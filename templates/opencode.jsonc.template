@@ -1,0 +1,73 @@
+{
+  "$schema": "https://opencode.ai/config.json",
+  "theme": "catppuccin",
+  "mcp": {
+    "forgejo": {
+      "type": "local",
+      "enabled": true,
+      "command": ["forgejo-mcp", "-t", "stdio", "--url", "YOU_FORGEJO_URL"],
+      "environment": {
+        "FORGEJO_ACCESS_TOKEN": "YOUR_FORGEJO_ACCESS_TOKEN"
+      }
+    },
+    "sequential": {
+      "type": "local",
+      "enabled": true,
+      "command": ["npx", "-y", "@modelcontextprotocol/server-sequential-thinking"]
+    },
+    "context7": {
+      "type": "local",
+      "enabled": true,
+      "command": ["npx", "-y", "@upstash/context7-mcp"]
+    },
+    "in-memoria": {
+      "type": "local",
+      "enabled": true,
+      "command": ["npx", "in-memoria", "server"]
+    },
+    "playwright": {
+      "type": "local",
+      "enabled": true,
+      "command": ["npx", "@playwright/mcp@latest"]
+    },
+    "morphllm-fast-apply": {
+      "type": "local",
+      "enabled": true,
+      "environment" : {
+        "MORPH_API_KEY": "YOUR_MORPH_API_KEY"
+      },
+      "command": ["npx", "-y", "@morph-llm/morph-fast-apply"]
+    },
+    "shadcn": {
+      "type": "local",
+      "enabled": true,
+      "command": ["npx", "shadcn@latest", "mcp"]
+    },
+    "prompt-kit": {
+      "type": "local",
+      "enabled": true,
+      "command": ["npx", "-y", "shadcn@canary", "registry:mcp"],
+      "environment": {
+        "REGISTRY_URL": "https://www.prompt-kit.com/c/registry.json"
+      }
+    },
+    "tavily": {
+      "type": "local",
+      "enabled": true,
+      "command": ["npx", "-y", "tavily-mcp@latest"],
+      "environment": {
+        "TAVILY_API_KEY": "YOUR_TAVILY_API_KEY"
+      }
+    },
+    "chrome-devtools": {
+      "type": "local",
+      "enabled": true,
+      "command": ["npx", "-y", "chrome-devtools-mcp@latest"]
+    },
+    "serena": {
+      "type": "local",
+      "enabled": true,
+      "command" : ["uvx", "--from", "git+https://github.com/oraios/serena", "serena", "start-mcp-server", "--context", "agent"]
+    }
+  }
+}
