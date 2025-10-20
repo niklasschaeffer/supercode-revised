@@ -4,7 +4,7 @@ description: Load project context from Serena memories and In-Memoria pattern in
 agents: context-gathering
 ---
 
-# load: $ARGUMENTS → Load project intelligence and return structured context
+# /load $ARGUMENTS
 
 Load comprehensive project context by combining Serena's persistent memories with In-Memoria's learned patterns and architectural intelligence.
 
@@ -92,4 +92,4 @@ The command returns structured context to the invoking context-gathering agent:
 
 ## Integration
 
-Invoked by the **context-gathering** agent during manifest creation. Returned context populates manifests with relevant files, patterns, standards, and previous decisions from both Serena and In-Memoria.
+Invoked by the **context-gathering** agent during manifest creation. Returned context populates manifests with relevant files, patterns, standards, and previous decisions from both Serena and In-Memoria. Pairs with **/save** for complete session lifecycle: dual MCP READ operations (load) complement dual MCP WRITE operations (save) for comprehensive knowledge management.

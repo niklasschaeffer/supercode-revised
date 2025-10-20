@@ -1,0 +1,100 @@
+---
+name: save
+description: Persist session context to Serena memories and In-Memoria intelligence for cross-session continuity
+agents: general
+---
+
+# /save $ARGUMENTS
+
+Save session context by capturing work summaries, architectural decisions, and discovered patterns to Serena memories and In-Memoria intelligence for dual MCP persistence.
+
+## Context
+
+**Current Directory**: !`pwd`
+
+## Behavior
+
+This command orchestrates session persistence through dual MCP integration:
+
+### Serena Integration
+1. **Session Analysis**: Analyze conversation context to extract key accomplishments and decisions
+2. **Memory Creation**: Use `write_memory` to persist session summaries, decisions, patterns
+3. **Checkpoint Creation**: Create resumable state for future sessions
+4. **Validation**: Confirm successful persistence and memory integrity
+
+### In-Memoria Integration
+1. **Pattern Contribution**: Use `contribute_insights` for coding patterns discovered
+2. **Best Practice Storage**: Architectural decisions → reusable intelligence
+3. **Optimization Capture**: Performance improvements → learned patterns
+4. **Cross-Session Learning**: Build project intelligence over sessions
+
+### Captured Content
+1. **Session Summary**: Work accomplished, files modified, features implemented
+2. **Architectural Decisions**: Design choices, trade-offs, rationale documentation
+3. **Pattern Discovery**: Coding patterns, conventions, architectural patterns discovered
+4. **Next Session Context**: Incomplete work, blockers, recommended next steps
+5. **Intelligence Contributions**: Patterns, best practices, optimizations for In-Memoria
+## Return Format
+
+```markdown
+## Session Saved
+
+### Serena Memories
+- session_YYYY_MM_DD_topic, architectural_decisions, patterns_discovered
+
+### In-Memoria Intelligence
+- [N] patterns contributed, [N] best practices, [N] optimizations stored
+
+### Session Summary
+Files: [N], Features: [list], Decisions: [list]
+
+### Next Session
+Use /load to restore context. Focus: [points]. Blockers: [list].
+```
+## Workflow
+1. **Session Analysis Phase**:
+   - Review conversation history for accomplishments
+   - Extract architectural decisions and rationale
+   - Identify discovered patterns and conventions
+   - Note incomplete work and blockers
+
+2. **Serena Persistence Phase**:
+   - `write_memory(session_summary)` → Save session work recap
+   - `write_memory(architectural_decisions)` → Update design decisions
+   - `write_memory(patterns_discovered)` → Document new patterns
+   - `write_memory(checkpoint_state)` → Create resumable state
+
+3. **In-Memoria Persistence Phase**:
+   - `contribute_insights(best_practice)` → Store coding conventions
+   - `contribute_insights(refactor_suggestion)` → Save improvement patterns
+   - `contribute_insights(optimization)` → Persist performance insights
+
+4. **Validation Phase**:
+   - Confirm all memories written successfully
+   - Verify In-Memoria contributions accepted
+   - Provide resumption context for next session
+
+## Tool Requirements
+
+**Serena**: write_memory (primary), list_memories (validation), read_memory (duplication check)
+**In-Memoria**: contribute_insights (pattern learning, cross-session intelligence)
+
+## Examples
+
+```
+/save
+# Session summary to Serena + patterns to In-Memoria
+
+/save --checkpoint
+# Detailed state with full dual MCP persistence
+
+/save --decision "Chose React for TypeScript"
+# Architectural decision to both MCPs
+
+/save --patterns
+# Coding patterns to Serena memories + In-Memoria intelligence
+```
+
+## Integration
+
+Invoked at session end or checkpoint intervals. Pairs with **/load** for complete session lifecycle: `/load` (READ from Serena + In-Memoria) → work → `/save` (WRITE to Serena + In-Memoria). Dual MCP architecture enables cross-session continuity and intelligent knowledge accumulation.
