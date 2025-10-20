@@ -7,9 +7,6 @@ The SuperCode framework components will be automatically imported below.
 # SuperCode Framework Components
 # ===================================================
 
-# Primary Agents
-[@agent/orchestration.md](./agent/orchestration.md)
-
 # Sub Agents
 [@agent/context-gathering.md](./agent/context-gathering.md)
 

@@ -21,7 +21,7 @@
 - **Context7**: Sequential coordinates analysis → Context7 provides official patterns
 - **Tavily**: Sequential plans research → Tavily executes searches
 - **Serena**: Sequential analyzes architecture → Serena provides semantic context
-- **Any complex task**: Sequential breaks down multi-step problems systematically
+- **Any complex task**: Sequential breaks down multistep problems systematically
 
 ## Examples
 ```

@@ -14,7 +14,7 @@
 - **Over basic memory tools**: When you need pattern prediction, not just fact storage
 - **For persistent intelligence**: AI remembers your coding style, architecture decisions across sessions
 - **For pattern learning**: Statistical analysis of naming conventions, architectural choices, code structure
-- **Over manual rules**: Dynamic learning from actual code instead of static, manually-defined rules
+- **Over manual rules**: Dynamic learning from actual code instead of static, manually defined rules
 - **Not for one-time analysis**: Use Serena for symbol operations, In-Memoria for persistent learning
 
 ## Works Best With

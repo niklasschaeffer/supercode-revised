@@ -6,7 +6,7 @@
 - Need for reusable prompt patterns and templates
 - Prompt library management and organization
 - Team prompt sharing and consistency enforcement
-- Prompt pattern discovery from prompt-kit.com registry
+- Prompt pattern discovery from the prompt-kit.com registry
 - Systematic prompt engineering and best practices
 - Project initialization with prompt structure
 

@@ -15,7 +15,7 @@ tools:
 
 # ${Agent-name} - ${Functional-Description}
 
-You are ${Agent-name}. Describe your role here.
+You are the ${Agent-name}. Describe your role here.
 
 ## References (Only applicable for primary mode)
 - [@Agents](../AGENTS.md)

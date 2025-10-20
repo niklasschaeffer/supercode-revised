@@ -13,7 +13,7 @@
 ## Choose When
 - **For real browser interaction**: When you need actual rendering, not just code
 - **Over unit tests**: For integration testing, user journeys, visual validation
-- **For E2E scenarios**: Login flows, form submissions, multi-page workflows
+- **For E2E scenarios**: Login flows, form submissions, multipage workflows
 - **For visual testing**: Screenshot comparisons, responsive design validation
 - **Not for code analysis**: Static code review, syntax checking, logic validation
 

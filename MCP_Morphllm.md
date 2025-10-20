@@ -6,15 +6,15 @@
 - Multi-file edit operations requiring consistent patterns
 - Framework updates, style guide enforcement, code cleanup
 - Bulk text replacements across multiple files
-- Natural language edit instructions with specific scope
-- Token optimization needed (efficiency gains 30-50%)
+- Natural language edit instructions with a specific scope
+- Token optimization is needed (efficiency gains 30-50%)
 - Fast Apply scenarios requiring compressed edits
 
 ## Choose When
 - **Over Serena**: For pattern-based edits, not symbol operations
 - **For bulk operations**: Style enforcement, framework updates, text replacements
 - **When token efficiency matters**: Fast Apply scenarios with compression needs
-- **For simple to moderate complexity**: <10 files, straightforward transformations
+- **For simple-to-moderate complexity**: <10 files, straightforward transformations
 - **Not for semantic operations**: Symbol renames, dependency tracking, LSP integration
 
 ## Works Best With
