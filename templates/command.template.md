@@ -1,7 +1,7 @@
 ---
 name: ${command-name}
 description: ${command-description} Briefly describe the purpose of the command.
-agents: ${agent-name}
+agent: ${agent-name} # Generation comment: Optional, only include if explicitly required by agent/user.
 ---
 
 # /${command-name} $ARGUMENTS
@@ -12,7 +12,7 @@ ${command-description} about what the command does.
 - [@Flags](../FLAGS.md) (Flags are optional and should be understood by the executing agent based on the Flags section)
 
 ## General Context
-**Invoked Arguments (can be empty, can have flags, can have prompt):** $ARGUMENTS
+**Invoked Arguments [user_prompt]:** $ARGUMENTS
 **Current Directory:** !`pwd`
 **Git Branch:** !`git rev-parse --abbrev-ref HEAD`
 **Git Status:**

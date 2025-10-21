@@ -15,6 +15,7 @@ The SuperCode framework components will be automatically imported below.
 [@agent/context-gathering.md](./agent/context-gathering.md)
 [@agent/devops-engineer.md](./agent/devops-engineer.md)
 [@agent/frontend-engineer.md](./agent/frontend-engineer.md)
+[@agent/generator-specialist.md](./agent/generator-specialist.md)
 [@agent/logging.md](./agent/logging.md)
 [@agent/qa-engineer.md](./agent/qa-engineer.md)
 [@agent/refactoring-expert.md](./agent/refactoring-expert.md)
@@ -22,6 +23,8 @@ The SuperCode framework components will be automatically imported below.
 [@agent/security-engineer.md](./agent/security-engineer.md)
 
 # Commands
+[@command/generate.md](./command/generate.md)
+[@command/implement.md](./command/implement.md)
 [@command/improve.md](./command/improve.md)
 [@command/load.md](./command/load.md)
 [@command/save.md](./command/save.md)
@@ -43,5 +46,3 @@ The SuperCode framework components will be automatically imported below.
 
 # Functional Flags
 [@FLAGS.md](FLAGS.md)
-
-
