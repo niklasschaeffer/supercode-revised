@@ -35,7 +35,7 @@ This command orchestrates project context loading through two primary MCP server
 
 ## Return Format
 
-The command returns structured context to the invoking context-gathering agent:
+The command returns structured context to the invoking orchestration agent:
 
 ```markdown
 ## Project Context (Loaded)
@@ -73,7 +73,7 @@ The command returns structured context to the invoking context-gathering agent:
 3. **Synthesis**:
    - Combine memory-based context with learned patterns
    - Structure for immediate consumption
-   - Return to context-gathering agent
+    - Return to orchestration agent
 
 ## Tool Requirements
 
@@ -98,4 +98,4 @@ The command returns structured context to the invoking context-gathering agent:
 
 ## Integration
 
-Invoked by the **context-gathering** agent during manifest creation. Returned context populates manifests with relevant files, patterns, standards, and previous decisions from both Serena and In-Memoria. Pairs with **/save** for complete session lifecycle: dual MCP READ operations (load) complement dual MCP WRITE operations (save) for comprehensive knowledge management.
+Invoked by the **orchestration** agent during initial context gathering. Returned context is provided to context-refinement agent for optimization when needed. Pairs with **/save** for complete session lifecycle: dual MCP READ operations (load) complement dual MCP WRITE operations (save) for comprehensive knowledge management.

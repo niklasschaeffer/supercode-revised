@@ -73,7 +73,7 @@ Activates Orchestration agent for intelligent multi-agent task coordination:
 
 /spawn "Refactor legacy codebase to modern patterns"
 # Orchestrates: refactoring-expert (code quality),
-# context-gathering (pattern intelligence), qa-engineer (regression prevention)
+# context-refinement (pattern intelligence), qa-engineer (regression prevention)
 
 /spawn --parallel "Implement 5 independent microservices"
 # Parallel delegation to backend-engineer for each service

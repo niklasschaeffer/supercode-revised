@@ -12,7 +12,7 @@ The SuperCode framework components will be automatically imported below.
 
 # Sub Agents
 [@agent/backend-engineer.md](./agent/backend-engineer.md)
-[@agent/context-gathering.md](./agent/context-gathering.md)
+[@agent/context-refinement.md](./agent/context-refinement.md)
 [@agent/devops-engineer.md](./agent/devops-engineer.md)
 [@agent/frontend-engineer.md](./agent/frontend-engineer.md)
 [@agent/generator-specialist.md](./agent/generator-specialist.md)
