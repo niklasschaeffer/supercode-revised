@@ -16,19 +16,23 @@ The SuperCode framework components will be automatically imported below.
 [@agent/devops-engineer.md](./agent/devops-engineer.md)
 [@agent/frontend-engineer.md](./agent/frontend-engineer.md)
 [@agent/generator-specialist.md](./agent/generator-specialist.md)
+[@agent/git-specialist.md](./agent/git-specialist.md)
 [@agent/logging.md](./agent/logging.md)
 [@agent/qa-engineer.md](./agent/qa-engineer.md)
 [@agent/refactoring-expert.md](./agent/refactoring-expert.md)
 [@agent/root-cause-analyst.md](./agent/root-cause-analyst.md)
 [@agent/security-engineer.md](./agent/security-engineer.md)
+[@agent/task-manager.md](./agent/task-manager.md)
 
 # Commands
 [@command/generate.md](./command/generate.md)
+[@command/git.md](./command/git.md)
 [@command/implement.md](./command/implement.md)
 [@command/improve.md](./command/improve.md)
 [@command/load.md](./command/load.md)
 [@command/save.md](./command/save.md)
 [@command/spawn.md](./command/spawn.md)
+[@command/task.md](./command/task.md)
 [@command/troubleshoot.md](./command/troubleshoot.md)
 
 # MCP Servers
