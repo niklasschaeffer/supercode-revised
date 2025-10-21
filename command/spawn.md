@@ -1,7 +1,6 @@
 ---
 name: spawn
 description: Orchestrate complex tasks through intelligent breakdown and specialist agent delegation
-agent: orchestration
 ---
 
 # /spawn $ARGUMENTS

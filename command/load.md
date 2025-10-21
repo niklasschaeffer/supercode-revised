@@ -1,7 +1,6 @@
 ---
 name: load
 description: Load project context from Serena memories and In-Memoria pattern intelligence
-agent: context-gathering
 ---
 
 # /load $ARGUMENTS

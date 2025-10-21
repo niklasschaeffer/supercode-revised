@@ -1,7 +1,6 @@
 ---
 name: troubleshoot
 description: Systematically diagnose errors and identify root causes through hypothesis-driven investigation
-agent: root-cause-analyst
 ---
 
 # /troubleshoot $ARGUMENTS

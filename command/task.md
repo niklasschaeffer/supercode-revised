@@ -1,7 +1,6 @@
 ---
 name: task
 description: Task management system for complex work decomposition and progress tracking
-agent: task-manager
 ---
 
 # /task $ARGUMENTS

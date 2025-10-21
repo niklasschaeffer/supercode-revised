@@ -1,7 +1,6 @@
 ---
 name: improve
 description: Improve existing code quality through systematic refactoring without breaking functionality
-agent: refactoring-expert
 ---
 
 # /improve $ARGUMENTS

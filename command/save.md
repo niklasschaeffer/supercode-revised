@@ -1,7 +1,6 @@
 ---
 name: save
 description: Persist session context to Serena memories and In-Memoria intelligence for cross-session continuity
-agent: logging
 ---
 
 # /save $ARGUMENTS

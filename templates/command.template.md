@@ -1,7 +1,6 @@
 ---
 name: ${command-name}
 description: ${command-description} Briefly describe the purpose of the command.
-agent: ${agent-name} # Generation comment: Optional, only include if explicitly required by agent/user.
 ---
 
 # /${command-name} $ARGUMENTS

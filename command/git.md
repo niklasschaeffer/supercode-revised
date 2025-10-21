@@ -1,7 +1,6 @@
 ---
 name: git
 description: Intelligent git workflows with Forgejo forge integration
-agent: git-specialist
 ---
 
 # /git $ARGUMENTS

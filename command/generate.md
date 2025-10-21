@@ -1,7 +1,6 @@
 ---
 name: generate
 description: Generate template-compliant agents, commands, or MCP documentation from requirements
-agent: generator-specialist
 ---
 
 # /generate $ARGUMENTS
