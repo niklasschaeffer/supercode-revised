@@ -5,8 +5,6 @@ mode: subagent
 reasoningEffort: medium
 textVerbosity: low
 tools:
-  bash: false
-  write: false
   edit: false
   task: false
   WebFetch: false

@@ -12,10 +12,11 @@ Orchestrate complex tasks by analyzing requirements, decomposing into subtasks, 
 - [@FLAGS.md](../FLAGS.md)
 
 ## General Context
-**Arguments:** $ARGUMENTS
-**Git Branch:** !`git rev-parse --abbrev-ref HEAD`
-**Git Status:** !`git status --short | grep '^ M'`
+**Invoked Arguments (can be empty, can have flags, can have prompt):** $ARGUMENTS
 **Current Directory:** !`pwd`
+**Git Branch:** !`git rev-parse --abbrev-ref HEAD`
+**Git Status:**
+!`git status --short | grep '^ M'`
 
 ## Behavior
 

@@ -12,10 +12,11 @@ ${command-description} about what the command does.
 - [@Flags](../FLAGS.md) (Flags are optional and should be understood by the executing agent based on the Flags section)
 
 ## General Context
-**Arguments:** $ARGUMENTS
-**Git Branch:**: !`git rev-parse --abbrev-ref HEAD`
-**Git Status:**: !`git status`
-**Current Directory:**: !`pwd`
+**Invoked Arguments (can be empty, can have flags, can have prompt):** $ARGUMENTS
+**Current Directory:** !`pwd`
+**Git Branch:** !`git rev-parse --abbrev-ref HEAD`
+**Git Status:**
+!`git status --short | grep '^ M'`
 
 ## Workflow
 - 4 Steps describing the command's workflow.
