@@ -9,7 +9,7 @@ agent: ${agent-name} # Generation comment: Optional, only include if explicitly 
 ${command-description} about what the command does.
 
 # References
-- [@Flags](../FLAGS.md) (Flags are optional and should be understood by the executing agent based on the Flags section)
+- [@Flags](../FLAGS.md)
 
 ## General Context
 **Invoked Arguments [user_prompt]:** $ARGUMENTS
