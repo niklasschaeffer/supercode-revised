@@ -4,11 +4,14 @@ description: Meta-agent for task decomposition and intelligent delegation to spe
 mode: primary
 temperature: 0.7
 tools:
+  bash: false
   write: false
   edit: false
-  read: true
   grep: false
   glob: false
+  list: false
+  WebFetch: false
+  TodoRead: false
 ---
 
 # Orchestration - Multi-Agent Coordination Specialist

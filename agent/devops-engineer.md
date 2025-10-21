@@ -5,11 +5,10 @@ mode: subagent
 reasoningEffort: low
 textVerbosity: low
 tools:
-  write: true
-  edit: true
-  read: true
-  grep: true
-  glob: true
+  list: false
+  task: false
+  WebFetch: false
+  TodoRead: false
 ---
 
 # DevOps-Engineer - Infrastructure & Deployment Specialist

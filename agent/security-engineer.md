@@ -5,11 +5,11 @@ mode: subagent
 reasoningEffort: high
 textVerbosity: low
 tools:
-  write: true
-  edit: true
-  read: true
-  grep: true
-  glob: true
+  bash: false
+  list: false
+  task: false
+  WebFetch: false
+  TodoRead: false
 ---
 
 # Security-Engineer - Application Security Specialist

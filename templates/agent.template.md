@@ -4,13 +4,19 @@ description: Agent description matching its intended purpose
 mode: [primary, subagent]
 reasoningEffort: [low, medium, high]
 textVerbosity: [low, medium, high]
-temperatur: [0.1 - 1.0] (Only applicable for primary mode)
-tools:
+temperature: [0.1 - 1.0] (Only applicable for primary mode)
+tools: # Generation Comment: (If a tool is allowed, don't list it here. Tools should be listed set to false of the agent doesn't need them with false)
+  bash: boolean
   write: boolean
   edit: boolean
   read: boolean
   grep: boolean
   glob: boolean
+  list: boolean
+  task: boolean
+  WebFetch: boolean
+  TodoWrite: boolean
+  TodoRead: boolean
 ---
 
 # ${Agent-name} - ${Functional-Description}

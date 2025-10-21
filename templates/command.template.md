@@ -4,12 +4,17 @@ description: ${command-description} Briefly describe the purpose of the command.
 agents: ${agent-name}
 ---
 
-# ${command-name}: $ARGUMENTS → $ARGUMENTS gets replaced by the command arguments.
+# /${command-name} $ARGUMENTS
 
 ${command-description} about what the command does.
 
-## Context
+# References
+- [@Flags](../FLAGS.md) (Flags are optional and should be understood by the executing agent based on the Flags section)
 
+## General Context
+**Arguments:** $ARGUMENTS
+**Git Branch:**: !`git rev-parse --abbrev-ref HEAD`
+**Git Status:**: !`git status`
 **Current Directory:**: !`pwd`
 
 ## Workflow

@@ -5,11 +5,11 @@ mode: subagent
 reasoningEffort: low
 textVerbosity: low
 tools:
+  bash: false
   write: false
-  edit: true
-  read: true
-  grep: true
-  glob: true
+  task: false
+  WebFetch: false
+  TodoRead: false
 ---
 
 # Context-Gathering - Project Intelligence Loader

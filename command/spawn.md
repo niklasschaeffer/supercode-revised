@@ -1,16 +1,21 @@
 ---
 name: spawn
 description: Orchestrate complex tasks through intelligent breakdown and specialist agent delegation
-agents: orchestration
+agent: orchestration
 ---
 
 # /spawn $ARGUMENTS
 
 Orchestrate complex tasks by analyzing requirements, decomposing into subtasks, selecting appropriate specialist agents, and coordinating parallel or sequential execution.
 
-## Context
+## References
+- [@FLAGS.md](../FLAGS.md)
 
-**Current Directory**: !`pwd`
+## General Context
+**Arguments:** $ARGUMENTS
+**Git Branch:** !`git rev-parse --abbrev-ref HEAD`
+**Git Status:** !`git status`
+**Current Directory:** !`pwd`
 
 ## Behavior
 

@@ -15,6 +15,7 @@ The SuperCode framework components will be automatically imported below.
 [@agent/context-gathering.md](./agent/context-gathering.md)
 [@agent/devops-engineer.md](./agent/devops-engineer.md)
 [@agent/frontend-engineer.md](./agent/frontend-engineer.md)
+[@agent/logging.md](./agent/logging.md)
 [@agent/qa-engineer.md](./agent/qa-engineer.md)
 [@agent/refactoring-expert.md](./agent/refactoring-expert.md)
 [@agent/security-engineer.md](./agent/security-engineer.md)

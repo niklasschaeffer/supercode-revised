@@ -1,16 +1,21 @@
 ---
 name: save
 description: Persist session context to Serena memories and In-Memoria intelligence for cross-session continuity
-agents: general
+agent: logging
 ---
 
 # /save $ARGUMENTS
 
 Save session context by capturing work summaries, architectural decisions, and discovered patterns to Serena memories and In-Memoria intelligence for dual MCP persistence.
 
-## Context
+## References
+- [@FLAGS.md](../FLAGS.md)
 
-**Current Directory**: !`pwd`
+## General Context
+**Arguments:** $ARGUMENTS
+**Git Branch:** !`git rev-parse --abbrev-ref HEAD`
+**Git Status:** !`git status`
+**Current Directory:** !`pwd`
 
 ## Behavior
 
@@ -19,7 +24,7 @@ This command orchestrates session persistence through dual MCP integration:
 ### Serena Integration
 1. **Session Analysis**: Analyze conversation context to extract key accomplishments and decisions
 2. **Memory Creation**: Use `write_memory` to persist session summaries, decisions, patterns
-3. **Checkpoint Creation**: Create resumable state for future sessions
+3. **Checkpoint Creation**: Create a resumable state for future sessions
 4. **Validation**: Confirm successful persistence and memory integrity
 
 ### In-Memoria Integration
@@ -29,7 +34,7 @@ This command orchestrates session persistence through dual MCP integration:
 4. **Cross-Session Learning**: Build project intelligence over sessions
 
 ### Captured Content
-1. **Session Summary**: Work accomplished, files modified, features implemented
+1. **Session Summary**: Work achieved, files modified, features implemented
 2. **Architectural Decisions**: Design choices, trade-offs, rationale documentation
 3. **Pattern Discovery**: Coding patterns, conventions, architectural patterns discovered
 4. **Next Session Context**: Incomplete work, blockers, recommended next steps
@@ -52,32 +57,28 @@ Files: [N], Features: [list], Decisions: [list]
 Use /load to restore context. Focus: [points]. Blockers: [list].
 ```
 ## Workflow
-1. **Session Analysis Phase**:
-   - Review conversation history for accomplishments
-   - Extract architectural decisions and rationale
-   - Identify discovered patterns and conventions
-   - Note incomplete work and blockers
+1. **Agent Invocation**:
+   - Invoke logging agent via Task tool for session state preservation
+   - Agent analyzes session transcript, todos, and changes systematically
 
-2. **Serena Persistence Phase**:
-   - `write_memory(session_summary)` → Save session work recap
-   - `write_memory(architectural_decisions)` → Update design decisions
-   - `write_memory(patterns_discovered)` → Document new patterns
-   - `write_memory(checkpoint_state)` → Create resumable state
+2. **Serena Persistence** (logging agent executes):
+   - `write_memory(session_summary)` → Save session work recap with clear keys
+   - `write_memory(architectural_decisions)` → Update design decisions and rationale
+   - `write_memory(patterns_discovered)` → Document discovered patterns and conventions
 
-3. **In-Memoria Persistence Phase**:
-   - `contribute_insights(best_practice)` → Store coding conventions
-   - `contribute_insights(refactor_suggestion)` → Save improvement patterns
-   - `contribute_insights(optimization)` → Persist performance insights
+3. **In-Memoria Persistence** (logging agent executes):
+   - `contribute_insights(best_practice)` → Store coding conventions and learnings
+   - `contribute_insights(refactor_suggestion)` → Save improvement patterns identified
+   - `contribute_insights(optimization)` → Persist performance insights discovered
 
-4. **Validation Phase**:
-   - Confirm all memories written successfully
-   - Verify In-Memoria contributions accepted
-   - Provide resumption context for next session
+4. **Consolidation & Validation**:
+   - Logging agent returns summary of memories created and insights contributed
+   - Validate successful persistence with memory keys and contribution confirmations
 
 ## Tool Requirements
 
-**Serena**: write_memory (primary), list_memories (validation), read_memory (duplication check)
-**In-Memoria**: contribute_insights (pattern learning, cross-session intelligence)
+**Task**: Invoke logging agent for session preservation (primary orchestration)
+**Logging Agent**: Executes Serena write_memory + In-Memoria contribute_insights operations
 
 ## Examples
 

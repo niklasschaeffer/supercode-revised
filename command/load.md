@@ -1,16 +1,21 @@
 ---
 name: load
 description: Load project context from Serena memories and In-Memoria pattern intelligence
-agents: context-gathering
+agent: context-gathering
 ---
 
 # /load $ARGUMENTS
 
 Load comprehensive project context by combining Serena's persistent memories with In-Memoria's learned patterns and architectural intelligence.
 
-## Context
+## References
+- [@FLAGS.md](../FLAGS.md)
 
-**Current Directory**: !`pwd`
+## General Context
+**Arguments:** $ARGUMENTS
+**Git Branch:** !`git rev-parse --abbrev-ref HEAD`
+**Git Status:** !`git status`
+**Current Directory:** !`pwd`
 
 ## Behavior
 
@@ -25,7 +30,7 @@ This command orchestrates project context loading through two primary MCP server
 1. **Check Learning Status**: Use `get_learning_status` to verify project intelligence exists
 2. **Auto-Learn If Needed**: Trigger `auto_learn_if_needed` for first-time projects
 3. **Load Developer Profile**: Get coding preferences, naming conventions, architectural choices
-4. **Pattern Recommendations**: Retrieve pattern intelligence for current project context
+4. **Pattern Recommendations**: Retrieve pattern intelligence for the current project context
 
 ## Return Format
 
