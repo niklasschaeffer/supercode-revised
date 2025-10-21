@@ -24,6 +24,32 @@
 - Human + AI memory systems for comprehensive knowledge management
 - Self-improving capabilities over time
 
+## QA Documentation Organization (2025-10-22)
+
+### Decision: Implement Structured QA Documentation System
+**Rationale**: Improve organization and scalability of QA approval storage by moving from project root to dedicated `docs/qa/` structure
+
+**Trade-offs Considered**:
+- **Complexity**: Initial setup complexity vs. long-term maintainability
+- **Migration Effort**: One-time migration cost vs. ongoing organizational benefits
+- **Learning Curve**: New structure adoption vs. improved discoverability
+
+**Chosen Approach**: Comprehensive `docs/qa/` folder structure with templates and standards
+
+### Implementation Strategy
+1. **Structure Creation**: Organized folders (approvals/, reports/, templates/, standards/)
+2. **Content Migration**: Move existing QA documents to appropriate locations
+3. **Template Development**: Standardized templates for validation reports and checklists
+4. **Standards Documentation**: Comprehensive QA criteria and metrics
+5. **Agent Integration**: Update qa-engineer agent to use new structure
+
+### Benefits Realized
+- Professional organization following project patterns
+- Scalable structure supporting framework growth
+- Standardized QA processes and documentation
+- Clear audit trail for approvals and validations
+- Template-driven consistency for future QA documents
+
 ## Previous Decisions (Preserved)
 
 ### Agent Architecture (2025-10-21)

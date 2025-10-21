@@ -18,6 +18,7 @@ The SuperCode framework components will be automatically imported below.
 [@agent/generator-specialist.md](./agent/generator-specialist.md)
 [@agent/git-specialist.md](./agent/git-specialist.md)
 [@agent/logging.md](./agent/logging.md)
+[@agent/mobile-optimization.md](./agent/mobile-optimization.md)
 [@agent/qa-engineer.md](./agent/qa-engineer.md)
 [@agent/refactoring-expert.md](./agent/refactoring-expert.md)
 [@agent/root-cause-analyst.md](./agent/root-cause-analyst.md)
