@@ -81,8 +81,8 @@ if [ -f "$JSONC_FILE" ]; then
     echo -e "${BLUE}   → Skipping to preserve your existing settings${NC}"
     echo -e "${GREEN}   ✓ Existing configuration preserved${NC}"
 else
-    if [ -f ".opencode/opencode.jsonc.example" ]; then
-        cp .opencode/opencode.jsonc.example "$JSONC_FILE"
+    if [ -f "./templates/opencode.jsonc.template" ]; then
+        cp ./templates/opencode.jsonc.template "$JSONC_FILE"
         echo -e "${GREEN}   ✓ Created new configuration file from template${NC}"
     else
         echo -e "${RED}   ⚠ Template configuration file not found${NC}"
