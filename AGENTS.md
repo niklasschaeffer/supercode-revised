@@ -7,17 +7,22 @@ The SuperCode framework components will be automatically imported below.
 # SuperCode Framework Components
 # ===================================================
 
+# Primary Agents
+[@agent/orchestration.md](./agent/orchestration.md)
+
 # Sub Agents
 [@agent/backend-engineer.md](./agent/backend-engineer.md)
 [@agent/context-gathering.md](./agent/context-gathering.md)
 [@agent/devops-engineer.md](./agent/devops-engineer.md)
 [@agent/frontend-engineer.md](./agent/frontend-engineer.md)
 [@agent/qa-engineer.md](./agent/qa-engineer.md)
+[@agent/refactoring-expert.md](./agent/refactoring-expert.md)
 [@agent/security-engineer.md](./agent/security-engineer.md)
 
 # Commands
 [@command/load.md](./command/load.md)
 [@command/save.md](./command/save.md)
+[@command/spawn.md](./command/spawn.md)
 
 # MCP Servers
 [@MCP_Chrome_Dev_Tools.md](MCP_Chrome_Dev_Tools.md)
