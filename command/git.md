@@ -22,7 +22,7 @@ Intelligent git operations combining local version control expertise with Forgej
 
 1. **Repository Analysis**:
    - `git status`, `git branch` → Local state
-   - Forgejo `list_branches`, `list_repo_commits` → Remote state
+   - Forgejo `list_branches`, `list_repo_commits`, ` → Remote state
 
 2. **Operation Execution**:
    - Parse operation (workflow/branch/issue/pr/commit)
@@ -68,6 +68,7 @@ Intelligent git operations combining local version control expertise with Forgej
 **Issue integration:**
 ```
 /git issue create "Fix login bug"  # Create Forgejo issue
+/git issue comment 123 "Fixing..." # Add comment to issue with what has been accomplished
 /git issue link 123               # Link current branch to issue
 /git issue close 123              # Close issue with verification
 ```
