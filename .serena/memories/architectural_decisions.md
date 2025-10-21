@@ -27,6 +27,62 @@
 ## QA Documentation Organization (2025-10-22)
 
 ### Decision: Implement Structured QA Documentation System
+**Rationale**: Improve organization and scalability of QA approval storage by moving from project root to dedicated `opendocs/qa/` structure
+
+**Trade-offs Considered**:
+- **Complexity**: Initial setup complexity vs. long-term maintainability
+- **Migration Effort**: One-time migration cost vs. ongoing organizational benefits
+- **Learning Curve**: New structure adoption vs. improved discoverability
+
+**Chosen Approach**: Comprehensive `opendocs/qa/` folder structure with templates and standards
+
+### Implementation Strategy
+1. **Structure Creation**: Organized folders (approvals/, reports/, standards/, templates/)
+2. **Content Migration**: Move existing QA documents from project root to appropriate locations
+3. **Template Development**: Standardized templates for validation reports and checklists
+4. **Standards Documentation**: Comprehensive QA criteria and metrics
+5. **Reference Integrity**: Maintain all cross-references during migration
+6. **Validation**: Comprehensive testing of new structure functionality
+
+### Benefits Realized
+- Professional organization following project patterns
+- Scalable structure supporting framework growth
+- Standardized QA processes and documentation
+- Clear audit trail for approvals and validations
+- Template-driven consistency for future QA documents
+- Reserved `opendocs/` folder for organized documentation
+- Enterprise-grade QA approval storage system
+
+## Agent Role Specialization (2025-10-22)
+
+### Decision: Transform Context-Gathering to Context-Refinement with Enhanced Orchestration
+**Rationale**: Eliminate role overlap and improve workflow efficiency through clear separation of concerns
+
+**Trade-offs Considered**:
+- **Role Complexity**: Specialized roles vs. generalist approach
+- **Coordination Overhead**: Multi-agent workflow vs. single-agent simplicity
+- **Migration Risk**: Architectural changes vs. maintaining status quo
+
+**Chosen Approach**: Context-gathering → Context-refinement transformation with orchestration enhancement
+
+### Implementation Strategy
+1. **Role Transformation**: Convert context-gathering agent to context-refinement specialist
+2. **Orchestration Enhancement**: Empower orchestration agent with primary context gathering
+3. **Workflow Separation**: Clear distinction between gathering (orchestration) and refinement (specialized)
+4. **Integration Updates**: Update all references and integration points
+5. **Backward Compatibility**: Preserve existing functionality during transformation
+
+### Benefits Realized
+- Clear separation of concerns between gathering and refinement
+- Improved agent coordination and workflow efficiency
+- Reduced redundancy in context management
+- Enhanced specialization for better context processing
+- Scalable architecture for future agent evolution
+- Maintained backward compatibility during transformation
+
+## QA Documentation Organization
+
+### Decision: Implement Structured QA Documentation System
 **Rationale**: Improve organization and scalability of QA approval storage by moving from project root to dedicated `docs/qa/` structure
 
 **Trade-offs Considered**:

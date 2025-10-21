@@ -69,3 +69,119 @@ Upgrade existing commands with dual MCP integration:
 - Confidence scoring for insight quality
 - Impact prediction for value assessment
 - Source agent tracking for attribution
+
+## File Organization Patterns (2025-10-22)
+
+### Hierarchical Relocation Pattern
+Systematic file moves with reference integrity preservation:
+```
+1. Analysis Phase
+   - Identify all files to relocate
+   - Map reference dependencies
+   - Plan target structure
+
+2. Preparation Phase  
+   - Create target directory structure
+   - Prepare reference update scripts
+   - Validate migration approach
+
+3. Execution Phase
+   - Move files to target locations
+   - Update all references systematically
+   - Verify reference integrity
+
+4. Validation Phase
+   - Test all affected functionality
+   - Validate reference completeness
+   - Generate validation reports
+```
+
+### Template Centralization Pattern
+Consolidate shared templates in dedicated locations:
+- Single source of truth for templates
+- Standardized template structure
+- Easy maintenance and updates
+- Consistent usage across agents/commands
+
+### Reserved Documentation Folder Pattern
+Establish special folders for organized documentation:
+- `opendocs/` for structured documentation
+- Hierarchical organization by function
+- Clear separation from code files
+- Enterprise-grade documentation standards
+
+## Agent Transformation Patterns (2025-10-22)
+
+### Role Specialization Pattern
+Transform generalist agents into specialized roles:
+```
+1. Role Analysis
+   - Identify overlapping responsibilities
+   - Define clear specialization boundaries
+   - Plan separation of concerns
+
+2. Transformation Design
+   - Redesign agent roles and responsibilities
+   - Update integration points
+   - Preserve core functionality
+
+3. Implementation
+   - Transform agent definitions
+   - Update all references
+   - Maintain backward compatibility
+
+4. Validation
+   - Test new role workflows
+   - Verify integration functionality
+   - Validate improved efficiency
+```
+
+### Workflow Orchestration Pattern
+Primary agent coordination with specialized support:
+- **Primary Agent**: Overall coordination and context gathering
+- **Specialized Agents**: Domain-specific refinement and processing
+- **Clear Workflow**: Sequential handoffs with defined responsibilities
+- **Integration Points**: Well-defined interfaces between agents
+
+### Backward Compatibility Preservation Pattern
+Maintain functionality during architectural changes:
+- Preserve existing interfaces during transformation
+- Gradual migration approach
+- Comprehensive testing of compatibility
+- Clear documentation of changes
+
+## Reference Integrity Patterns (2025-10-22)
+
+### Comprehensive Reference Update Pattern
+Systematic reference maintenance during major changes:
+```
+1. Reference Discovery
+   - Search for all file references
+   - Identify import/include statements
+   - Map dependency chains
+
+2. Reference Mapping
+   - Create old → new location mappings
+   - Plan systematic updates
+   - Prepare update scripts
+
+3. Systematic Updates
+   - Update all references consistently
+   - Verify update completeness
+   - Test updated functionality
+
+```
+
+4. Integrity Validation
+   - Comprehensive testing of affected systems
+   - Reference completeness verification
+   - Functional validation of changes
+```
+
+### Cross-System Reference Pattern
+Maintain references across multiple system components:
+- Agent definitions and imports
+- Command configurations
+- Template references
+- Documentation links
+- Integration point updates
