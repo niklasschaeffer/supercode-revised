@@ -23,9 +23,10 @@ Load comprehensive project context by combining Serena's persistent memories wit
 This command orchestrates project context loading through two primary MCP servers:
 
 ### Serena Integration
-1. **List Available Memories**: Use `list_memories` to discover stored project context
-2. **Load Key Memories**: Read relevant memories (project_overview, architectural_decisions, coding_standards, etc.)
-3. **Extract Persistent Context**: Retrieve cross-session knowledge and decisions
+1. **Activate the project**: Use `activte_project` with !`pwd`
+2. **List Available Memories**: Use `list_memories` to discover stored project context
+3. **Load Key Memories**: Read relevant memories (project_overview, architectural_decisions, coding_standards, etc.)
+4. **Extract Persistent Context**: Retrieve cross-session knowledge and decisions
 
 ### In-Memoria Integration
 1. **Check Learning Status**: Use `get_learning_status` to verify project intelligence exists
