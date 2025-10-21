@@ -25,8 +25,9 @@ This command orchestrates session persistence through dual MCP integration:
 ### Serena Integration
 1. **Session Analysis**: Analyze conversation context to extract key accomplishments and decisions
 2. **Memory Creation**: Use `write_memory` to persist session summaries, decisions, patterns
-3. **Checkpoint Creation**: Create a resumable state for future sessions
-4. **Validation**: Confirm successful persistence and memory integrity
+3. **Context Preparation**: Prepare for the next session with `prepare_for_new_conversation` 
+4. **Checkpoint Creation**: Create a resumable state for future sessions
+5. **Validation**: Confirm successful persistence and memory integrity
 
 ### In-Memoria Integration
 1. **Pattern Contribution**: Use `contribute_insights` for coding patterns discovered
@@ -66,6 +67,7 @@ Use /load to restore context. Focus: [points]. Blockers: [list].
    - `write_memory(session_summary)` → Save session work recap with clear keys
    - `write_memory(architectural_decisions)` → Update design decisions and rationale
    - `write_memory(patterns_discovered)` → Document discovered patterns and conventions
+   - `prepare_for_new_conversation` → Prepare for next session
 
 3. **In-Memoria Persistence** (logging agent executes):
    - `contribute_insights(best_practice)` → Store coding conventions and learnings

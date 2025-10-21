@@ -1,38 +1,42 @@
 # Architectural Decisions
 
-## Decision: Load-First Context Strategy
-**Date**: 2025-10-21
-**Decision**: Context-gathering agent must execute /load command BEFORE manual file discovery
-**Rationale**: 
-- Serena memories contain project decisions and standards
-- In-Memoria contains learned patterns and developer preferences
-- Loading intelligence first provides 80% of context
-- Targeted discovery fills remaining 20% gaps
-**Impact**: More efficient context gathering, fewer redundant tool calls
+## Dual MCP Integration (2025-10-21)
 
-## Decision: No Magic MCP Integration
-**Date**: 2025-10-21
-**Decision**: Remove all Magic MCP references from documentation
-**Rationale**: Project does not use Magic MCP server
-**Impact**: All MCP documentation updated to remove Magic, use shadcn or native alternatives
+### Decision: Implement Dual MCP Architecture
+**Rationale**: Enhance SuperCode framework with both explicit persistence (Serena) and implicit learning (In-Memoria)
 
-## Decision: 100-Line Maximum for All Documentation
-**Date**: 2025-10-21
-**Decision**: All agents, commands, and MCP documentation limited to 100 lines
-**Rationale**: 
-- Enforces conciseness and clarity
-- Prevents verbose over-explanation
-- Makes documentation scannable and actionable
-**Impact**: All documentation rewritten to be concise, direct, example-focused
+**Trade-offs Considered**:
+- **Complexity**: Increased system complexity vs. enhanced capabilities
+- **Maintenance**: Two MCP systems vs. single point of failure
+- **Learning Curve**: Dual integration vs. simplified workflow
 
-## Decision: Template-Based Agent Structure
-**Date**: 2025-10-21
-**Decision**: All agents must follow agent.template.md structure exactly
-**Rationale**: Consistency across agent definitions, predictable structure
-**Impact**: Context-gathering agent rewritten to match template (Triggers, Focus Areas, Tool Usage, MCP Integrations, Boundaries, Success Metrics)
+**Chosen Approach**: Dual MCP integration for complementary strengths
 
-## Decision: Simple Manifest Format
-**Date**: 2025-10-21
-**Decision**: Context manifests use Files → Patterns → Decisions → Constraints format
-**Rationale**: Simple, actionable, easy to parse for agents
-**Impact**: Context-gathering creates manifests in standardized format with clear source attribution
+### Implementation Strategy
+1. **Serena MCP**: Human-readable memories for explicit session state
+2. **In-Memoria MCP**: AI-driven pattern discovery for implicit learning
+3. **Integration Points**: Commands (load/save) and Agents (logging)
+4. **Workflow**: Load → Work → Save cycle with both MCPs
+
+### Benefits Realized
+- Cross-session continuity through persistent memories
+- Intelligent framework evolution through pattern learning
+- Human + AI memory systems for comprehensive knowledge management
+- Self-improving capabilities over time
+
+## Previous Decisions (Preserved)
+
+### Agent Architecture (2025-10-21)
+- Orchestration agent as primary coordinator
+- Specialized sub-agents for domain expertise
+- Clear tool boundaries and responsibilities
+
+### Command System (2025-10-21)
+- YAML frontmatter for structured metadata
+- Consistent behavior patterns across commands
+- Integration with MCP servers for persistence
+
+### Template System (2025-10-21)
+- Standardized templates for agents and commands
+- MCP server templates for integration
+- Consistent structure for maintainability
