@@ -35,10 +35,10 @@ echo ""
 
 # Copy agent markdown files (forcefully overwrite)
 echo -e "${YELLOW}📝 Installing agent configuration files...${NC}"
-if [ -d ".opencode/agent" ]; then
-    AGENT_COUNT=$(ls -1 .opencode/agent/*.md 2>/dev/null | wc -l)
+if [ -d "./agent" ]; then
+    AGENT_COUNT=$(ls -1 ./agent/*.md 2>/dev/null | wc -l)
     if [ $AGENT_COUNT -gt 0 ]; then
-        cp -f .opencode/agent/*.md "$CONFIG_DIR/agent/"
+        cp -f ./agent/*.md "$CONFIG_DIR/agent/"
         echo -e "${GREEN}   ✓ Installed $AGENT_COUNT agent files${NC}"
     else
         echo -e "${RED}   ⚠ No agent files found${NC}"
@@ -49,10 +49,10 @@ fi
 
 # Copy command markdown files (forcefully overwrite)
 echo -e "${YELLOW}📝 Installing command configuration files...${NC}"
-if [ -d ".opencode/command" ]; then
-    COMMAND_COUNT=$(ls -1 .opencode/command/*.md 2>/dev/null | wc -l)
+if [ -d "./command" ]; then
+    COMMAND_COUNT=$(ls -1 ./command/*.md 2>/dev/null | wc -l)
     if [ $COMMAND_COUNT -gt 0 ]; then
-        cp -f .opencode/command/*.md "$CONFIG_DIR/command/"
+        cp -f ./command/*.md "$CONFIG_DIR/command/"
         echo -e "${GREEN}   ✓ Installed $COMMAND_COUNT command files${NC}"
     else
         echo -e "${RED}   ⚠ No command files found${NC}"
@@ -63,10 +63,10 @@ fi
 
 # Copy root-level markdown files from .opencode (forcefully overwrite)
 echo -e "${YELLOW}📝 Installing root configuration files...${NC}"
-if [ -d ".opencode" ]; then
-    ROOT_COUNT=$(ls -1 .opencode/*.md 2>/dev/null | wc -l)
+if [ -d "." ]; then
+    ROOT_COUNT=$(ls -1 ./*.md 2>/dev/null | wc -l)
     if [ $ROOT_COUNT -gt 0 ]; then
-        cp -f .opencode/*.md "$CONFIG_DIR/"
+        cp -f ./*.md "$CONFIG_DIR/"
         echo -e "${GREEN}   ✓ Installed $ROOT_COUNT root configuration files${NC}"
     else
         echo -e "${RED}   ⚠ No root configuration files found${NC}"

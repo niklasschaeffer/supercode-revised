@@ -18,12 +18,15 @@ The SuperCode framework components will be automatically imported below.
 [@agent/logging.md](./agent/logging.md)
 [@agent/qa-engineer.md](./agent/qa-engineer.md)
 [@agent/refactoring-expert.md](./agent/refactoring-expert.md)
+[@agent/root-cause-analyst.md](./agent/root-cause-analyst.md)
 [@agent/security-engineer.md](./agent/security-engineer.md)
 
 # Commands
+[@command/improve.md](./command/improve.md)
 [@command/load.md](./command/load.md)
 [@command/save.md](./command/save.md)
 [@command/spawn.md](./command/spawn.md)
+[@command/troubleshoot.md](./command/troubleshoot.md)
 
 # MCP Servers
 [@MCP_Chrome_Dev_Tools.md](MCP_Chrome_Dev_Tools.md)

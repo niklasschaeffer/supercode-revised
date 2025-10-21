@@ -14,7 +14,7 @@ Orchestrate complex tasks by analyzing requirements, decomposing into subtasks, 
 ## General Context
 **Arguments:** $ARGUMENTS
 **Git Branch:** !`git rev-parse --abbrev-ref HEAD`
-**Git Status:** !`git status`
+**Git Status:** !`git status --short | grep '^ M'`
 **Current Directory:** !`pwd`
 
 ## Behavior

@@ -14,7 +14,7 @@ Save session context by capturing work summaries, architectural decisions, and d
 ## General Context
 **Arguments:** $ARGUMENTS
 **Git Branch:** !`git rev-parse --abbrev-ref HEAD`
-**Git Status:** !`git status`
+**Git Status:** !`git status --short | grep '^ M'`
 **Current Directory:** !`pwd`
 
 ## Behavior

@@ -14,7 +14,7 @@ Load comprehensive project context by combining Serena's persistent memories wit
 ## General Context
 **Arguments:** $ARGUMENTS
 **Git Branch:** !`git rev-parse --abbrev-ref HEAD`
-**Git Status:** !`git status`
+**Git Status:** !`git status --short | grep '^ M'`
 **Current Directory:** !`pwd`
 
 ## Behavior
