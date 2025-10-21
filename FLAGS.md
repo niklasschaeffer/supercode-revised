@@ -6,10 +6,10 @@ Behavioral flags for SuperCode to enable specific execution modes and tool selec
 
 **--brainstorm**
 - Trigger: Vague project requests, exploration keywords ("maybe", "thinking about", "not sure")
-- Behavior: Activate collaborative discovery mindset, ask probing questions, guide requirement elicitation
+- Behavior: Activate a collaborative discovery mindset, ask probing questions, guide requirement elicitation
 
 **--introspect**
-- Trigger: Self-analysis requests, error recovery, complex problem solving requiring meta-cognition
+- Trigger: Self-analysis requests, error recovery, complex problem-solving requiring meta-cognition
 - Behavior: Expose thinking process with transparency markers (🤔, 🎯, ⚡, 📊, 💡)
 
 **--task-manage**
@@ -32,7 +32,7 @@ Behavioral flags for SuperCode to enable specific execution modes and tool selec
 
 **--seq / --sequential**
 - Trigger: Complex debugging, system design, multi-component analysis
-- Behavior: Enable Sequential for structured multi-step reasoning and hypothesis testing
+- Behavior: Enable Sequential for structured multistep reasoning and hypothesis testing
 
 **--shadcn**
 - Trigger: UI component requests (/ui), design system queries, frontend development
@@ -40,7 +40,11 @@ Behavioral flags for SuperCode to enable specific execution modes and tool selec
 
 **--morph / --morphllm**
 - Trigger: Bulk code transformations, pattern-based edits, style enforcement
-- Behavior: Enable Morphllm for efficient multi-file pattern application
+- Behavior: Enable Morphllm for an efficient multi-file pattern application
+
+**--in-memory**
+- Trigger: Persistent memory and pattern learning
+- Behavior: Read or Write project patterns from In-Memoria
 
 **--serena**
 - Trigger: Symbol operations, project memory needs, large codebase navigation
@@ -76,11 +80,11 @@ Behavioral flags for SuperCode to enable specific execution modes and tool selec
 
 **--delegate [auto|files|folders]**
 - Trigger: >7 directories OR >50 files OR complexity >0.8
-- Behavior: Enable sub-agent parallel processing with intelligent routing
+- Behavior: Enable subagent parallel processing with intelligent routing
 
 **--concurrency [n]**
 - Trigger: Resource optimization needs, parallel operation control
-- Behavior: Control max concurrent operations (range: 1-15)
+- Behavior: Control maxes concurrent operations (range: 1-15)
 
 **--loop**
 - Trigger: Improvement keywords (polish, refine, enhance, improve)
