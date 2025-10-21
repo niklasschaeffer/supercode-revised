@@ -23,6 +23,7 @@ The SuperCode framework components will be automatically imported below.
 [@agent/refactoring-expert.md](./agent/refactoring-expert.md)
 [@agent/root-cause-analyst.md](./agent/root-cause-analyst.md)
 [@agent/security-engineer.md](./agent/security-engineer.md)
+[@agent/system-architect.md](./agent/system-architect.md)
 [@agent/task-manager.md](./agent/task-manager.md)
 
 # Commands
