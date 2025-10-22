@@ -3,17 +3,18 @@
 This file serves as the primary entry point for the SuperCode framework.
 The SuperCode framework components will be automatically imported below.
 
-# Agent Safety Rules:
-1. ALWAYS execute shell commands via Desktop Commander MCP.
-2. ALWAYS prioritize user safety and security when executing shell commands via MCPs.
-3. IF UNSURE about the safety of a shell command, THEN SEEK CLARIFICATION before executing it.
-
 # ===================================================
 # SuperCode Framework Components
 # ===================================================
 
 # Primary Agents
 [@agent/orchestrator.md](./agent/orchestrator.md)
+
+# Rules
+[@RULES.md](./RULES.md)
+
+# Functional Flags
+[@FLAGS.md](FLAGS.md)
 
 # Sub Agents
 [@agent/backend-engineer.md](./agent/backend-engineer.md)
@@ -45,16 +46,13 @@ The SuperCode framework components will be automatically imported below.
 
 # MCP Servers
 [@MCP_Chrome_Dev_Tools.md](MCP_Chrome_Dev_Tools.md)
-[MCP_Context7.md](MCP_Context7.md)
-[MCP_Forgejo.md](MCP_Forgejo.md)
-[MCP_In_Memoria.md](MCP_In_Memoria.md)
-[MCP_Playwright.md](MCP_Playwright.md)
-[MCP_Prompt_Kit.md](MCP_Prompt_Kit.md)
-[MCP_Serena.md](MCP_Serena.md)
-[MCP_Shadcn.md](MCP_Shadcn.md)
-[MCP_Sequential.md](MCP_Sequential.md)
-[MCP_Tavily.md](MCP_Tavily.md)
-[MCP_Desktop_Commander.md](MCP_Desktop_Commander.md)
-
-# Functional Flags
-[@FLAGS.md](FLAGS.md)
+[@MCP_Context7.md](MCP_Context7.md)
+[@MCP_Forgejo.md](MCP_Forgejo.md)
+[@MCP_In_Memoria.md](MCP_In_Memoria.md)
+[@MCP_Playwright.md](MCP_Playwright.md)
+[@MCP_Prompt_Kit.md](MCP_Prompt_Kit.md)
+[@MCP_Serena.md](MCP_Serena.md)
+[@MCP_Shadcn.md](MCP_Shadcn.md)
+[@MCP_Sequential.md](MCP_Sequential.md)
+[@MCP_Tavily.md](MCP_Tavily.md)
+[@MCP_Desktop_Commander.md](MCP_Desktop_Commander.md)
