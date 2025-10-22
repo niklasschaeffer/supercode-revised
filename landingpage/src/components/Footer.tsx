@@ -18,12 +18,12 @@ export function Footer() {
                   <span className="font-bold text-lg">SuperCode</span>
                 </div>
                 <p className="text-slate-400 text-sm leading-relaxed">
-                  Next-generation development framework with intelligent multi-agent orchestration 
+                  Next-generation development framework with intelligent multi-agent orchestration
                   and seamless tool integrations.
                 </p>
                 <div className="flex space-x-2">
                   <Button size="sm" variant="ghost" asChild>
-                    <a href="https://github.com/supercode" target="_blank" rel="noopener noreferrer">
+                    <a href="https://github.com/niklasschaeffer/supercode-revised" target="_blank" rel="noopener noreferrer">
                       <Github className="h-4 w-4" />
                     </a>
                   </Button>
@@ -33,7 +33,7 @@ export function Footer() {
                     </a>
                   </Button>
                   <Button size="sm" variant="ghost" asChild>
-                    <a href="mailto:hello@supercode.dev">
+                    <a href="mailto:niklas@nx-solutions.de">
                       <Mail className="h-4 w-4" />
                     </a>
                   </Button>
@@ -102,7 +102,7 @@ export function Footer() {
                 <h3 className="font-semibold">Community</h3>
                 <ul className="space-y-2 text-sm text-slate-400">
                   <li>
-                    <a href="https://github.com/supercode/discussions" className="hover:text-slate-100 transition-colors">
+                    <a href="https://github.com/niklasschaeffer/supercode-revised/discussions" className="hover:text-slate-100 transition-colors">
                       Discussions
                     </a>
                   </li>
@@ -112,7 +112,7 @@ export function Footer() {
                     </a>
                   </li>
                   <li>
-                    <a href="https://github.com/supercode/issues" className="hover:text-slate-100 transition-colors">
+                    <a href="https://github.com/niklasschaeffer/supercode-revised/issues" className="hover:text-slate-100 transition-colors">
                       Issues
                     </a>
                   </li>

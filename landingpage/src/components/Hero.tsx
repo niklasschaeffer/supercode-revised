@@ -9,7 +9,7 @@ export function Hero() {
     <section id="hero" className="min-h-screen flex items-center justify-center relative overflow-hidden">
       {/* Background gradient */}
       <div className="absolute inset-0 bg-gradient-to-br from-blue-50 via-indigo-50 to-purple-50 dark:from-slate-900 dark:via-slate-800 dark:to-slate-900" />
-      
+
       {/* Animated background elements */}
       <div className="absolute inset-0 overflow-hidden">
         <div className="absolute -top-40 -right-40 w-80 h-80 bg-purple-300 dark:bg-purple-900 rounded-full mix-blend-multiply filter blur-xl opacity-20 animate-pulse" />
@@ -32,7 +32,7 @@ export function Hero() {
             </span>
           </h1>
           <p className="text-xl sm:text-2xl text-muted-foreground mb-8 max-w-3xl mx-auto leading-relaxed">
-            Transform your development workflow with intelligent multi-agent orchestration, 
+            Transform your development workflow with intelligent multi-agent orchestration,
             seamless MCP integrations, and AI-powered code generation.
           </p>
         </AnimatedSection>
@@ -46,7 +46,7 @@ export function Hero() {
               </a>
             </Button>
             <Button size="lg" variant="outline" className="text-lg px-8 py-6" asChild>
-              <a href="https://github.com/supercode" target="_blank" rel="noopener noreferrer">
+              <a href="https://github.com/niklasschaeffer/supercode-revised" target="_blank" rel="noopener noreferrer">
                 <Github className="mr-2 h-5 w-5" />
                 View on GitHub
               </a>
@@ -57,9 +57,9 @@ export function Hero() {
         <AnimatedSection animation="fade-up" delay={300}>
           <div className="flex flex-wrap justify-center gap-2 mb-12">
             {TECH_STACK.map((tech, index) => (
-              <Badge 
-                key={tech.name} 
-                variant="outline" 
+              <Badge
+                key={tech.name}
+                variant="outline"
                 className="text-xs sm:text-sm"
                 style={{ animationDelay: `${index * 100}ms` }}
               >
