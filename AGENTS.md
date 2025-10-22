@@ -8,7 +8,7 @@ The SuperCode framework components will be automatically imported below.
 # ===================================================
 
 # Primary Agents
-[@agent/orchestration.md](./agent/orchestration.md)
+[@agent/orchestrator.md](./agent/orchestrator.md)
 
 # Sub Agents
 [@agent/backend-engineer.md](./agent/backend-engineer.md)

@@ -19,7 +19,7 @@ Orchestrate complex tasks by analyzing requirements, decomposing into subtasks, 
 
 ## Behavior
 
-Activates Orchestration agent for intelligent multi-agent task coordination:
+Activates Orchestrator agent for intelligent multi-agent task coordination:
 
 **Task Analysis**: Evaluate complexity, domains, parallelization opportunities, dependencies
 **Decomposition**: Break into well-defined subtasks with clear objectives
@@ -59,7 +59,7 @@ Activates Orchestration agent for intelligent multi-agent task coordination:
 
 ## Tool Requirements
 
-**Orchestration Agent**: PRIMARY - Task decomposition, agent coordination, result synthesis
+**Orchestrator Agent**: PRIMARY - Task decomposition, agent coordination, result synthesis
 **Task Tool**: Agent invocation for specialist delegation
 **Sequential MCP**: Complex workflow planning and dependency analysis
 **TodoWrite**: Progress tracking for multi-agent coordination
@@ -86,4 +86,4 @@ Activates Orchestration agent for intelligent multi-agent task coordination:
 
 ## Integration
 
-Invoked for complex multi-domain tasks requiring specialist coordination. Complements /load (context) and /save (persistence) by enabling intelligent task orchestration. The orchestration agent analyzes task requirements, selects appropriate specialists, and coordinates their execution for optimal results.
+Invoked for complex multi-domain tasks requiring specialist coordination. Complements /load (context) and /save (persistence) by enabling intelligent task orchestration. The orchestrator agent analyzes task requirements, selects appropriate specialists, and coordinates their execution for optimal results.
