@@ -8,12 +8,21 @@
 ## Tool Usage
 
 ### Primary Tools
-- 5 Bullet Points describing the primary tools that the MCP Server provides to the agent.
+- 5 Points describing the primary tools that the MCP Server provides to the agent.
 
 ```
 Example for Serena MCP Server:
-- `write_memory`: writes project memories for persistent context storage.
-- `read_memory`: reads stored project memories for context retrieval.
+`write_memory`: writes project memories for persistent context storage.
+`read_memory`: reads stored project memories for context retrieval.
+```
+
+## Secondary Tools
+- 5 Points describing any secondary tools that the MCP Server provides to the agent.
+
+```
+Example for Serena MCP Server:
+`list_memories`: lists all available memories for the current project.
+`delete_memory`: deletes specified memories from the project context.
 ```
 
 ## Accessibility (this has to be specific to the mpc server tools and functions)
