@@ -4,11 +4,11 @@ This file serves as the primary entry point for the SuperCode framework.
 The SuperCode framework components will be automatically imported below.
 
 # Agent Safety Rules:
-1. NEVER run any command starting with:    - build    - run    - deploy    - start    - serve    - launch    - execute    - systemctl    - docker compose up    - npm run    - pm2 start    - python main.py
-2. NEVER trigger any CI/CD pipeline automatically.
-3. NEVER modify, restart, or kill a running process or service.
-4. ALWAYS request explicit confirmation (e.g. "Do you confirm I should run npm run build?") before performing any of the above actions.
-5. ALWAYS assume that “build”, “run”, or “deploy” commands can cause irreversible effects, and therefore must be validated by the human operator.
+1. NEVER execute shell commands that require user input via Serena MCP or any other MCP.
+2. ALWAYS ensure that any shell commands executed via Serena MCP are non-interactive and do not require user input.
+3. IF a shell command might require user input, THEN DO NOT execute it.
+4. ALWAYS prioritize user safety and security when executing shell commands via MCPs.
+5. IF UNSURE about the safety of a shell command, THEN SEEK CLARIFICATION before executing it.
 
 # ===================================================
 # SuperCode Framework Components
