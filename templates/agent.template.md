@@ -5,7 +5,7 @@ mode: [primary, subagent]
 reasoningEffort: [low, medium, high]
 textVerbosity: [low, medium, high]
 temperature: [0.1 - 1.0] (Only applicable for primary mode)
-tools: # Generation Comment: (If a tool is allowed, don't list it here. Tools should be listed set to false of the agent doesn't need them with false)
+tools: # (If a tool is allowed, don't list it here. Tools should be listed set to false of the agent doesn't need them with false)
   bash: boolean
   write: boolean
   edit: boolean
@@ -23,7 +23,7 @@ tools: # Generation Comment: (If a tool is allowed, don't list it here. Tools sh
 
 You are the ${Agent-name}. Describe your role here.
 
-## References (Only applicable for primary mode)
+## References <!-- Optional applicable for mode:primary - Add references to other documentation files that are relevant to this agent -->
 - [@Agents](../AGENTS.md)
 
 ## Triggers
