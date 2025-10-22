@@ -56,7 +56,7 @@ export default defineConfig({
       "@": path.resolve(__dirname, "./src"),
     },
   },
-  base: '/', // Relative paths for GitHub Pages custom domain compatibility
+  base: './', // Relative paths for GitHub Pages custom domain compatibility
   build: {
     outDir: '../docs',
     emptyOutDir: true,
