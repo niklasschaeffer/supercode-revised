@@ -225,13 +225,13 @@ export function ConfigOptions() {
             <h4 className="font-medium">API Keys and Tokens</h4>
             <CodeBlock
               code="# Set API tokens via environment variables
-export GITHUB_TOKEN="your-github-token"
-export FORGEJO_TOKEN="your-forgejo-token"
-export OPENAI_API_KEY="your-openai-key"
+export GITHUB_TOKEN='your-github-token'
+export FORGEJO_TOKEN='your-forgejo-token'
+export OPENAI_API_KEY='your-openai-key'
 
 # Or use SuperCode config
-supercode config set security.tokens.github "your-github-token"
-supercode config set security.tokens.forgejo "your-forgejo-token""
+supercode config set security.tokens.github 'your-github-token'
+supercode config set security.tokens.forgejo 'your-forgejo-token'"
               language="bash"
               title="API Token Configuration"
             />
@@ -252,20 +252,20 @@ supercode config set security.tokens.forgejo "your-forgejo-token""
             <h4 className="font-medium">Available Variables</h4>
             <CodeBlock
               code="# Core SuperCode variables
-export SUPERCODE_HOME="$HOME/.supercode"
-export SUPERCODE_LOG_LEVEL="debug"
-export SUPERCODE_WORKSPACE="$HOME/projects"
-export SUPERCODE_CONFIG_FILE="$HOME/.supercode/custom-config.json"
+export SUPERCODE_HOME='$HOME/.supercode'
+export SUPERCODE_LOG_LEVEL='debug'
+export SUPERCODE_WORKSPACE='$HOME/projects'
+export SUPERCODE_CONFIG_FILE='$HOME/.supercode/custom-config.json'
 
 # MCP server variables
-export FORGEJO_URL="https://git.example.com"
-export FORGEJO_TOKEN="your-token"
-export IN_MEMORIA_DB="./custom-db.db"
+export FORGEJO_URL='https://git.example.com'
+export FORGEJO_TOKEN='your-token'
+export IN_MEMORIA_DB='./custom-db.db'
 
 # Agent variables
-export SUPERCODE_DEFAULT_AGENT="frontend-engineer"
-export SUPERCODE_AGENT_TIMEOUT="600"
-export SUPERCODE_MAX_CONCURRENT_AGENTS="8""
+export SUPERCODE_DEFAULT_AGENT='frontend-engineer'
+export SUPERCODE_AGENT_TIMEOUT='600'
+export SUPERCODE_MAX_CONCURRENT_AGENTS='8'"
               language="bash"
               title="Environment Variables"
             />

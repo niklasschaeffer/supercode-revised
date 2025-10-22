@@ -1,9 +1,8 @@
 import { useState } from 'react'
-import { Link, useLocation, useNavigate } from 'react-router-dom'
+import { Link, useLocation } from 'react-router-dom'
 import { Button } from '@/components/ui/button'
 import { Input } from '@/components/ui/input'
 import { Badge } from '@/components/ui/badge'
-import { Separator } from '@/components/ui/separator'
 import { 
   Search, 
   Menu, 
@@ -95,7 +94,6 @@ export function DocumentationLayout({ children }: { children: React.ReactNode })
   const [searchQuery, setSearchQuery] = useState('')
   const [isSidebarOpen, setIsSidebarOpen] = useState(false)
   const location = useLocation()
-  const navigate = useNavigate()
 
   const filteredSections = docSections.filter(section => {
     const matchesSearch = section.title.toLowerCase().includes(searchQuery.toLowerCase()) ||

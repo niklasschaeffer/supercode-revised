@@ -205,7 +205,7 @@ npx supercode@latest init"
             <h4 className="font-medium">PATH Issues</h4>
             <CodeBlock
               code="# Add SuperCode to PATH (add to ~/.bashrc or ~/.zshrc)
-export PATH="$PATH:$HOME/.supercode/bin"
+export PATH='$PATH:$HOME/.supercode/bin'
 
 # Reload shell configuration
 source ~/.bashrc  # or ~/.zshrc"

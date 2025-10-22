@@ -5,7 +5,7 @@ import { Badge } from '@/components/ui/badge'
 import { Separator } from '@/components/ui/separator'
 import { CodeBlock } from '../CodeBlock'
 import { TableOfContents } from '../TableOfContents'
-import { Download, Terminal, CheckCircle, AlertTriangle, Settings, ArrowRight } from 'lucide-react'
+import { Terminal, CheckCircle, AlertTriangle, Settings, ArrowRight } from 'lucide-react'
 
 const tocItems = [
   { id: 'system-requirements', title: 'System Requirements', level: 2 },

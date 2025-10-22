@@ -47,7 +47,7 @@ export function AnimatedSection({
 
   return (
     <div
-      ref={elementRef}
+      ref={elementRef as React.RefObject<HTMLDivElement>}
       className={cn(getAnimationClasses(), className)}
       style={{
         transitionDelay: `${delay}ms`,

@@ -1,7 +1,7 @@
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from '@/components/ui/card'
 import { Badge } from '@/components/ui/badge'
 import { CodeBlock } from '../../CodeBlock'
-import { Download, Terminal, Settings, CheckCircle } from 'lucide-react'
+import { Settings, CheckCircle } from 'lucide-react'
 
 export function DetailedSteps() {
   return (
@@ -49,13 +49,12 @@ brew update && brew upgrade"
 sudo apt install -y build-essential curl wget git
 
 # On CentOS/RHEL
-sudo yum groupinstall -y \"Development Tools\"
+sudo yum groupinstall -y 'Development Tools'
 sudo yum install -y curl wget git
 
 # On macOS
 xcode-select --install
 brew install git curl wget"
-
               language="bash"
               title="Install Build Tools"
             />
@@ -148,7 +147,7 @@ wget https://github.com/supercode/supercode/releases/latest/download/supercode-w
           <div className="space-y-3">
             <h4 className="font-medium">Extract and Install</h4>
             <CodeBlock
-              code="# Extract the archive
+              code={`# Extract the archive
 tar -xzf supercode-linux-x64.tar.gz
 
 # Make the binary executable
@@ -162,9 +161,8 @@ mkdir -p ~/.local/bin
 mv supercode ~/.local/bin/
 
 # Add to PATH if needed
-echo 'export PATH=\"$PATH:$HOME/.local/bin\"' >> ~/.bashrc
-source ~/.bashrc"
-
+echo 'export PATH="$PATH:$HOME/.local/bin"' >> ~/.bashrc
+source ~/.bashrc`}
               language="bash"
               title="Extract and Install"
             />
@@ -416,14 +414,13 @@ source ~/.bashrc  # or ~/.zshrc"
             <h4 className="font-medium">Environment Setup</h4>
             <CodeBlock
               code="# Add to ~/.bashrc, ~/.zshrc, or .env
-export SUPERCODE_HOME=\"$HOME/.supercode\"
-export SUPERCODE_LOG_LEVEL=\"info\"
-export SUPERCODE_WORKSPACE=\"$HOME/projects\"
+export SUPERCODE_HOME='$HOME/.supercode'
+export SUPERCODE_LOG_LEVEL='info'
+export SUPERCODE_WORKSPACE='$HOME/projects'
 
 # Optional: API tokens for integrations
-export GITHUB_TOKEN=\"your-github-token\"
-export FORGEJO_TOKEN=\"your-forgejo-token\""
-
+export GITHUB_TOKEN='your-github-token'
+export FORGEJO_TOKEN='your-forgejo-token'"
               language="bash"
               title="Environment Variables"
             />

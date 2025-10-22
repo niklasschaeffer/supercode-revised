@@ -36,9 +36,8 @@ npx supercode@latest init
 
 # Solution 2: Use user-local directory
 mkdir -p ~/.local/bin
-export PATH="$PATH:$HOME/.local/bin"
+export PATH='$PATH:$HOME/.local/bin'
 curl -fsSL https://supercode.dev/install.sh | bash -s -- --prefix=$HOME/.local"
-
               language="bash"
               title="Fix Permission Issues"
             />
@@ -47,7 +46,7 @@ curl -fsSL https://supercode.dev/install.sh | bash -s -- --prefix=$HOME/.local"
           <div className="space-y-3">
             <h4 className="font-medium">Command Not Found</h4>
             <CodeBlock
-              code="# Problem: supercode command not found
+              code={`# Problem: supercode command not found
 # Check if SuperCode is in PATH
 which supercode
 
@@ -59,8 +58,7 @@ source ~/.bashrc
 sudo ln -sf /usr/local/bin/supercode /usr/bin/supercode
 
 # Solution 3: Reinstall with correct PATH
-curl -fsSL https://supercode.dev/install.sh | bash -s -- --prefix=/usr/local"
-
+curl -fsSL https://supercode.dev/install.sh | bash -s -- --prefix=/usr/local`}
               language="bash"
               title="Fix PATH Issues"
             />
@@ -102,7 +100,7 @@ curl -fsSL https://mirror.supercode.dev/install.sh | bash"
           <div className="space-y-3">
             <h4 className="font-medium">Configuration File Not Found</h4>
             <CodeBlock
-              code="# Problem: Config file missing or corrupted
+              code={`# Problem: Config file missing or corrupted
 supercode config show
 # Error: Configuration file not found
 
@@ -112,14 +110,13 @@ supercode init
 
 # Or create manual config
 mkdir -p ~/.supercode
-cat > ~/.supercode/config.json << EOF
+cat > ~/.supercode/config.json << 'EOF'
 {
-  \"version\": \"1.0.0\",
-  \"defaultAgent\": \"orchestrator\",
-  \"workspace\": \"./workspace\"
+  "version": "1.0.0",
+  "defaultAgent": "orchestrator",
+  "workspace": "./workspace"
 }
-EOF"
-
+EOF`}
               language="bash"
               title="Fix Configuration Issues"
             />
@@ -166,7 +163,7 @@ supercode agent install ./frontend-engineer.tar.gz"
             <h4 className="font-medium">Agent Timeout</h4>
             <CodeBlock
               code="# Problem: Agents timing out during tasks
-supercode task create --agent=frontend-engineer --description=\"Build component\"
+supercode task create --agent=frontend-engineer --description='Build component'
 # Error: Agent timeout after 300 seconds
 
 # Solution 1: Increase timeout
@@ -177,8 +174,7 @@ free -h
 df -h
 
 # Solution 3: Run with verbose logging
-SUPERCODE_LOG_LEVEL=debug supercode task run <task-id>"
-
+SUPERCODE_LOG_LEVEL=debug supercode task run TASK_ID"
               language="bash"
               title="Fix Timeout Issues"
             />
@@ -186,7 +182,7 @@ SUPERCODE_LOG_LEVEL=debug supercode task run <task-id>"
 
           <div className="space-y-3">
             <h4 className="font-medium">MCP Connection Failures</h4>
-            <CodeBlock>
+            <CodeBlock
               code="# Problem: MCP servers not connecting
 supercode mcp status
 # Error: Connection refused
@@ -196,13 +192,12 @@ supercode mcp test
 supercode mcp configure forgejo --url=https://git.example.com
 
 # Solution 2: Verify credentials
-export FORGEJO_TOKEN="valid-token"
+export FORGEJO_TOKEN='valid-token'
 supercode mcp test forgejo
 
 # Solution 3: Restart MCP services
 supercode mcp restart
 supercode mcp enable forgejo"
-
               language="bash"
               title="Fix MCP Connection Issues"
             />

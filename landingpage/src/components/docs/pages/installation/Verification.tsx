@@ -177,16 +177,15 @@ supercode mcp list
 
           <div className="space-y-3">
             <h4 className="font-medium">Task System</h4>
-            <CodeBlock>
+            <CodeBlock
               code="# Create a test task
-supercode task create --description=\"Test task\" --test
+supercode task create --description='Test task' --test
 
 # List tasks
 supercode task list
 
 # Check task system health
 supercode task system-status"
-
               language="bash"
               title="Task System Test"
             />
@@ -232,7 +231,7 @@ ls -la test-app/
 supercode spawn frontend-engineer --test
 
 # Ask agent a simple question
-supercode ask frontend-engineer \"What is React?\" --test
+supercode ask frontend-engineer 'What is React?' --test
 
 # Should receive a response without errors"
               language="bash"

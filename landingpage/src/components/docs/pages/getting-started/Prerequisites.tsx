@@ -166,9 +166,9 @@ pnpm --version"
             <h4 className="font-medium mb-2">Environment Variables</h4>
             <CodeBlock
               code="# Add to your shell profile (~/.bashrc, ~/.zshrc, etc.)
-export SUPERCODE_HOME="$HOME/.supercode"
-export SUPERCODE_LOG_LEVEL="info"
-export PATH="$PATH:$SUPERCODE_HOME/bin""
+export SUPERCODE_HOME='$HOME/.supercode'
+export SUPERCODE_LOG_LEVEL='info'
+export PATH='$PATH:$SUPERCODE_HOME/bin'"
               language="bash"
               title="Environment Variables"
             />

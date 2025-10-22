@@ -1,5 +1,4 @@
 import { useEffect } from 'react'
-import { ScrollArea } from '@/components/ui/scroll-area'
 
 interface TOCItem {
   id: string
@@ -48,7 +47,7 @@ export function TableOfContents({ items }: TableOfContentsProps) {
   }
 
   return (
-    <ScrollArea className="h-[calc(100vh-10rem)]">
+    <div className="h-[calc(100vh-10rem)] overflow-y-auto">
       <div className="space-y-2">
         {items.map((item) => (
           <a
@@ -68,6 +67,6 @@ export function TableOfContents({ items }: TableOfContentsProps) {
           </a>
         ))}
       </div>
-    </ScrollArea>
+    </div>
   )
 }

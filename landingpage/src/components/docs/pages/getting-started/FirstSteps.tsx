@@ -1,5 +1,4 @@
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from '@/components/ui/card'
-import { Badge } from '@/components/ui/badge'
 import { Button } from '@/components/ui/button'
 import { CodeBlock } from '../../CodeBlock'
 import { Play, Rocket, Zap, Star } from 'lucide-react'
@@ -76,7 +75,7 @@ npm run dev"
 supercode spawn frontend-engineer
 
 # Ask the agent to add a component
-supercode ask frontend-engineer \"Add a navigation component with logo and menu items\""
+supercode ask frontend-engineer 'Add a navigation component with logo and menu items'"
               language="bash"
               title="Spawn and Use Agent"
             />
@@ -86,7 +85,7 @@ supercode ask frontend-engineer \"Add a navigation component with logo and menu 
             <h4 className="font-medium">Agent Task Management</h4>
             <CodeBlock
               code="# Create a task for an agent
-supercode task create --agent=frontend-engineer --description=\"Create responsive landing page\"
+supercode task create --agent=frontend-engineer --description='Create responsive landing page'
 
 # Check task status
 supercode task status <task-id>
@@ -116,10 +115,10 @@ supercode task list"
 supercode mcp forgejo init-repo --name=my-react-app
 
 # Create your first commit
-supercode mcp forgejo commit --message=\"Initial project setup\"
+supercode mcp forgejo commit --message='Initial project setup'
 
 # Create an issue
-supercode mcp forgejo create-issue --title=\"Add user authentication\" --description=\"Implement login and registration\""
+supercode mcp forgejo create-issue --title='Add user authentication' --description='Implement login and registration'"
               language="bash"
               title="Git Operations"
             />
@@ -132,7 +131,7 @@ supercode mcp forgejo create-issue --title=\"Add user authentication\" --descrip
 supercode mcp in-memoria analyze --path=./src
 
 # Get code insights
-supercode mcp in-memoria insights --query=\"performance improvements\"
+supercode mcp in-memoria insights --query='performance improvements'
 
 # Learn from your code
 supercode mcp in-memoria learn --project=./"
@@ -166,8 +165,8 @@ supercode spawn frontend-engineer
 supercode spawn backend-engineer
 
 # 3. Create tasks
-supercode task create --agent=frontend-engineer --description=\"Build user profile UI\"
-supercode task create --agent=backend-engineer --description=\"Implement user profile API\"
+supercode task create --agent=frontend-engineer --description='Build user profile UI'
+supercode task create --agent=backend-engineer --description='Implement user profile API'
 
 # 4. Run tasks in parallel
 supercode task run --parallel --tasks=<task-1>,<task-2>
@@ -181,19 +180,19 @@ supercode mcp forgejo create-pr --source=feature/user-profile --target=main"
 
           <div className="space-y-3">
             <h4 className="font-medium">Bug Fix Workflow</h4>
-            <CodeBlock>
+            <CodeBlock
               code="# 1. Analyze the issue
-supercode mcp in-memoria analyze --path=./src --query=\"potential bugs\"
+supercode mcp in-memoria analyze --path=./src --query='potential bugs'
 
 # 2. Spawn root cause analyst
 supercode spawn root-cause-analyst
 
 # 3. Investigate the issue
-supercode task create --agent=root-cause-analyst --description=\"Investigate login bug reported in issue #123\"
+supercode task create --agent=root-cause-analyst --description='Investigate login bug reported in issue #123'
 
 # 4. Fix the issue
 supercode spawn backend-engineer
-supercode task create --agent=backend-engineer --description=\"Fix authentication token validation\""
+supercode task create --agent=backend-engineer --description='Fix authentication token validation'"
               language="bash"
               title="Bug Fix Process"
             />

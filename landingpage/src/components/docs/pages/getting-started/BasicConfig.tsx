@@ -241,20 +241,20 @@ supercode mcp configure in-memoria --database=./my-db.db"
               code="# Add to ~/.bashrc, ~/.zshrc, or .env file
 
 # SuperCode home directory
-export SUPERCODE_HOME="$HOME/.supercode"
+export SUPERCODE_HOME='$HOME/.supercode'
 
 # Log level override
-export SUPERCODE_LOG_LEVEL="debug"
+export SUPERCODE_LOG_LEVEL='debug'
 
 # Default workspace
-export SUPERCODE_WORKSPACE="$HOME/projects"
+export SUPERCODE_WORKSPACE='$HOME/projects'
 
 # API tokens for MCP integrations
-export FORGEJO_TOKEN="your-token-here"
-export GITHUB_TOKEN="your-github-token"
+export FORGEJO_TOKEN='your-token-here'
+export GITHUB_TOKEN='your-github-token'
 
 # Database connections
-export IN_MEMORIA_DB="./custom-db.db""
+export IN_MEMORIA_DB='./custom-db.db'"
               language="bash"
               title="Environment Variables"
             />

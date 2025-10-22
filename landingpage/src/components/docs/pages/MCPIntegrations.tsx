@@ -6,7 +6,7 @@ import { Badge } from '@/components/ui/badge'
 import { Separator } from '@/components/ui/separator'
 import { CodeBlock } from '../CodeBlock'
 import { TableOfContents } from '../TableOfContents'
-import { Plug, Zap, Settings, ArrowRight, CheckCircle, Puzzle } from 'lucide-react'
+import { Plug, Settings, ArrowRight, CheckCircle, Puzzle } from 'lucide-react'
 
 const tocItems = [
   { id: 'overview', title: 'Overview', level: 2 },
@@ -186,7 +186,21 @@ export function MCPIntegrations() {
             />
             
             <CodeBlock
-              code="{\n  \"mcp\": {\n    \"servers\": {\n      \"forgejo\": {\n        \"url\": \"https://git.example.com\",\n        \"token\": \"${FORGEJO_TOKEN}\",\n        \"enabled\": true\n      },\n      \"in-memoria\": {\n        \"database\": \"./in-memoria.db\",\n        \"enabled\": true\n      }\n    }\n  }\n}"
+              code={`{
+  "mcp": {
+    "servers": {
+      "forgejo": {
+        "url": "https://git.example.com",
+        "token": "\${FORGEJO_TOKEN}",
+        "enabled": true
+      },
+      "in-memoria": {
+        "database": "./in-memoria.db",
+        "enabled": true
+      }
+    }
+  }
+}`}
               language="json"
               title="MCP Configuration File"
             />
@@ -210,7 +224,11 @@ export function MCPIntegrations() {
             </CardHeader>
             <CardContent className="space-y-4">
               <CodeBlock
-                code="# Create issue via MCP\nsupercode mcp forgejo create-issue --title=\"Bug fix\" --description=\"Fix login issue\"\n\n# Create pull request\nsupercode mcp forgejo create-pr --source=feature-branch --target=main"
+                code="# Create issue via MCP
+supercode mcp forgejo create-issue --title='Bug fix' --description='Fix login issue'
+
+# Create pull request
+supercode mcp forgejo create-pr --source=feature-branch --target=main"
                 language="bash"
                 title="Forgejo MCP Usage"
               />
@@ -226,7 +244,14 @@ export function MCPIntegrations() {
             </CardHeader>
             <CardContent className="space-y-4">
               <CodeBlock
-                code="# Analyze codebase\nsupercode mcp in-memoria analyze --path=./src\n\n# Learn patterns\nsupercode mcp in-memoria learn --project=./my-project\n\n# Get insights\nsupercode mcp in-memoria insights --query=\"performance issues\""
+                code="# Analyze codebase
+supercode mcp in-memoria analyze --path=./src
+
+# Learn patterns
+supercode mcp in-memoria learn --project=./my-project
+
+# Get insights
+supercode mcp in-memoria insights --query='performance issues'"
                 language="bash"
                 title="In-Memoria MCP Usage"
               />

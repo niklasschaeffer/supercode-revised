@@ -3,7 +3,7 @@ import { Button } from '@/components/ui/button'
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from '@/components/ui/card'
 import { Badge } from '@/components/ui/badge'
 import { AnimatedSection } from '@/components/ui/animated-section'
-import { Copy, Download, Terminal, Zap } from 'lucide-react'
+import { Download, Terminal, Zap } from 'lucide-react'
 import { MCP_SERVERS } from '@/utils/constants'
 
 export function Installation() {
