@@ -1,5 +1,32 @@
 # Architectural Decisions
 
+## MCP Documentation Standardization (2025-10-22)
+
+### Decision: Implement Template-Driven Documentation Standardization
+**Rationale**: Ensure consistency, maintainability, and developer experience across all MCP server documentation
+
+**Trade-offs Considered**:
+- **Customization vs. Consistency**: Individual file customization vs. unified structure
+- **Development Speed**: Quick updates vs. systematic template compliance
+- **Content Depth**: Variable depth vs. standardized coverage
+
+**Chosen Approach**: Template-first standardization with consistent structure and depth
+
+### Implementation Strategy
+1. **Template Authority**: Use `templates/MCP_Server.template.md` as single source of truth
+2. **Section Hierarchy**: Purpose → Triggers → Tool Usage → Accessibility → Choose When → Works Best With → Examples
+3. **Content Standardization**: 5 bullet points per subsection for balanced coverage
+4. **Technical Accuracy**: Use actual MCP function names instead of generic descriptions
+5. **Dual Section Addition**: Add both "Tool Usage" and "Accessibility" sections to all files
+
+### Benefits Realized
+- 100% template compliance across 11 MCP documentation files
+- Improved developer experience with actionable, copy-pasteable examples
+- Reduced cognitive load through predictable documentation structure
+- Enhanced maintainability through template-driven approach
+- Comprehensive coverage including accessibility considerations
+- Scalable documentation system for future MCP additions
+
 ## Dual MCP Integration (2025-10-21)
 
 ### Decision: Implement Dual MCP Architecture
