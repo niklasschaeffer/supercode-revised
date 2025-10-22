@@ -11,7 +11,7 @@ A stunning, modern landing page for the SuperCode framework with scrolling anima
 - **🌙 Dark Mode**: Full dark mode support with system preference detection
 - **⚡ Performance**: Optimized build with Vite and code splitting
 - **🔧 TypeScript**: Full type safety and IntelliSense support
-- **🤖 AI-Powered**: Showcases 14 specialized agents and 11 MCP integrations
+- **🤖 AI-Powered**: Showcases 15 specialized agents and 11 MCP integrations
 
 ## 📁 Project Structure
 

@@ -22,7 +22,7 @@ A stunning, production-ready landing page for the SuperCode framework featuring 
 - **Category badges** for feature organization
 
 ### 3. Agents Section
-- **14 specialized agents** organized by category
+- **15 specialized agents** organized by category
 - **Color-coded categories** (Core, Development, Architecture, Quality, etc.)
 - **Interactive cards** with hover animations
 - **Detailed descriptions** for each agent
@@ -128,7 +128,7 @@ A stunning, production-ready landing page for the SuperCode framework featuring 
 ## 🎯 Content Strategy
 
 ### SuperCode Framework Showcase
-- **14 Specialized Agents** - Complete agent ecosystem
+- **15 Specialized Agents** - Complete agent ecosystem
 - **11 MCP Server Integrations** - Tool integration capabilities
 - **25+ Behavioral Flags** - Fine-grained control
 - **Dual Memory System** - Serena + In-Memoria

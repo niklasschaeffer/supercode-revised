@@ -119,7 +119,7 @@ export function GettingStarted() {
           <div className="flex items-start space-x-4">
             <CheckCircle className="h-6 w-6 text-green-600 mt-0.5" />
             <div>
-              <h3 className="font-semibold">14 Specialized Agents</h3>
+              <h3 className="font-semibold">15 Specialized Agents</h3>
               <p className="text-sm text-muted-foreground">
                 From frontend engineers to security specialists, get expert help for every development task.
               </p>
@@ -242,7 +242,7 @@ export function GettingStarted() {
                 <ArrowRight className="h-4 w-4 transition-transform group-hover:translate-x-1" />
               </CardTitle>
               <CardDescription>
-                Discover the 14 specialized agents and their unique capabilities.
+                Discover the 15 specialized agents and their unique capabilities.
               </CardDescription>
             </CardHeader>
             <CardContent>

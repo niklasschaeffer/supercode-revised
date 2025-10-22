@@ -86,6 +86,13 @@ export const AGENTS: Agent[] = [
     category: 'Analysis'
   },
   {
+    id: 'deep-research-specialist',
+    name: 'Deep-Research-Specialist',
+    description: 'Research specialist focused on deep investigation, multi-source analysis, and comprehensive information synthesis',
+    icon: '🔍',
+    category: 'Analysis'
+  },
+  {
     id: 'task-manager',
     name: 'Task Manager',
     description: 'Coordinate task execution and workflow management',
@@ -134,7 +141,7 @@ export const NAVIGATION_ITEMS: NavigationItem[] = [
 
 export const FEATURES = [
   {
-    title: '14 Specialized Agents',
+    title: '15 Specialized Agents',
     description: 'Comprehensive coverage of development tasks from frontend to DevOps',
     icon: '🤖',
     highlight: true

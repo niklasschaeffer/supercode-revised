@@ -5,7 +5,6 @@ import generateFile from 'vite-plugin-generate-file'
 
 // GitHub Pages compatible configuration
 // For custom domains, use relative paths to ensure assets load correctly
-const isProduction = process.env.NODE_ENV === 'production'
 
 // https://vitejs.dev/config/
 export default defineConfig({

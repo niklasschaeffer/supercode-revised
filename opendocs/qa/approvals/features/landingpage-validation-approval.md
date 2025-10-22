@@ -17,7 +17,7 @@ The SuperCode landing page has passed comprehensive validation with excellent sc
 
 ### Core Landing Page Features
 - [x] **Hero Section** - Professional design with animations
-- [x] **Agents Showcase** - All 14 agents properly displayed
+- [x] **Agents Showcase** - All 15 agents properly displayed
 - [x] **MCP Integrations** - All 11 integrations highlighted
 - [x] **Installation Section** - Interactive code blocks
 - [x] **Navigation** - Smooth scroll functionality

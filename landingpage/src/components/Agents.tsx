@@ -27,7 +27,7 @@ export function Agents() {
         <AnimatedSection animation="fade-up">
           <div className="text-center mb-16">
             <h2 className="text-3xl sm:text-4xl font-bold mb-4">
-              14 Specialized AI Agents
+              15 Specialized AI Agents
             </h2>
             <p className="text-xl text-muted-foreground max-w-3xl mx-auto">
               Each agent is expertly trained for specific development tasks, working together seamlessly
