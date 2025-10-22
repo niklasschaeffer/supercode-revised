@@ -7,19 +7,20 @@ import generateFile from 'vite-plugin-generate-file'
 // GitHub Pages compatible configuration
 // For custom domains, use relative paths to ensure assets load correctly
 
+// Custom plugin to remove module type for GitHub Pages compatibility
+const removeModuleType = () => ({
+  name: 'remove-module-type',
+  transformIndexHtml(html) {
+    // Remove type="module" from script tags for GitHub Pages compatibility
+    return html.replace(/type="module"\s*/g, '')
+  }
+})
+
 // https://vitejs.dev/config/
 export default defineConfig({
   plugins: [
       react(),
-      legacy({
-        targets: ['defaults', 'not IE 11'],
-        modernPolyfills: false,
-        renderLegacyChunks: true,
-        polyfills: ['es.promise', 'es.object.assign'],
-        // GitHub Pages compatibility: Disable modern chunks to prevent ES module CORS issues
-        buildTarget: 'es2015',
-        externalSystemJS: false
-      }),
+      removeModuleType(), // Custom plugin to remove module type for GitHub Pages
       generateFile([
         {
           type: 'raw',
@@ -59,13 +60,14 @@ export default defineConfig({
   build: {
     outDir: '../docs',
     emptyOutDir: true,
+    target: 'es2015', // Force ES2015 target for broader compatibility
     rollupOptions: {
       output: {
-        manualChunks: {
-          vendor: ['react', 'react-dom'],
-          radix: ['@radix-ui/react-slot', '@radix-ui/react-dialog', '@radix-ui/react-dropdown-menu', '@radix-ui/react-label', '@radix-ui/react-separator', '@radix-ui/react-toast'],
-          icons: ['lucide-react'],
-        },
+        format: 'iife', // Force IIFE format to avoid ES modules
+        entryFileNames: 'assets/[name].js',
+        chunkFileNames: 'assets/[name].js',
+        assetFileNames: 'assets/[name].[ext]',
+        // Remove manualChunks as it conflicts with legacy plugin
       },
     },
     sourcemap: true,
@@ -75,6 +77,10 @@ export default defineConfig({
         drop_console: true,
         drop_debugger: true,
       },
+    },
+    // Force legacy polyfills and disable modern features
+    modulePreload: {
+      polyfill: false
     },
   },
   server: {
