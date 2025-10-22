@@ -1,10 +1,18 @@
 import { defineConfig } from 'vite'
 import react from '@vitejs/plugin-react'
 import path from 'path'
+import generateFile from 'vite-plugin-generate-file'
 
 // https://vitejs.dev/config/
 export default defineConfig({
-  plugins: [react()],
+  plugins: [
+      react(),
+      generateFile([{
+        type: 'raw',
+        output: './CNAME',
+        data: 'supercode.nx-solutions.de'
+      }])
+  ],
   resolve: {
     alias: {
       "@": path.resolve(__dirname, "./src"),
