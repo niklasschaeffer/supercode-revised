@@ -10,6 +10,29 @@
 - Systematic prompt engineering and best practices
 - Project initialization with prompt structure
 
+## Tool Usage
+
+### Primary Tools
+- `prompt-kit_init`: Initializes a new project using registry-style prompt structure
+- `prompt-kit_get_items`: Lists all available prompt patterns in the registry for discovery
+- `prompt-kit_get_item`: Retrieves specific prompt pattern with detailed usage instructions
+- `prompt-kit_add_item`: Adds new prompt patterns to the registry for team sharing
+- `prompt-kit_get_audit_checklist`: Provides validation checklist for prompt implementation
+
+### Secondary Tools
+- Registry search functionality for finding relevant prompt patterns by keyword
+- Template management for organizing prompts by category and use case
+- Version control integration for tracking prompt pattern evolution
+- Export/import capabilities for sharing prompt libraries across teams
+- Usage analytics for tracking prompt effectiveness and adoption
+
+## Accessibility
+- Access to the prompt-kit.com registry containing thousands of tested prompt patterns
+- Integration with local project structure for seamless prompt management
+- Team collaboration features for sharing and maintaining prompt consistency
+- Cross-platform compatibility supporting various development environments
+- Real-time synchronization with remote prompt registries for latest patterns
+
 ## Choose When
 - **Over manual prompts**: When you need consistent, tested prompt patterns
 - **For team collaboration**: Shared prompt libraries across team members

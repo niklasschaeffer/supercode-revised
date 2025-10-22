@@ -10,6 +10,29 @@
 - Need for production-ready, accessible UI components
 - Component audit and verification after installation
 
+## Tool Usage
+
+### Primary Tools
+- `shadcn_get_project_registries`: Retrieves configured registry names from components.json
+- `shadcn_search_items_in_registries`: Fuzzy search across shadcn registries for component discovery
+- `shadcn_view_items_in_registries`: Detailed component information including files and dependencies
+- `shadcn_get_item_examples_from_registries`: Retrieves usage examples and demo implementations
+- `shadcn_get_add_command_for_items`: Generates CLI commands for adding components to projects
+
+### Secondary Tools
+- `shadcn_list_items_in_registries`: Lists all available items in configured registries
+- Component dependency analysis for understanding integration requirements
+- Installation validation tools for verifying component setup
+- Version compatibility checking for framework updates
+- Design system audit utilities for consistency validation
+
+## Accessibility
+- Direct access to shadcn/ui component registries and official documentation
+- Integration with local components.json configuration files
+- Support for multiple registry configurations (@shadcn, @acme, custom registries)
+- Real-time synchronization with latest component updates and examples
+- Cross-framework compatibility for React, Vue, Svelte implementations
+
 ## Choose When
 - **For component discovery**: When you need to search and explore shadcn/ui registry
 - **For component search**: Fuzzy search across shadcn/ui registries with examples

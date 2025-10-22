@@ -10,6 +10,29 @@
 - Regex-based replacements with context awareness
 - Project activation and configuration management
 
+## Tool Usage
+
+### Primary Tools
+- `serena_find_symbol`: Locate symbols with LSP-powered semantic search and filtering
+- `serena_find_referencing_symbols`: Find all references to symbols across the codebase
+- `serena_rename_symbol`: Rename symbols with automatic reference tracking
+- `serena_replace_symbol_body`: Replace symbol definitions while preserving structure
+- `serena_write_memory`: Store project context and analysis in persistent memory
+
+### Secondary Tools
+- `serena_get_symbols_overview`: Get comprehensive symbol overview for files
+- `serena_search_for_pattern`: Flexible pattern matching across code files
+- `serena_replace_regex`: Context-aware regex replacements with validation
+- `serena_insert_before_symbol` / `serena_insert_after_symbol`: Precise code insertion
+- `serena_read_memory`: Retrieve stored project context and analysis
+
+## Accessibility
+- LSP integration for semantic code understanding across multiple languages
+- Direct file system access for reading and writing source code
+- Project-wide symbol database for cross-file dependency tracking
+- Memory persistence system for maintaining context across sessions
+- Multi-language support for TypeScript, JavaScript, Python, Java, C#, Go, Rust
+
 ## Choose When
 - **Over Morphllm**: For symbol operations with LSP integration, not pattern edits
 - **For semantic understanding**: Symbol references, dependency graphs, code structure

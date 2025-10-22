@@ -10,6 +10,29 @@
 - Team and organization management: search teams, manage collaborators
 - Git forge automation needs requiring programmatic access
 
+## Tool Usage
+
+### Primary Tools
+- `forgejo_create_issue`: Create new issues with title, body, and metadata
+- `forgejo_create_pull_request`: Create PRs with base/head branches and descriptions
+- `forgejo_list_repo_issues`: List and filter repository issues by state, labels, type
+- `forgejo_list_repo_pull_requests`: Retrieve PR lists with sorting and filtering options
+- `forgejo_create_file`: Create new files in repositories with commit messages
+
+### Secondary Tools
+- `forgejo_update_file`: Update existing files with version control integration
+- `forgejo_delete_file`: Remove files with proper commit tracking
+- `forgejo_create_branch`: Create new branches from existing base branches
+- `forgejo_add_issue_labels`: Apply labels to existing issues for organization
+- `forgejo_search_users`: Find users and team members within organizations
+
+## Accessibility
+- Direct API access to Forgejo/Gitea instances for repository management
+- Integration with Git repositories for version control operations
+- Team collaboration features for managing development workflows
+- Organization-level access for multi-repository coordination
+- Real-time synchronization with remote forge instances
+
 ## Choose When
 - **Over manual git operations**: When you need structured issue/PR workflows with metadata
 - **For forge integration**: When working with Forgejo/Gitea instances programmatically

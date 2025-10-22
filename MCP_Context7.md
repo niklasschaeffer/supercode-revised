@@ -10,6 +10,29 @@
 - Version-specific implementation requirements
 - Need for curated, up-to-date library documentation
 
+## Tool Usage
+
+### Primary Tools
+- `context7_resolve_library_id`: Resolves package names to Context7-compatible library IDs
+- `context7_get_library_docs`: Fetches up-to-date documentation for specific libraries
+- Framework-specific pattern retrieval for React, Vue, Angular, Next.js, Express
+- Version-aware documentation access for compatibility requirements
+- Code snippet extraction with implementation examples
+
+### Secondary Tools
+- Library comparison tools for choosing between similar packages
+- API reference lookup with parameter details and return types
+- Best practice recommendations based on official documentation
+- Migration guides for framework version updates
+- Integration pattern examples for common use cases
+
+## Accessibility
+- Direct access to official documentation repositories and APIs
+- Real-time synchronization with library documentation updates
+- Multi-language support for JavaScript, TypeScript, Python, Go, Rust frameworks
+- Version-specific documentation access for compatibility requirements
+- Integration with popular package registries (npm, PyPI, crates.io, Maven)
+
 ## Choose When
 - **Over WebSearch**: When you need curated, version-specific documentation
 - **Over native knowledge**: When implementation must follow official patterns

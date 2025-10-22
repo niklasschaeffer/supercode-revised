@@ -10,6 +10,29 @@
 - Performance bottleneck identification requiring methodical approach
 - Chain-of-thought reasoning with revision and branching
 
+## Tool Usage
+
+### Primary Tools
+- `sequential_sequentialthinking`: Core reasoning engine for multi-step analysis with hypothesis testing
+- Dynamic thought revision capabilities for refining analysis based on new insights
+- Branching logic for exploring multiple solution paths simultaneously
+- Evidence gathering and validation mechanisms for systematic problem solving
+- Solution hypothesis generation and verification processes
+
+### Secondary Tools
+- Problem decomposition utilities for breaking complex issues into manageable steps
+- Context management for maintaining analysis state across multiple reasoning steps
+- Confidence scoring for evaluating solution reliability
+- Progress tracking for monitoring analysis completion
+- Integration hooks for connecting with external data sources
+
+## Accessibility
+- Integration with external knowledge bases and documentation systems
+- Access to code analysis tools for understanding system architecture
+- Connection to monitoring and logging systems for performance data
+- Real-time data gathering from running applications and services
+- Cross-platform compatibility for various development environments
+
 ## Choose When
 - **Over native reasoning**: When problems have 3+ interconnected components
 - **For systematic analysis**: Root cause analysis, architecture review, security assessment
