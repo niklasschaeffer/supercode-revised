@@ -13,6 +13,7 @@ Intelligent git operations combining local version control expertise with Forgej
 ## General Context
 **Invoked Arguments [user_prompt]:** $ARGUMENTS
 **Current Directory:** !`pwd`
+**Current Folder:** !`basename $(pwd)`
 **Git Branch:** !`git rev-parse --abbrev-ref HEAD`
 **Git Status:**
 !`git status --short | grep '^ M'`

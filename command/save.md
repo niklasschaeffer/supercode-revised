@@ -11,8 +11,9 @@ Save session context by capturing work summaries, architectural decisions, and d
 - [@FLAGS.md](../FLAGS.md)
 
 ## General Context
-**Invoked Arguments (can be empty, can have flags, can have prompt):** $ARGUMENTS
+**Invoked Arguments [user_prompt]:** $ARGUMENTS
 **Current Directory:** !`pwd`
+**Current Folder:** !`basename $(pwd)`
 **Git Branch:** !`git rev-parse --abbrev-ref HEAD`
 **Git Status:**
 !`git status --short | grep '^ M'`

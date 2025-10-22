@@ -13,6 +13,7 @@ Hierarchical task management system for breaking down complex work into trackabl
 ## General Context
 **Invoked Arguments [user_prompt]:** $ARGUMENTS
 **Current Directory:** !`pwd`
+**Current Folder:** !`basename $(pwd)`
 **Git Branch:** !`git rev-parse --abbrev-ref HEAD`
 **Git Status:**
 !`git status --short | grep '^ M'`

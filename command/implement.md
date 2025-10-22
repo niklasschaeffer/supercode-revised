@@ -11,10 +11,12 @@ Implement features, components, APIs, or complete functionality based on user re
 - [@FLAGS.md](../FLAGS.md)
 
 ## General Context
-**Arguments:** $ARGUMENTS
-**Git Branch:** !`git rev-parse --abbrev-ref HEAD`
-**Git Status:** !`git status --short | grep '^ M'`
+**Invoked Arguments [user_prompt]:** $ARGUMENTS
 **Current Directory:** !`pwd`
+**Current Folder:** !`basename $(pwd)`
+**Git Branch:** !`git rev-parse --abbrev-ref HEAD`
+**Git Status:**
+!`git status --short | grep '^ M'`
 
 ## Behavior
 

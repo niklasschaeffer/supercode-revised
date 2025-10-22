@@ -11,10 +11,11 @@ Load comprehensive project context by combining Serena's persistent memories wit
 - [@FLAGS.md](../FLAGS.md)
 
 ## General Context
-**Invoked Arguments (can be empty, can have flags, can have prompt):** $ARGUMENTS
+**Invoked Arguments [user_prompt]:** $ARGUMENTS
 **Current Directory:** !`pwd`
+**Current Folder:** !`basename $(pwd)`
 **Git Branch:** !`git rev-parse --abbrev-ref HEAD`
-**Git Status:** 
+**Git Status:**
 !`git status --short | grep '^ M'`
 
 ## Behavior
@@ -22,7 +23,7 @@ Load comprehensive project context by combining Serena's persistent memories wit
 This command orchestrates project context loading through two primary MCP servers:
 
 ### Serena Integration
-1. **Activate the project**: Use `activte_project` with !`pwd`
+1. **Activate the project**: Use `activte_project` with !`basename $(pwd)`
 2. **List Available Memories**: Use `list_memories` to discover stored project context
 3. **Load Key Memories**: Read relevant memories (project_overview, architectural_decisions, coding_standards, etc.)
 4. **Extract Persistent Context**: Retrieve cross-session knowledge and decisions
