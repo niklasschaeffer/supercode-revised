@@ -5,7 +5,7 @@ description: Orchestrate complex tasks through intelligent breakdown and special
 
 # /spawn $ARGUMENTS
 
-Orchestrate complex tasks by analyzing requirements, decomposing into subtasks, selecting appropriate specialist agents, and coordinating parallel or sequential execution.
+Orchestrate complex tasks by analyzing requirements, decomposing into subtasks, selecting appropriate specialist agents, and coordinating sequential execution.
 
 ## References
 - [@FLAGS.md](../FLAGS.md)
@@ -22,10 +22,10 @@ Orchestrate complex tasks by analyzing requirements, decomposing into subtasks, 
 
 Activates Orchestrator agent for intelligent multi-agent task coordination:
 
-**Task Analysis**: Evaluate complexity, domains, parallelization opportunities, dependencies
+**Task Analysis**: Evaluate complexity, domains, dependencies
 **Decomposition**: Break into well-defined subtasks with clear objectives
 **Agent Selection**: Match subtasks to specialist agents by domain expertise
-**Delegation**: Invoke agents via Task tool (parallel where possible)
+**Delegation**: Invoke agents via Task tool
 **Synthesis**: Integrate multi-agent results into coherent solutions
 
 ## Return Format
@@ -39,7 +39,7 @@ Activates Orchestrator agent for intelligent multi-agent task coordination:
 - [N subtasks total]
 
 ### Agent Execution
-- **Parallel**: [Agents executed concurrently]
+- **Parallel**: [Agents executed concurrently] <!-- currently not supported -->
 - **Sequential**: [Agents with dependencies]
 
 ### Results Synthesis
@@ -47,15 +47,15 @@ Activates Orchestrator agent for intelligent multi-agent task coordination:
 
 ### Completion Status
 ✅ [N]/[N] subtasks completed successfully
-⏱️ Time saved: [percentage] via parallelization
+⏱️ Time saved: [percentage] via parallelization <!-- currently not supported -->
 ```
 
 ## Workflow
 
-1. **Analysis**: Evaluate complexity, domains, parallelization, dependencies
+1. **Analysis**: Evaluate complexity, domains, dependencies
 2. **Decomposition**: Break into subtasks with objectives and success criteria
 3. **Selection**: Match subtasks to specialist agents by expertise
-4. **Delegation**: Invoke via Task tool (parallel where possible), track progress
+4. **Delegation**: Invoke via Task tool track progress
 5. **Synthesis**: Integrate results, resolve conflicts, validate completion
 
 ## Tool Requirements
@@ -76,8 +76,8 @@ Activates Orchestrator agent for intelligent multi-agent task coordination:
 # Orchestrates: refactoring-expert (code quality),
 # context-refinement (pattern intelligence), qa-engineer (regression prevention)
 
-/spawn --parallel "Implement 5 independent microservices"
-# Parallel delegation to backend-engineer for each service
+/spawn --delegate "Implement 5 independent microservices"
+# delegation to backend-engineer for each service
 # Concurrent execution for maximum efficiency
 
 /spawn "Complete security audit and remediation"

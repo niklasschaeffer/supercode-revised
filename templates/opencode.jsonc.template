@@ -64,10 +64,15 @@
       "enabled": true,
       "command": ["npx", "-y", "chrome-devtools-mcp@latest"]
     },
+    "desktop-commander": {
+      "type": "local",
+      "enabled": true,
+      "command": ["npx", "-y", "@wonderwhy-er/desktop-commander@latest"]
+    },
     "serena": {
       "type": "local",
       "enabled": true,
-      "command" : ["uvx", "--from", "git+https://github.com/oraios/serena", "serena", "start-mcp-server", "--context", "agent"]
+      "command" : ["uvx", "--from", "git+https://github.com/oraios/serena", "serena", "start-mcp-server", "--context", "ide-assistant"]
     }
   }
 }

@@ -4,11 +4,9 @@ This file serves as the primary entry point for the SuperCode framework.
 The SuperCode framework components will be automatically imported below.
 
 # Agent Safety Rules:
-1. NEVER execute shell commands that require user input via Serena MCP or any other MCP.
-2. ALWAYS ensure that any shell commands executed via Serena MCP are non-interactive and do not require user input.
-3. IF a shell command might require user input, THEN DO NOT execute it.
-4. ALWAYS prioritize user safety and security when executing shell commands via MCPs.
-5. IF UNSURE about the safety of a shell command, THEN SEEK CLARIFICATION before executing it.
+1. ALWAYS execute shell commands via Desktop Commander MCP.
+2. ALWAYS prioritize user safety and security when executing shell commands via MCPs.
+3. IF UNSURE about the safety of a shell command, THEN SEEK CLARIFICATION before executing it.
 
 # ===================================================
 # SuperCode Framework Components
@@ -57,6 +55,7 @@ The SuperCode framework components will be automatically imported below.
 [MCP_Shadcn.md](MCP_Shadcn.md)
 [MCP_Sequential.md](MCP_Sequential.md)
 [MCP_Tavily.md](MCP_Tavily.md)
+[MCP_Desktop_Commander.md](MCP_Desktop_Commander.md)
 
 # Functional Flags
 [@FLAGS.md](FLAGS.md)
