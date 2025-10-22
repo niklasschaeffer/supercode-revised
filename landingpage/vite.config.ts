@@ -1,5 +1,6 @@
 import { defineConfig } from 'vite'
 import react from '@vitejs/plugin-react'
+import legacy from '@vitejs/plugin-legacy'
 import path from 'path'
 import generateFile from 'vite-plugin-generate-file'
 
@@ -10,6 +11,12 @@ import generateFile from 'vite-plugin-generate-file'
 export default defineConfig({
   plugins: [
       react(),
+      legacy({
+        targets: ['defaults', 'not IE 11'],
+        modernPolyfills: true,
+        renderLegacyChunks: true,
+        polyfills: ['es.promise', 'es.object.assign']
+      }),
       generateFile([
         {
           type: 'raw',
