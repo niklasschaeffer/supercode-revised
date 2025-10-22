@@ -1,0 +1,10 @@
+User-agent: *
+Allow: /
+
+# Sitemap
+Sitemap: https://username.github.io/supercode-revised/sitemap.xml
+
+# Block common bot paths
+Disallow: /api/
+Disallow: /admin/
+Disallow: /*.json$
