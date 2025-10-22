@@ -95,6 +95,9 @@ The command returns structured context to the invoking orchestrator agent:
 
 /load --patterns-only
 # Only loads In-Memoria patterns, skips Serena memories
+
+/load --uc
+# Ultra compressed context load for maximum token efficiency
 ```
 
 ## Integration
