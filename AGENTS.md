@@ -48,7 +48,6 @@ The SuperCode framework components will be automatically imported below.
 [MCP_Context7.md](MCP_Context7.md)
 [MCP_Forgejo.md](MCP_Forgejo.md)
 [MCP_In_Memoria.md](MCP_In_Memoria.md)
-[MCP_Morphllm.md](MCP_Morphllm.md)
 [MCP_Playwright.md](MCP_Playwright.md)
 [MCP_Prompt_Kit.md](MCP_Prompt_Kit.md)
 [MCP_Serena.md](MCP_Serena.md)

@@ -6,7 +6,7 @@ Successfully refactored all 11 MCP_*.md documentation files to align with the up
 ## Files Updated
 1. ✅ MCP_Prompt_Kit.md
 2. ✅ MCP_Context7.md  
-3. ✅ MCP_Morphllm.md
+3. ✅ MCP_Morphllm.md [NOTE: Migrated to Desktop Commander in Oct 2025]
 4. ✅ MCP_Sequential.md
 5. ✅ MCP_Shadcn.md
 6. ✅ MCP_Playwright.md
@@ -128,3 +128,6 @@ This refactoring significantly improves the usability and consistency of MCP doc
 - Maintain consistent documentation standards across the project
 
 The documentation now serves as a comprehensive, accurate, and easy-to-navigate reference for all MCP servers in the SuperCode framework.
+
+## Migration Note (October 2025)
+During Phase 3 of the MCP Server Migration, MorpLLM was successfully migrated to Desktop Commander. Historical references to MorpLLM have been preserved with migration notes, and current documentation reflects Desktop Commander as the active MCP server for file system operations and local development automation.

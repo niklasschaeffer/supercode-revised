@@ -38,9 +38,7 @@ Behavioral flags for SuperCode to enable specific execution modes and tool selec
 - Trigger: UI component requests (/ui), design system queries, frontend development
 - Behavior: Enable Shadcn for modern UI generation from shadcn patterns/components
 
-**--morph / --morphllm**
-- Trigger: Bulk code transformations, pattern-based edits, style enforcement
-- Behavior: Enable Morphllm for an efficient multi-file pattern application
+
 
 **--in-memory**
 - Trigger: Persistent memory and pattern learning

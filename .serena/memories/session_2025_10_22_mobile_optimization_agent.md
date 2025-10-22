@@ -34,7 +34,7 @@ Coordinated 4 specialist agents in parallel/sequential execution:
 
 ### Tool Integration
 - **Primary Tools**: Write/Edit, Read, Glob, Grep, TodoWrite
-- **MCP Integrations**: Chrome DevTools, Playwright, Sequential, Tavily, Morphllm
+- **MCP Integrations**: Chrome DevTools, Playwright, Sequential, Tavily, Desktop Commander [NOTE: Migrated from Morphllm in Oct 2025]
 - **Success Metrics**: LCP <2.5s, FID <100ms, CLS <0.1, bundle <150KB
 
 ## Architectural Decisions

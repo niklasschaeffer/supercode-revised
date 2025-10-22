@@ -70,7 +70,7 @@ Invokes Refactoring-Expert agent for safe, systematic code improvement:
 3. **Systematic Refactoring Phase**:
    - Apply improvements incrementally using Edit/MultiEdit for controlled changes
    - Use Serena MCP for symbol-level refactoring (rename, extract, move functions/classes)
-   - Use Morphllm MCP for pattern-based transformations across multiple files
+   - Use Desktop Commander MCP for file operations and systematic code transformations
 
 4. **Validation & Documentation Phase**:
    - Run tests after each change to verify behavior preservation immediately

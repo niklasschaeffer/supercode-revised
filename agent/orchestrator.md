@@ -143,7 +143,7 @@ task({
     ## 📊 Your Specialized Context  
     **Performance**: 94% success rate on documentation tasks
     **Expertise**: Template compliance, systematic refactoring
-    **Tools**: Morphllm for patterns, Serena for validation
+    **Tools**: Desktop Commander for file operations, Serena for validation
     
     ## 🎯 Success Criteria
     - 100% template compliance across 11 MCP files

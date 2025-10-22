@@ -14,7 +14,7 @@ Created complete documentation for all MCP servers in opencode.jsonc.template:
 - **MCP_Shadcn.md** (33 lines) - shadcn/ui component registry
 - **MCP_Prompt_Kit.md** (33 lines) - Reusable prompt pattern management
 - **MCP_Chrome_Dev_Tools.md** (33 lines) - Chrome DevTools Protocol automation
-- **MCP_Morphllm.md** (33 lines) - Pattern-based code editing engine
+- **MCP_Morphllm.md** (33 lines) - Pattern-based code editing engine [NOTE: Migrated to Desktop Commander in Oct 2025]
 - **MCP_Tavily.md** (34 lines) - Web search & real-time research
 - **MCP_Serena.md** (33 lines) - Semantic code & symbol operations
 - **MCP_Context7.md** (33 lines) - Official library documentation lookup

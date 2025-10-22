@@ -10,7 +10,7 @@ All agents follow agent.template.md pattern, exactly 70 lines each (under 100-li
 ### 1. **frontend-engineer.md** (70 lines)
 - **Purpose**: UI development with accessibility, performance, framework best practices
 - **Reasoning**: Medium (complex UI logic, state management)
-- **MCP Stack**: shadcn (components), Context7 (frameworks), Playwright (testing), Sequential (architecture), Morphllm (bulk updates)
+- **MCP Stack**: shadcn (components), Context7 (frameworks), Playwright (testing), Sequential (architecture), Desktop Commander (bulk updates) [NOTE: Migrated from Morphllm in Oct 2025]
 - **Key Metrics**: WCAG 2.1 AA >95%, Lighthouse >90, >80% component reuse, <200KB bundles, >85% test coverage
 
 ### 2. **backend-engineer.md** (70 lines)

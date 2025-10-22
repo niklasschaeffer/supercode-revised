@@ -23,7 +23,7 @@ Improve all MCP_*.md documentation files to align with the updated template stru
 ### 3. Files Successfully Updated
 1. MCP_Prompt_Kit.md
 2. MCP_Context7.md  
-3. MCP_Morphllm.md
+3. MCP_Morphllm.md [NOTE: Migrated to Desktop Commander in Oct 2025]
 4. MCP_Sequential.md
 5. MCP_Shadcn.md
 6. MCP_Playwright.md

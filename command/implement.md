@@ -56,14 +56,14 @@ Direct feature implementation with optional delegation and parallel execution:
 
 1. **Analysis**: Parse requirements, detect framework (Read/Grep/Glob), identify patterns
 2. **Planning**: Determine approach, identify files, plan architecture
-3. **Implementation**: Generate code (Write/Edit/MultiEdit), use Context7/Magic MCP, apply security
+3. **Implementation**: Generate code (Write/Edit/MultiEdit), use Context7 MCP, apply security
 4. **Validation**: Review quality, provide tests, update documentation
 
 ## Tool Requirements
 
 **Write/Edit/MultiEdit**: Direct code generation and modification
 **Context7 MCP**: Framework patterns and official documentation (React, Vue, Express)
-**Magic MCP**: UI component generation for frontend features
+**Shadcn MCP**: UI component generation for frontend features
 **Read/Grep/Glob**: Project analysis and pattern detection
 
 ## Examples

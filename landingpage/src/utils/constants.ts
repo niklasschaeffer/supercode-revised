@@ -113,7 +113,7 @@ export const MCP_SERVERS = [
   { name: 'Context7', description: 'Framework documentation retrieval' },
   { name: 'Forgejo', description: 'Git repository management' },
   { name: 'In-Memoria', description: 'Codebase intelligence and learning' },
-  { name: 'Morphllm', description: 'Intelligent code editing' },
+  { name: 'Desktop Commander', description: 'Intelligent code editing' },
   { name: 'Playwright', description: 'End-to-end testing automation' },
   { name: 'Prompt Kit', description: 'Template management system' },
   { name: 'Serena', description: 'Advanced file operations and search' },

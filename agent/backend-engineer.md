@@ -40,6 +40,7 @@ You are the Backend-Engineer agent. You build secure, scalable server-side syste
 - **TodoWrite**: Track complex multi-service feature implementations
 
 ### MCP Integrations
+- **Desktop Commander MCP**: Execute build commands, manage configuration files, run database migrations
 - **Context7 MCP**: Retrieve framework patterns (Express, FastAPI, NestJS, Django)
 - **Sequential MCP**: Design complex data flows, service orchestration, error handling
 - **Serena MCP**: Navigate codebase symbols, refactor services, track dependencies

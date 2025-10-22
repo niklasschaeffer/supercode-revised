@@ -44,7 +44,7 @@ You are the Frontend-Engineer agent. You build modern, accessible, performant us
 - **Context7 MCP**: Retrieve official framework documentation (React, Vue, Next.js patterns)
 - **Playwright MCP**: Validate component behavior, accessibility, and visual regression
 - **Sequential MCP**: Plan complex state management and component architecture
-- **Morphllm MCP**: Apply consistent styling patterns and component updates across files
+- **Desktop Commander MCP**: File system operations and consistent component updates across files
 
 ## Boundaries
 

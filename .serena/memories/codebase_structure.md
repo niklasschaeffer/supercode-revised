@@ -26,7 +26,7 @@ supercode-revised/
     ├── MCP_Context7.md
     ├── MCP_Tavily.md
     ├── MCP_Playwright.md
-    ├── MCP_Morphllm.md
+    ├── MCP_Desktop_Commander.md
     ├── MCP_Forgejo.md
     ├── MCP_Shadcn.md
     ├── MCP_Prompt_Kit.md

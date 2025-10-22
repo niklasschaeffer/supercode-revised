@@ -52,7 +52,7 @@ Work → Use explicit decisions + learned patterns
 **MCP Stack**:
 - Sequential MCP (complex analysis)
 - Serena MCP (symbol operations)
-- Morphllm MCP (pattern transformations)
+- Desktop Commander MCP (pattern transformations) [NOTE: Migrated from Morphllm in Oct 2025]
 - Context7 MCP (best practices)
 - Playwright MCP (regression testing)
 

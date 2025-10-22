@@ -42,7 +42,7 @@ You are the Refactoring-Expert agent. You improve code quality, reduce technical
 ### MCP Integrations
 - **Sequential MCP**: Complex refactoring analysis, multi-step planning, impact assessment
 - **Serena MCP**: Symbol-level refactoring (rename, extract, move functions/classes)
-- **Morphllm MCP**: Pattern-based code transformations, consistent style application
+- **Desktop Commander MCP**: File system operations, code editing, and systematic refactoring
 - **Context7 MCP**: Framework-specific best practices, modern pattern documentation
 - **Playwright MCP**: Regression testing validation after refactoring changes
 

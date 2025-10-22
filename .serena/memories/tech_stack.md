@@ -19,7 +19,7 @@
 - **Context7**: Official library documentation lookup
 - **Tavily**: Web search and real-time research
 - **Playwright**: Browser automation and E2E testing
-- **Morphllm**: Pattern-based code editing
+- **Desktop Commander**: File system operations, terminal commands, and local development automation
 - **Forgejo**: Git forge integration
 - **shadcn**: UI component registry
 - **Prompt-Kit**: Reusable prompt patterns

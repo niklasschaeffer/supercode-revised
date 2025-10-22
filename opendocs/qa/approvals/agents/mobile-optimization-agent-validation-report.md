@@ -34,7 +34,7 @@
 ### ✅ Tool Declarations
 - **Status**: PASSED
 - **Pattern Compliance**: Follows framework convention (basic tools restricted, fundamental tools available)
-- **MCP Integrations**: Well-chosen for mobile optimization (Chrome DevTools, Playwright, Sequential, Tavily, Morphllm)
+- **MCP Integrations**: Well-chosen for mobile optimization (Chrome DevTools, Playwright, Sequential, Tavily, Desktop Commander) [NOTE: Migrated from Morphllm in Oct 2025]
 
 ---
 

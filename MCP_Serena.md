@@ -34,14 +34,13 @@
 - Multi-language support for TypeScript, JavaScript, Python, Java, C#, Go, Rust
 
 ## Choose When
-- **Over Morphllm**: For symbol operations with LSP integration, not pattern edits
 - **For semantic understanding**: Symbol references, dependency graphs, code structure
 - **For memory persistence**: Store/retrieve project context across sessions
 - **For symbol refactoring**: Rename functions/classes with reference tracking
 - **Not for bulk edits**: Pattern-based transformations across many files
 
 ## Works Best With
-- **Morphllm**: Serena finds symbols → Morphllm applies pattern transformations
+- **Desktop Commander**: Serena handles symbol operations → Desktop Commander manages file operations
 - **Sequential**: Serena provides semantic context → Sequential analyzes architecture
 - **In-Memoria**: Serena handles symbol operations → In-Memoria learns patterns
 
@@ -52,5 +51,5 @@
 "get overview of utils.ts symbols" → Serena (LSP-powered symbol overview)
 "store this analysis in memory" → Serena (write_memory for session persistence)
 "replace calculateTotal function body" → Serena (symbol-level replacement)
-"update all console.log calls" → Morphllm (pattern-based bulk replacement)
+"update all console.log calls" → Desktop Commander (pattern-based bulk replacement)
 ```

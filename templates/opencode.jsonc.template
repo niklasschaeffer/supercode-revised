@@ -30,14 +30,7 @@
       "enabled": true,
       "command": ["npx", "@playwright/mcp@latest"]
     },
-    "morphllm-fast-apply": {
-      "type": "local",
-      "enabled": true,
-      "environment" : {
-        "MORPH_API_KEY": "YOUR_MORPH_API_KEY"
-      },
-      "command": ["npx", "-y", "@morph-llm/morph-fast-apply"]
-    },
+
     "shadcn": {
       "type": "local",
       "enabled": true,

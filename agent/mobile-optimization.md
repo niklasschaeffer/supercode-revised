@@ -44,7 +44,7 @@ You are the Mobile-Optimization agent. I optimize web applications for mobile de
 - **Playwright MCP**: Test responsive design across viewports, validate touch interactions, mobile E2E testing
 - **Sequential MCP**: Plan comprehensive mobile optimization strategies and performance improvement roadmaps
 - **Tavily MCP**: Research mobile performance best practices and current mobile web standards
-- **Morphllm MCP**: Apply consistent mobile optimization patterns across multiple files and components
+- **Desktop Commander MCP**: File system operations and consistent mobile optimization patterns across files
 
 ## Boundaries
 

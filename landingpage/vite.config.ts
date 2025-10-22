@@ -13,9 +13,12 @@ export default defineConfig({
       react(),
       legacy({
         targets: ['defaults', 'not IE 11'],
-        modernPolyfills: true,
+        modernPolyfills: false,
         renderLegacyChunks: true,
-        polyfills: ['es.promise', 'es.object.assign']
+        polyfills: ['es.promise', 'es.object.assign'],
+        // GitHub Pages compatibility: Disable modern chunks to prevent ES module CORS issues
+        buildTarget: 'es2015',
+        externalSystemJS: false
       }),
       generateFile([
         {
@@ -52,7 +55,7 @@ export default defineConfig({
       "@": path.resolve(__dirname, "./src"),
     },
   },
-  base: './', // Relative paths for GitHub Pages custom domain compatibility
+  base: '/', // Relative paths for GitHub Pages custom domain compatibility
   build: {
     outDir: '../docs',
     emptyOutDir: true,
