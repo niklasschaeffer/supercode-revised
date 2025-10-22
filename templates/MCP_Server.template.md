@@ -5,6 +5,12 @@
 ## Triggers
 - 5-6 Bullet Points describing the triggers that the MCP Server will respond to.
 
+## Tool Usage
+- 5 Bullet Points describing the primary tools that the MCP Server provides to the agent.
+
+## Accessibility (this has to be specific to the mpc server tools and functions)
+- 5 Bullet Points describing how the MCP Server can access applications, data sources, or environments.
+
 ## Choose When
 - 5 Bullet Points describing when the MCP Server should be used.
 
