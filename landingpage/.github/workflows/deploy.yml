@@ -1,0 +1,69 @@
+name: Deploy Landing Page
+
+on:
+  push:
+    branches: [ main ]
+    paths: [ 'landingpage/**' ]
+  pull_request:
+    branches: [ main ]
+    paths: [ 'landingpage/**' ]
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    
+    steps:
+    - name: Checkout
+      uses: actions/checkout@v4
+      
+    - name: Setup Node.js
+      uses: actions/setup-node@v4
+      with:
+        node-version: '18'
+        cache: 'npm'
+        cache-dependency-path: landingpage/package-lock.json
+        
+    - name: Install dependencies
+      working-directory: ./landingpage
+      run: npm ci
+      
+    - name: Type check
+      working-directory: ./landingpage
+      run: npm run type-check
+      
+    - name: Lint
+      working-directory: ./landingpage
+      run: npm run lint
+      
+    - name: Build
+      working-directory: ./landingpage
+      run: npm run build
+      
+    - name: Upload build artifacts
+      uses: actions/upload-artifact@v4
+      with:
+        name: build-files
+        path: docs/
+        retention-days: 1
+        
+  deploy:
+    needs: build
+    runs-on: ubuntu-latest
+    if: github.ref == 'refs/heads/main'
+    
+    steps:
+    - name: Checkout
+      uses: actions/checkout@v4
+      
+    - name: Download build artifacts
+      uses: actions/download-artifact@v4
+      with:
+        name: build-files
+        path: docs/
+        
+    - name: Deploy to GitHub Pages
+      uses: peaceiris/actions-gh-pages@v3
+      with:
+        github_token: ${{ secrets.GITHUB_TOKEN }}
+        publish_dir: ./docs
+        destination_dir: supercode-revised
