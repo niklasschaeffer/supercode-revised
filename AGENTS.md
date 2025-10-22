@@ -3,11 +3,12 @@
 This file serves as the primary entry point for the SuperCode framework.
 The SuperCode framework components will be automatically imported below.
 
-# !!! Important !!!
-- When running npm run dev or npm run build specify a timeout to not exceed the default of 300s.
-```
-Example: `npm run dev -- --timeout 600` or `npm run build -- --timeout 600`
-```
+# Agent Safety Rules:
+1. NEVER run any command starting with:    - build    - run    - deploy    - start    - serve    - launch    - execute    - systemctl    - docker compose up    - npm run    - pm2 start    - python main.py
+2. NEVER trigger any CI/CD pipeline automatically.
+3. NEVER modify, restart, or kill a running process or service.
+4. ALWAYS request explicit confirmation (e.g. "Do you confirm I should run npm run build?") before performing any of the above actions.
+5. ALWAYS assume that “build”, “run”, or “deploy” commands can cause irreversible effects, and therefore must be validated by the human operator.
 
 # ===================================================
 # SuperCode Framework Components
