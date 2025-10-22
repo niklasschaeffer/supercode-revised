@@ -3,6 +3,12 @@
 This file serves as the primary entry point for the SuperCode framework.
 The SuperCode framework components will be automatically imported below.
 
+# !!! Important !!!
+- When running npm run dev or npm run build specify a timeout to not exceed the default of 300s.
+```
+Example: `npm run dev -- --timeout 600` or `npm run build -- --timeout 600`
+```
+
 # ===================================================
 # SuperCode Framework Components
 # ===================================================
