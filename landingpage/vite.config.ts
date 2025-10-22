@@ -7,12 +7,12 @@ import generateFile from 'vite-plugin-generate-file'
 // GitHub Pages compatible configuration
 // For custom domains, use relative paths to ensure assets load correctly
 
-// Custom plugin to remove module type for GitHub Pages compatibility
-const removeModuleType = () => ({
-  name: 'remove-module-type',
+// Custom plugin to replace module type for GitHub Pages compatibility
+const replaceModuleType = () => ({
+  name: 'replace-module-type',
   transformIndexHtml(html) {
-    // Remove type="module" from script tags for GitHub Pages compatibility
-    return html.replace(/type="module"\s*/g, '')
+    // Replace type="module" with type="text/javascript" for explicit browser compatibility
+    return html.replace(/type="module"/g, 'type="text/javascript"')
   }
 })
 
@@ -20,7 +20,7 @@ const removeModuleType = () => ({
 export default defineConfig({
   plugins: [
       react(),
-      removeModuleType(), // Custom plugin to remove module type for GitHub Pages
+      replaceModuleType(), // Custom plugin to replace module type for GitHub Pages
       generateFile([
         {
           type: 'raw',
