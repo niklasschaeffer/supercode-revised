@@ -11,6 +11,7 @@ interface CodeBlockProps {
   highlightLines?: number[]
   copyable?: boolean
   className?: string
+  showCopy?: boolean // For backward compatibility
 }
 
 export function CodeBlock({ 
@@ -20,9 +21,13 @@ export function CodeBlock({
   showLineNumbers = true,
   highlightLines = [],
   copyable = true,
-  className = ''
+  className = '',
+  showCopy // Use this if provided, otherwise use copyable
 }: CodeBlockProps) {
   const [copied, setCopied] = useState(false)
+  
+  // Use showCopy for backward compatibility with UI component
+  const shouldShowCopy = showCopy !== undefined ? showCopy : copyable
 
   const handleCopy = async () => {
     try {
@@ -35,6 +40,19 @@ export function CodeBlock({
   }
 
   const lines = code.split('\n')
+  
+  // Simple syntax highlighting for common languages
+  const highlightCode = (text: string, lang: string) => {
+    if (lang === 'bash') {
+      return text
+        .replace(/^#.*$/gm, '<span class="text-slate-500">$&</span>') // Comments
+        .replace(/\b(npm|git|cd|mkdir|rm|cp|mv|ls|cat|echo|export|source|supercode|node|python|curl|wget)\b/g, '<span class="text-blue-400">$&</span>') // Commands
+        .replace(/(--[a-zA-Z-]+)/g, '<span class="text-purple-400">$&</span>') // Flags
+        .replace(/('.*?'|".*?")/g, '<span class="text-green-400">$&</span>') // Strings
+        .replace(/(https?:\/\/[^\s]+)/g, '<span class="text-cyan-400">$&</span>') // URLs
+    }
+    return text
+  }
   
   const getLanguageIcon = () => {
     switch (language) {
@@ -62,7 +80,7 @@ export function CodeBlock({
             {!title && <Badge variant="secondary" className="text-xs">{language}</Badge>}
           </div>
           
-          {copyable && (
+          {shouldShowCopy && (
             <Button
               variant="ghost"
               size="sm"
@@ -96,7 +114,11 @@ export function CodeBlock({
                     {index + 1}
                   </span>
                 )}
-                <span>{line || '\u00A0'}</span>
+                <span 
+                  dangerouslySetInnerHTML={{ 
+                    __html: highlightCode(line || '\u00A0', language) 
+                  }}
+                />
               </div>
             ))}
           </code>
@@ -104,7 +126,7 @@ export function CodeBlock({
       </div>
 
       {/* Copy button overlay for when there's no header */}
-      {copyable && !title && !language && (
+      {shouldShowCopy && !title && !language && (
         <div className="absolute top-2 right-2">
           <Button
             variant="secondary"
