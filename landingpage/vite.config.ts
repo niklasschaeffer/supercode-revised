@@ -1,26 +1,12 @@
 import { defineConfig } from 'vite'
 import react from '@vitejs/plugin-react'
-import legacy from '@vitejs/plugin-legacy'
 import path from 'path'
 import generateFile from 'vite-plugin-generate-file'
-
-// GitHub Pages compatible configuration
-// For custom domains, use relative paths to ensure assets load correctly
-
-// Custom plugin to replace module type for GitHub Pages compatibility
-const replaceModuleType = () => ({
-  name: 'replace-module-type',
-  transformIndexHtml(html) {
-    // Replace type="module" with type="text/javascript" for explicit browser compatibility
-    return html.replace(/type="module"/g, 'type="text/javascript"')
-  }
-})
 
 // https://vitejs.dev/config/
 export default defineConfig({
   plugins: [
       react(),
-      replaceModuleType(), // Custom plugin to replace module type for GitHub Pages
       generateFile([
         {
           type: 'raw',
@@ -60,27 +46,27 @@ export default defineConfig({
   build: {
     outDir: '../docs',
     emptyOutDir: true,
-    target: 'es2015', // Force ES2015 target for broader compatibility
+    // Remove manual chunks temporarily to test basic functionality
     rollupOptions: {
       output: {
-        format: 'iife', // Force IIFE format to avoid ES modules
-        entryFileNames: 'assets/[name].js',
-        chunkFileNames: 'assets/[name].js',
-        assetFileNames: 'assets/[name].[ext]',
-        // Remove manualChunks as it conflicts with legacy plugin
+        // Explicit chunking to ensure proper React/ReactDOM handling
+        manualChunks: {
+          // Keep React and ReactDOM together in a dedicated chunk
+          react: ['react', 'react-dom'],
+          // Separate UI component libraries
+          radix: ['@radix-ui/react-slot', '@radix-ui/react-dialog', '@radix-ui/react-dropdown-menu', '@radix-ui/react-label', '@radix-ui/react-separator', '@radix-ui/react-toast'],
+          // Separate icon libraries
+          icons: ['lucide-react'],
+        },
       },
     },
     sourcemap: true,
     minify: 'terser',
     terserOptions: {
       compress: {
-        drop_console: false,
-        drop_debugger: false,
+        drop_console: true,
+        drop_debugger: true,
       },
-    },
-    // Force legacy polyfills and disable modern features
-    modulePreload: {
-      polyfill: false
     },
   },
   server: {

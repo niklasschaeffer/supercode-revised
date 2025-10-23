@@ -5,6 +5,10 @@ mode: subagent
 reasoningEffort: high
 textVerbosity: low
 tools:
+  edit: false
+  write: false
+  task: false
+  TodoWrite: false
   WebFetch: false
 ---
 

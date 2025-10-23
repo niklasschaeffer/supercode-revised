@@ -11,3 +11,5 @@
 1. NEVER run `npm run build` in the root folder.
 2. NAVIGATE to the landingpage folder BEFORE running `npm run build`.
 3. ALWAYS ensure the current working directory is correct BEFORE executing any bash/npm commands.
+4. ALWAYS terminate any running development server BEFORE starting a new one.
+5. ALWAYS terminate running servers before ending your session.

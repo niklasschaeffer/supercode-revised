@@ -37,11 +37,11 @@ function LandingPage() {
 
 function App() {
   return (
-    <BrowserRouter basename={process.env.NODE_ENV === 'production' ? '.' : '/'}>
+    <BrowserRouter>
       <Routes>
         {/* Main landing page route */}
         <Route path="/" element={<LandingPage />} />
-        
+
         {/* Documentation routes - handled by DocumentationRouter */}
         <Route path="/docs/*" element={<DocumentationRouter />} />
       </Routes>
