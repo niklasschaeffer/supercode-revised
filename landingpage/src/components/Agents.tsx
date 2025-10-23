@@ -20,15 +20,13 @@ const categoryColors = {
 }
 
 export function Agents() {
-  const categories = Object.keys(categoryColors)
-
   return (
     <section id="agents" className="py-20 bg-white dark:bg-slate-800">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <AnimatedSection animation="fade-up">
           <div className="text-center mb-16">
             <h2 className="text-3xl sm:text-4xl font-bold mb-4">
-              18 Specialized AI Agents
+              17 Specialized AI Agents
             </h2>
             <p className="text-xl text-muted-foreground max-w-3xl mx-auto">
               Each agent is expertly trained for specific development tasks, working together seamlessly
@@ -36,52 +34,41 @@ export function Agents() {
           </div>
         </AnimatedSection>
 
-        {categories.map((category, categoryIndex) => {
-          const categoryAgents = AGENTS.filter(agent => agent.category === category)
-          
-          if (categoryAgents.length === 0) return null
-
-          return (
-            <div key={category} className="mb-12">
-              <AnimatedSection animation="fade-up" delay={categoryIndex * 100}>
-                <div className="flex items-center gap-2 mb-6">
-                  <Badge 
-                    variant="secondary" 
-                    className={`text-sm px-3 py-1 ${categoryColors[category as keyof typeof categoryColors]}`}
-                  >
-                    {category}
-                  </Badge>
-                  <div className="h-px bg-slate-200 dark:bg-slate-700 flex-1" />
-                </div>
+        <AnimatedSection animation="fade-up" delay={200}>
+          <div className="grid gap-6 grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4">
+            {AGENTS.map((agent, index) => (
+              <AnimatedSection
+                key={agent.id}
+                animation="scale-up"
+                delay={index * 50}
+                threshold={0.1}
+              >
+                <Card className="h-full transition-all duration-300 hover:shadow-lg hover:scale-105 group cursor-pointer relative">
+                  {/* Category Badge in top-right corner */}
+                  <div className="absolute top-3 right-3 z-10">
+                    <Badge 
+                      className={`text-xs px-2 py-1 ${categoryColors[agent.category as keyof typeof categoryColors]}`}
+                    >
+                      {agent.category}
+                    </Badge>
+                  </div>
+                  
+                  <CardHeader className="text-center pb-4">
+                    <div className="text-4xl mb-3 group-hover:scale-110 transition-transform duration-300">
+                      {agent.icon}
+                    </div>
+                    <CardTitle className="text-lg leading-tight">{agent.name}</CardTitle>
+                    <CardDescription className="text-sm leading-relaxed">
+                      {agent.description}
+                    </CardDescription>
+                  </CardHeader>
+                </Card>
               </AnimatedSection>
+            ))}
+          </div>
+        </AnimatedSection>
 
-              <div className="grid gap-6 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4">
-                {categoryAgents.map((agent, agentIndex) => (
-                  <AnimatedSection
-                    key={agent.id}
-                    animation="scale-up"
-                    delay={categoryIndex * 100 + agentIndex * 50}
-                    threshold={0.1}
-                  >
-                    <Card className="h-full transition-all duration-300 hover:shadow-lg hover:scale-105 group cursor-pointer">
-                      <CardHeader className="text-center">
-                        <div className="text-5xl mb-3 group-hover:scale-110 transition-transform duration-300">
-                          {agent.icon}
-                        </div>
-                        <CardTitle className="text-lg">{agent.name}</CardTitle>
-                        <CardDescription className="text-sm leading-relaxed">
-                          {agent.description}
-                        </CardDescription>
-                      </CardHeader>
-                    </Card>
-                  </AnimatedSection>
-                ))}
-              </div>
-            </div>
-          )
-        })}
-
-        <AnimatedSection animation="fade-up" delay={1000}>
+        <AnimatedSection animation="fade-up" delay={1200}>
           <div className="mt-16 text-center">
             <Card className="max-w-2xl mx-auto bg-gradient-to-r from-blue-50 to-purple-50 dark:from-blue-900/20 dark:to-purple-900/20 border-blue-200 dark:border-blue-800">
               <CardHeader>

@@ -17,15 +17,13 @@ const categoryColors = {
 }
 
 export function Commands() {
-  const categories = Object.keys(categoryColors)
-
   return (
     <section id="commands" className="py-20 bg-slate-50 dark:bg-slate-900">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <AnimatedSection animation="fade-up">
           <div className="text-center mb-16">
             <h2 className="text-3xl sm:text-4xl font-bold mb-4">
-              13 Powerful Commands
+              12 Powerful Commands
             </h2>
             <p className="text-xl text-muted-foreground max-w-3xl mx-auto">
               Complete command set for project initialization, context management, and development workflows
@@ -33,60 +31,43 @@ export function Commands() {
           </div>
         </AnimatedSection>
 
-        {categories.map((category, categoryIndex) => {
-          const categoryCommands = COMMANDS.filter(command => command.category === category)
-          
-          if (categoryCommands.length === 0) return null
-
-          return (
-            <div key={category} className="mb-12">
-              <AnimatedSection animation="fade-up" delay={categoryIndex * 100}>
-                <div className="flex items-center gap-2 mb-6">
-                  <Badge 
-                    variant="secondary" 
-                    className={`text-sm px-3 py-1 ${categoryColors[category as keyof typeof categoryColors]}`}
-                  >
-                    {category}
-                  </Badge>
-                  <div className="h-px bg-slate-200 dark:bg-slate-700 flex-1" />
-                </div>
+        <AnimatedSection animation="fade-up" delay={200}>
+          <div className="grid gap-6 grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4">
+            {COMMANDS.map((command, index) => (
+              <AnimatedSection
+                key={command.id}
+                animation="scale-up"
+                delay={index * 50}
+                threshold={0.1}
+              >
+                <Card className="h-full transition-all duration-300 hover:shadow-lg hover:scale-105 group cursor-pointer relative">
+                  {/* Category Badge in top-right corner */}
+                  <div className="absolute top-3 right-3 z-10">
+                    <Badge 
+                      className={`text-xs px-2 py-1 ${categoryColors[command.category as keyof typeof categoryColors]}`}
+                    >
+                      {command.category}
+                    </Badge>
+                  </div>
+                  
+                  <CardHeader>
+                    <div className="flex items-center justify-between mb-3 pr-16">
+                      <CardTitle className="text-lg group-hover:text-blue-600 transition-colors">
+                        /{command.name.toLowerCase()}
+                      </CardTitle>
+                    </div>
+                    <CardDescription className="text-sm leading-relaxed mb-3">
+                      {command.description}
+                    </CardDescription>
+                    <div className="bg-slate-100 dark:bg-slate-800 rounded p-2 font-mono text-xs text-slate-600 dark:text-slate-400">
+                      {command.example}
+                    </div>
+                  </CardHeader>
+                </Card>
               </AnimatedSection>
-
-              <div className="grid gap-6 md:grid-cols-2 lg:grid-cols-3">
-                {categoryCommands.map((command, commandIndex) => (
-                  <AnimatedSection
-                    key={command.id}
-                    animation="scale-up"
-                    delay={categoryIndex * 100 + commandIndex * 50}
-                    threshold={0.1}
-                  >
-                    <Card className="h-full transition-all duration-300 hover:shadow-lg hover:scale-105 group cursor-pointer">
-                      <CardHeader>
-                        <div className="flex items-center justify-between mb-3">
-                          <CardTitle className="text-lg group-hover:text-blue-600 transition-colors">
-                            /{command.name.toLowerCase()}
-                          </CardTitle>
-                          <Badge 
-                            variant="outline" 
-                            className="text-xs"
-                          >
-                            {command.category}
-                          </Badge>
-                        </div>
-                        <CardDescription className="text-sm leading-relaxed mb-3">
-                          {command.description}
-                        </CardDescription>
-                        <div className="bg-slate-100 dark:bg-slate-800 rounded p-2 font-mono text-xs text-slate-600 dark:text-slate-400">
-                          {command.example}
-                        </div>
-                      </CardHeader>
-                    </Card>
-                  </AnimatedSection>
-                ))}
-              </div>
-            </div>
-          )
-        })}
+            ))}
+          </div>
+        </AnimatedSection>
 
         <AnimatedSection animation="fade-up" delay={1200}>
           <div className="mt-16 text-center">
