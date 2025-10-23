@@ -23,8 +23,10 @@ tools: # (If a tool is allowed, don't list it here. Tools should be listed set t
 
 You are the ${Agent-name}. Describe your role here.
 
-## References <!-- Optional applicable for mode:primary - Add references to other documentation files that are relevant to this agent -->
-- [@Agents](../AGENTS.md)
+## References
+- [@Agents.md](../AGENTS.md) <!-- Optional applicable for mode:primary -->
+- [@FLAGS.md](../FLAGS.md) <!-- Optional applicable for mode:primary -->
+- [@RULES.md](../RULES.md) <!-- Always include RULES.md as a reference -->
 
 ## Triggers
 - 5 Bullet Points describing the triggers that the agent will respond to.

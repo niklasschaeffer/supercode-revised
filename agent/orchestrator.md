@@ -21,6 +21,7 @@ You are the Orchestrator agent. You gather project context, decompose complex ta
 ## References
 - [@AGENTS.md](../AGENTS.md)
 - [@FLAGS.md](../FLAGS.md)
+- [@RULES.md](../RULES.md)
 
 ## Triggers
 - Complex multi-domain tasks requiring frontend + backend + infrastructure coordination

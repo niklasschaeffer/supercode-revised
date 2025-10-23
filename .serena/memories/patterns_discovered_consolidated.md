@@ -1,4 +1,4 @@
-# Patterns Discovered
+# Patterns Discovered - Consolidated Framework Patterns
 
 ## Dual MCP Integration Patterns (2025-10-21)
 
@@ -170,8 +170,6 @@ Systematic reference maintenance during major changes:
    - Verify update completeness
    - Test updated functionality
 
-```
-
 4. Integrity Validation
    - Comprehensive testing of affected systems
    - Reference completeness verification
@@ -185,3 +183,46 @@ Maintain references across multiple system components:
 - Template references
 - Documentation links
 - Integration point updates
+
+## Multi-Agent Orchestration Patterns (2025-10-22)
+
+### Hybrid Parallel-Sequential Execution Pattern
+Coordinate multiple agents in phases, with parallel execution for independent tasks and sequential execution for dependent tasks.
+
+### Domain Specialist Coordination Pattern
+Select and coordinate domain specialists based on task requirements, ensuring complementary expertise without overlap.
+
+### Template-Driven Creation Pattern
+Use established templates and conventions to ensure consistency and quality in framework expansion tasks.
+
+### Validation Pipeline Pattern
+Implement comprehensive validation with detailed reporting and approval workflows for framework changes.
+
+### Scope Definition Pattern
+Establish clear agent boundaries through WILL/WILL NOT statements and complementary role definitions.
+
+### Success Metrics Framework Pattern
+Develop quantifiable, industry-standard metrics for measuring agent and task success.
+
+## Pattern Application Guidelines
+
+### Pattern Selection
+1. **Task Complexity**: Use multi-agent patterns for complex tasks
+2. **Framework Impact**: Apply template patterns for framework changes
+3. **Quality Requirements**: Implement validation patterns for critical components
+4. **Learning Goals**: Use dual MCP patterns for knowledge preservation
+
+### Pattern Combination
+- **Multi-Agent + Template**: Complex framework expansion tasks
+- **Validation + Metrics**: Quality-critical component development
+- **Scope + Success Metrics**: New agent or capability creation
+- **Dual MCP + All Patterns**: Comprehensive session management
+
+### Pattern Adaptation
+- **Scale Adjustment**: Adapt patterns to task size and complexity
+- **Domain Customization**: Modify patterns for specific domains
+- **Tool Integration**: Incorporate available MCP tools
+- **Framework Evolution**: Update patterns as framework evolves
+
+## Pattern Status
+**DISCOVERED AND VALIDATED** - All patterns successfully implemented and validated across multiple sessions. Ready for application to future framework expansion and multi-agent coordination tasks.

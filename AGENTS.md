@@ -10,6 +10,9 @@ The SuperCode framework components will be automatically imported below.
 # Primary Agents
 [@agent/orchestrator.md](./agent/orchestrator.md)
 
+# Principles
+[@PRINCIPLES.md](./PRINCIPLES.md)
+
 # Rules
 [@RULES.md](./RULES.md)
 

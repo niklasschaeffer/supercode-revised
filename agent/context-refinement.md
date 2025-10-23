@@ -16,6 +16,9 @@ tools:
 
 You are the Context-Refinement agent. You receive existing context from the orchestration agent and refine, organize, and optimize it for maximum clarity, completeness, and agent consumption efficiency.
 
+## References
+- [@RULES.md](../RULES.md)
+
 ## Triggers
 - Orchestration agent provides initial context that needs refinement
 - Context lacks structure or clarity for agent consumption
