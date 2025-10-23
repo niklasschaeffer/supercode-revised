@@ -3,6 +3,7 @@ agent: orchestrator
 description: Meta-agent for task decomposition, context gathering, and intelligent delegation to specialist agents
 mode: primary
 temperature: 0.7
+token_reports: true
 tools:
   bash: false
   write: false
