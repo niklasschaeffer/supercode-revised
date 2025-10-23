@@ -28,9 +28,8 @@
     "playwright": {
       "type": "local",
       "enabled": true,
-      "command": ["npx", "@playwright/mcp@latest"]
+      "command": ["npx", "@playwright/mcp@latest", "--viewport-size=1920x1080"]
     },
-
     "shadcn": {
       "type": "local",
       "enabled": true,
@@ -65,7 +64,7 @@
     "serena": {
       "type": "local",
       "enabled": true,
-      "command" : ["uvx", "--from", "git+https://github.com/oraios/serena", "serena", "start-mcp-server", "--context", "ide-assistant"]
+      "command" : ["uvx", "--from", "git+https://github.com/oraios/serena", "serena", "start-mcp-server", "--context", "agent"]
     }
   }
 }

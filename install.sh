@@ -1,7 +1,7 @@
 #!/bin/bash
 
 ###
-# Install OpenCode configuration files to the user's home directory
+# Install SuperCode configuration files to the user's home directory
 ###
 
 # Color codes for better output
@@ -20,7 +20,7 @@ JSONC_FILE="$CONFIG_DIR/opencode.jsonc"
 # Print header
 echo ""
 echo -e "${CYAN}╔═════════════════════════════════════════════════════════════════════╗${NC}"
-echo -e "${CYAN}║${NC}  ${BOLD}${MAGENTA}OpenCode Configuration Installer${NC}                              ${CYAN}║${NC}"
+echo -e "${CYAN}║${NC}  ${BOLD}${MAGENTA}SuperCode Configuration Installer${NC}                              ${CYAN}║${NC}"
 echo -e "${CYAN}╚═════════════════════════════════════════════════════════════════════╝${NC}"
 echo ""
 echo -e "${BLUE}📁 Target directory:${NC} ${BOLD}$CONFIG_DIR${NC}"
@@ -94,6 +94,6 @@ echo -e "${CYAN}╔════════════════════�
 echo -e "${CYAN}║${NC}  ${BOLD}${GREEN}✨ Installation Complete!${NC}                                       ${CYAN}║${NC}"
 echo -e "${CYAN}╚═════════════════════════════════════════════════════════════════════╝${NC}"
 echo ""
-echo -e "${MAGENTA}🚀 OpenCode is ready to use!${NC}"
+echo -e "${MAGENTA}🚀 SuperCode is ready now Read to use in OpenCode!${NC}"
 echo -e "${BLUE}   Configuration location:${NC} $CONFIG_DIR"
 echo ""

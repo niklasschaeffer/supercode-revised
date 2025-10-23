@@ -8,29 +8,14 @@ import { MCP_SERVERS } from '@/utils/constants'
 
 export function Installation() {
   const installCode = `# Clone the repository
-git clone https://github.com/supercode/supercode.git
+git clone https://github.com/niklasschaeffer/supercode-revised.git
 cd supercode
 
 # Install dependencies
 npm install
 
 # Initialize SuperCode
-npm run supercode init
-
-# Start your first project
-npm run supercode create my-app`
-
-  const quickStartCode = `# Create a new project with agents
-supercode create my-web-app --template=react
-
-# Add frontend engineering
-supercode agent frontend-engineer --task="build responsive UI"
-
-# Add backend API
-supercode agent backend-engineer --task="create REST API"
-
-# Run quality assurance
-supercode agent qa-engineer --task="test and validate"`
+npm run supercode:init`
 
   return (
     <section id="installation" className="py-20 bg-slate-50 dark:bg-slate-900">
@@ -46,7 +31,7 @@ supercode agent qa-engineer --task="test and validate"`
           </div>
         </AnimatedSection>
 
-        <div className="grid gap-12 lg:grid-cols-2">
+        <div className="grid gap-12 lg:grid-cols-1">
           <AnimatedSection animation="fade-right" delay={200}>
             <Card className="h-full">
               <CardHeader>
@@ -71,30 +56,6 @@ supercode agent qa-engineer --task="test and validate"`
               </CardContent>
             </Card>
           </AnimatedSection>
-
-          <AnimatedSection animation="fade-left" delay={300}>
-            <Card className="h-full">
-              <CardHeader>
-                <div className="flex items-center gap-2 mb-2">
-                  <Zap className="h-5 w-5 text-purple-600 dark:text-purple-400" />
-                  <CardTitle>Quick Start</CardTitle>
-                </div>
-                <CardDescription>
-                  Create your first project with AI-powered agents
-                </CardDescription>
-              </CardHeader>
-              <CardContent>
-                <CodeBlock code={quickStartCode} language="bash" />
-                <div className="mt-4 flex gap-2">
-                  <Button size="sm" variant="outline" asChild>
-                    <a href="/docs" target="_blank" rel="noopener noreferrer">
-                      View Documentation
-                    </a>
-                  </Button>
-                </div>
-              </CardContent>
-            </Card>
-          </AnimatedSection>
         </div>
 
         <AnimatedSection animation="fade-up" delay={400}>
@@ -109,9 +70,9 @@ supercode agent qa-engineer --task="test and validate"`
               <CardContent>
                 <div className="flex flex-wrap justify-center gap-2">
                   {MCP_SERVERS.map((server, index) => (
-                    <Badge 
-                      key={server.name} 
-                      variant="secondary" 
+                    <Badge
+                      key={server.name}
+                      variant="secondary"
                       className="text-xs"
                       style={{ animationDelay: `${index * 50}ms` }}
                     >

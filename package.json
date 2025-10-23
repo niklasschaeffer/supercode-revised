@@ -1,4 +1,7 @@
 {
+  "scripts": {
+    "supercode:init": "/usr/bin/env bash ./install.sh"
+  },
   "dependencies": {
     "@opencode-ai/plugin": "^0.15.8"
   }
