@@ -52,9 +52,6 @@ npm run supercode:init
 # Check that everything is working
 /load --status
 
-# View available MCP integrations
-/list-mcps
-
 # Test agent coordination
 /spawn orchestrator
 ```
@@ -385,9 +382,6 @@ SuperCode automatically maintains comprehensive documentation:
 # Generate current documentation
 /generate --docs --comprehensive
 
-# Update MCP server documentation
-/update-docs --mcp-servers
-
 # Create agent capability matrix
 /generate --matrix --agents
 ```
@@ -402,7 +396,7 @@ We welcome contributions! Here's how to get started:
 
 ```bash
 # Fork and clone
-git clone https://github.com/your-username/supercode-revised.git
+git clone https://github.com/niklasschaeffer/supercode-revised.git
 
 # Create feature branch
 git checkout -b feature/amazing-feature
@@ -438,32 +432,6 @@ git checkout -b feature/amazing-feature
 
 ---
 
-## 🗺️ Roadmap
-
-### Current Focus (v1.0)
-
-- ✅ **Core Framework** - Agent system, command system, MCP integrations
-- ✅ **Memory Management** - Optimized dual persistence system
-- ✅ **Behavioral Flags** - Execution control and optimization
-- ✅ **Template System** - Standardized templates
-
-### Upcoming Features
-
-- 🔄 **Visual Studio Code Extension** - Native IDE integration
-- 🔄 **Web Dashboard** - Browser-based management interface
-- 🔄 **Advanced Analytics** - Usage metrics and insights
-- 🔄 **Plugin System** - Third-party extensions
-- 🔄 **Cloud Deployment** - Managed cloud offerings
-
-### Long-term Vision
-
-- 🎯 **Enterprise Features** - Advanced security and compliance
-- 🎯 **AI Training** - Custom model training capabilities
-- 🎯 **Marketplace** - Agent and command marketplace
-- 🎯 **Global Community** - Open source community initiatives
-
----
-
 ## 📄 License
 
 This project is licensed under the **MIT License** - see the [LICENSE](LICENSE) file for details.
@@ -484,8 +452,8 @@ This project is licensed under the **MIT License** - see the [LICENSE](LICENSE) 
 ### Getting Help
 
 - **Documentation** - Check this README and generated docs
-- **Issues** - [GitHub Issues](https://github.com/your-org/supercode-revised/issues)
-- **Discussions** - [GitHub Discussions](https://github.com/your-org/supercode-revised/discussions)
+- **Issues** - [GitHub Issues](https://github.com/niklasschaeffer/supercode-revised/issues)
+- **Discussions** - [GitHub Discussions](https://github.com/niklasschaeffer/supercode-revised/discussions)
 - **Community** - Join our community forums
 
 ### Quick Commands for Help
@@ -511,7 +479,7 @@ This project is licensed under the **MIT License** - see the [LICENSE](LICENSE) 
 **Get started now:**
 
 ```bash
-git clone https://github.com/your-org/supercode-revised.git
+git clone https://github.com/niklasschaeffer/supercode-revised.git
 cd supercode-revised
 npm install
 npm run supercode:init
