@@ -147,6 +147,12 @@ export const FEATURES = [
     highlight: true
   },
   {
+    title: '11 Commands',
+    description: 'Powerful command set for project initialization, context loading',
+    icon: '💻',
+    highlight: true
+  },
+  {
     title: '11 MCP Server Integrations',
     description: 'Seamless integration with modern development tools and services',
     icon: '🔌',
@@ -162,7 +168,7 @@ export const FEATURES = [
     title: '25+ Behavioral Flags',
     description: 'Fine-grained control over agent behavior and decision making',
     icon: '🚩',
-    highlight: false
+    highlight: true
   },
   {
     title: 'Dual Memory System',

@@ -500,7 +500,6 @@ This project is licensed under the **MIT License** - see the [LICENSE](LICENSE) 
 - **Documentation** - Check this README and generated docs
 - **Issues** - [GitHub Issues](https://github.com/niklasschaeffer/supercode-revised/issues)
 - **Discussions** - [GitHub Discussions](https://github.com/niklasschaeffer/supercode-revised/discussions)
-- **Community** - Join our community forums
 
 ### Quick Commands for Help
 

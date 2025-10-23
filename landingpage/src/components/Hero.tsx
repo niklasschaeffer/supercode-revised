@@ -71,7 +71,7 @@ export function Hero() {
         </AnimatedSection>
 
         <AnimatedSection animation="scale-up" delay={400}>
-          <div className="grid grid-cols-2 md:grid-cols-4 gap-8 max-w-4xl mx-auto">
+          <div className="grid grid-cols-3 md:grid-cols-5 gap-8 max-w-4xl mx-auto">
             <div className="text-center">
               <div className="text-3xl font-bold text-blue-600 dark:text-blue-400 mb-2">15+</div>
               <div className="text-sm text-muted-foreground">Specialized Agents</div>
@@ -79,6 +79,10 @@ export function Hero() {
             <div className="text-center">
               <div className="text-3xl font-bold text-purple-600 dark:text-purple-400 mb-2">11</div>
               <div className="text-sm text-muted-foreground">MCP Integrations</div>
+            </div>
+            <div className="text-center">
+              <div className="text-3xl font-bold text-teal-600 dark:text-teal-400 mb-2">11</div>
+              <div className="text-sm text-muted-foreground">Commands</div>
             </div>
             <div className="text-center">
               <div className="text-3xl font-bold text-indigo-600 dark:text-indigo-400 mb-2">25+</div>

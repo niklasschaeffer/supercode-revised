@@ -30,7 +30,7 @@ export function Features() {
                 feature.highlight ? 'border-blue-200 dark:border-blue-800 bg-blue-50/50 dark:bg-blue-900/20' : ''
               }`}>
                 <CardHeader>
-                  <div className="text-4xl mb-4">{feature.icon}</div>
+                  <div className="text-4xl mb-4 text-center">{feature.icon}</div>
                   <CardTitle className="flex items-center gap-2">
                     {feature.title}
                     {feature.highlight && (
