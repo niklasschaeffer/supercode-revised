@@ -4,6 +4,7 @@ import { Navigation } from "@/components/Navigation"
 import { Hero } from "@/components/Hero"
 import { Features } from "@/components/Features"
 import { Agents } from "@/components/Agents"
+import { CommandWorkflow } from "@/components/CommandWorkflow"
 import { Installation } from "@/components/Installation"
 import { Footer } from "@/components/Footer"
 import { DocumentationRouter } from "@/components/docs/DocumentationRouter"
@@ -29,6 +30,7 @@ function LandingPage() {
       <Hero />
       <Features />
       <Agents />
+      <CommandWorkflow />
       <Installation />
       <Footer />
     </div>

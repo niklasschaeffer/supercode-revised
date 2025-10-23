@@ -33,7 +33,7 @@ export function Hero() {
           </h1>
           <p className="text-xl sm:text-2xl text-muted-foreground mb-8 max-w-3xl mx-auto leading-relaxed">
             Transform your development workflow with intelligent multi-agent orchestration,
-            seamless MCP integrations, and AI-powered code generation.
+            seamless MCP integrations, and complete project initialization in one command.
           </p>
         </AnimatedSection>
 

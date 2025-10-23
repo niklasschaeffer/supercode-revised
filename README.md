@@ -36,7 +36,10 @@ npm run supercode:init
 ### Your First Steps
 
 ```bash
-# Load project context and initialize the framework
+# Initialize project and establish dual MCP foundation
+/initialize
+
+# Load project context and activate framework
 /load
 
 # Try your first enhanced command with behavioral flags
@@ -49,14 +52,17 @@ npm run supercode:init
 ### Verification
 
 ```bash
-# Check that everything is working
+# Check initialization status
+/initialize --status
+
+# Verify context loading
 /load --status
 
 # Test agent coordination
 /spawn orchestrator
 ```
 
-✅ **SuperCode is now ready!** You have access to 11 MCP servers, behavioral flags, and the complete agent ecosystem.
+✅ **SuperCode is now ready!** You have access to 11 MCP servers, behavioral flags, and the complete agent ecosystem with dual MCP foundation established.
 
 ---
 
@@ -145,6 +151,9 @@ Specialized agents for every task:
 Powerful commands for common workflows:
 
 ```bash
+# Initialize project and establish dual MCP foundation
+/initialize
+
 # Load project context from memories + patterns
 /load
 
@@ -203,6 +212,13 @@ supercode-revised/
 - **In-Memoria** - Implicit, AI-learned patterns for automated recommendations
 - **Intelligent Coordination** - Cross-system deduplication and complementary knowledge
 
+**Initialization Process:**
+The `/initialize` command establishes this dual MCP foundation by:
+- Activating project in Serena and performing initial onboarding
+- Running In-Memoria analysis for pattern learning and intelligence
+- Creating core memories and architectural documentation
+- Setting up the complete context management foundation
+
 ### Memory Management
 
 **Optimized Memory System:**
@@ -210,10 +226,33 @@ supercode-revised/
 - **2-3 session memory limit** for sustainable development
 - **Pattern consolidation** into single source of truth
 - **Automatic constraint enforcement** without user intervention
+- **Foundation establishment** through `/initialize` for optimal memory setup
 
 ---
 
 ## 🎯 Usage Examples
+
+### Project Initialization
+
+```bash
+# Complete project bootstrap with dual MCP foundation
+/initialize
+
+# Force relearn for existing projects
+/initialize --force-relearn
+
+# Skip analysis for quick setup
+/initialize --skip-analysis
+
+# Initialize with verbose output
+/initialize --verbose
+```
+
+**The Complete Workflow:**
+1. **`/initialize`** - CREATE foundation from scratch (establishes dual MCP integration)
+2. **`/load`** - READ existing context from both MCPs
+3. **Work with framework** - Use agents and commands for development
+4. **`/save`** - WRITE completed work to both MCPs
 
 ### Multi-Agent Orchestration
 
@@ -233,6 +272,9 @@ supercode-revised/
 ### Context-Driven Development
 
 ```bash
+# Initialize project foundation
+/initialize
+
 # Load comprehensive project context
 /load
 
@@ -291,6 +333,9 @@ npm install
 
 # Set up development environment
 npm run supercode:init
+
+# Initialize project and establish dual MCP foundation
+/initialize
 
 # Load development context
 /load
@@ -401,7 +446,8 @@ git clone https://github.com/niklasschaeffer/supercode-revised.git
 # Create feature branch
 git checkout -b feature/amazing-feature
 
-# Load context and start development
+# Initialize and load context for development
+/initialize
 /load
 
 # Make your changes
@@ -483,6 +529,7 @@ git clone https://github.com/niklasschaeffer/supercode-revised.git
 cd supercode-revised
 npm install
 npm run supercode:init
+/initialize
 /load
 ```
 

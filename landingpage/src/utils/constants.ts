@@ -134,6 +134,7 @@ export const NAVIGATION_ITEMS: NavigationItem[] = [
   { label: 'Home', href: '#hero' },
   { label: 'Features', href: '#features' },
   { label: 'Agents', href: '#agents' },
+  { label: 'Workflow', href: '#workflow' },
   { label: 'Installation', href: '#installation' },
   { label: 'Documentation', href: '/docs', external: true },
   { label: 'GitHub', href: 'https://github.com/niklasschaeffer/supercode-revised', external: true }
@@ -150,6 +151,12 @@ export const FEATURES = [
     title: '11 MCP Server Integrations',
     description: 'Seamless integration with modern development tools and services',
     icon: '🔌',
+    highlight: true
+  },
+  {
+    title: 'Project Initialization',
+    description: 'Complete project bootstrap establishing dual MCP foundation in one command',
+    icon: '🚀',
     highlight: true
   },
   {

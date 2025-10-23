@@ -42,6 +42,7 @@ The SuperCode framework components will be automatically imported below.
 [@command/git.md](./command/git.md)
 [@command/implement.md](./command/implement.md)
 [@command/improve.md](./command/improve.md)
+[@command/initialize.md](./command/initialize.md)
 [@command/load.md](./command/load.md)
 [@command/save.md](./command/save.md)
 [@command/spawn.md](./command/spawn.md)

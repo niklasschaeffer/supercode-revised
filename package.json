@@ -1,6 +1,9 @@
 {
   "scripts": {
-    "supercode:init": "/usr/bin/env bash ./install.sh"
+    "supercode:install": "/usr/bin/env bash ./install.sh",
+    "supercode:memory": "npx in-memoria init && npx in-memoria analyze . && npx in-memoria learn .",
+    "supercode:initialize": "opencode run '/initialize --ultrathink' --agent orchestrator",
+    "supercode:init": "npm run supercode:install && npm run supercode:memory && npm run supercode:initialize"
   },
   "dependencies": {
     "@opencode-ai/plugin": "^0.15.8"

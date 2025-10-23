@@ -17,6 +17,15 @@ npm install
 # Initialize SuperCode
 npm run supercode:init`
 
+  const initializeCode = `# Initialize project and establish dual MCP foundation
+/initialize
+
+# Load project context
+/load
+
+# Start developing with enhanced commands
+/implement --ultrathink "create a new feature"`
+
   return (
     <section id="installation" className="py-20 bg-slate-50 dark:bg-slate-900">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
@@ -31,7 +40,7 @@ npm run supercode:init`
           </div>
         </AnimatedSection>
 
-        <div className="grid gap-12 lg:grid-cols-1">
+        <div className="grid gap-12 lg:grid-cols-2">
           <AnimatedSection animation="fade-right" delay={200}>
             <Card className="h-full">
               <CardHeader>
@@ -52,6 +61,28 @@ npm run supercode:init`
                       Download
                     </a>
                   </Button>
+                </div>
+              </CardContent>
+            </Card>
+          </AnimatedSection>
+
+          <AnimatedSection animation="fade-left" delay={300}>
+            <Card className="h-full">
+              <CardHeader>
+                <div className="flex items-center gap-2 mb-2">
+                  <Zap className="h-5 w-5 text-purple-600 dark:text-purple-400" />
+                  <CardTitle>Quick Start</CardTitle>
+                </div>
+                <CardDescription>
+                  Initialize your project and start building with AI agents
+                </CardDescription>
+              </CardHeader>
+              <CardContent>
+                <CodeBlock code={initializeCode} language="bash" />
+                <div className="mt-4">
+                  <Badge variant="secondary" className="text-xs">
+                    ✨ Establishes dual MCP foundation
+                  </Badge>
                 </div>
               </CardContent>
             </Card>

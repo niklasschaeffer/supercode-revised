@@ -1,2 +1,6 @@
 node_modules
 .idea
+
+# In Memoria
+in-memoria.db
+.in-memoria/cache/
