@@ -34,6 +34,7 @@ The SuperCode framework components will be automatically imported below.
 [@agent/task-manager.md](./agent/task-manager.md)
 
 # Commands
+[@command/cleanup.md](./command/cleanup.md)
 [@command/generate.md](./command/generate.md)
 [@command/git.md](./command/git.md)
 [@command/implement.md](./command/implement.md)
