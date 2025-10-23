@@ -73,7 +73,7 @@ export function Hero() {
         <AnimatedSection animation="scale-up" delay={400}>
           <div className="grid grid-cols-2 md:grid-cols-4 gap-8 max-w-4xl mx-auto">
             <div className="text-center">
-              <div className="text-3xl font-bold text-blue-600 dark:text-blue-400 mb-2">14+</div>
+              <div className="text-3xl font-bold text-blue-600 dark:text-blue-400 mb-2">15+</div>
               <div className="text-sm text-muted-foreground">Specialized Agents</div>
             </div>
             <div className="text-center">
@@ -85,8 +85,8 @@ export function Hero() {
               <div className="text-sm text-muted-foreground">Behavioral Flags</div>
             </div>
             <div className="text-center">
-              <div className="text-3xl font-bold text-green-600 dark:text-green-400 mb-2">2</div>
-              <div className="text-sm text-muted-foreground">Memory Systems</div>
+              <div className="text-3xl font-bold text-green-600 dark:text-green-400 mb-2">Dual</div>
+              <div className="text-sm text-muted-foreground">Memory System</div>
             </div>
           </div>
         </AnimatedSection>
