@@ -47,7 +47,7 @@ npm run supercode:init`
                 <CodeBlock code={installCode} language="bash" />
                 <div className="mt-4 flex gap-2">
                   <Button size="sm" variant="outline" asChild>
-                    <a href="https://github.com/supercode" target="_blank" rel="noopener noreferrer">
+                    <a href="https://github.com/niklasschaeffer/supercode-revised" target="_blank" rel="noopener noreferrer">
                       <Download className="h-4 w-4 mr-2" />
                       Download
                     </a>
