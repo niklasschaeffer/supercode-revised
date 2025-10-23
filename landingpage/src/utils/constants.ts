@@ -1,10 +1,10 @@
-import type { NavigationItem, Agent, TechStack } from '@/types'
+import type { NavigationItem, Agent, TechStack, Command } from '@/types'
 
 export const AGENTS: Agent[] = [
   {
-    id: 'orchestration',
-    name: 'Orchestration',
-    description: 'Primary agent for coordinating multi-agent workflows and task distribution',
+    id: 'orchestrator',
+    name: 'Orchestrator',
+    description: 'Meta-agent for task decomposition, context gathering, and intelligent delegation to specialist agents',
     icon: '🎯',
     category: 'Core'
   },
@@ -105,6 +105,20 @@ export const AGENTS: Agent[] = [
     description: 'Comprehensive logging and monitoring system implementation',
     icon: '📊',
     category: 'Monitoring'
+  },
+  {
+    id: 'renovator',
+    name: 'Renovator',
+    description: 'Project renovation and dependency management specialist with Renovate-Bot expertise',
+    icon: '🔧',
+    category: 'Maintenance'
+  },
+  {
+    id: 'context-refinement',
+    name: 'Context Refinement',
+    description: 'Refine and optimize existing context for enhanced agent consumption and clarity',
+    icon: '✨',
+    category: 'Optimization'
   }
 ]
 
@@ -134,6 +148,7 @@ export const NAVIGATION_ITEMS: NavigationItem[] = [
   { label: 'Home', href: '#hero' },
   { label: 'Features', href: '#features' },
   { label: 'Agents', href: '#agents' },
+  { label: 'Commands', href: '#commands' },
   { label: 'Workflow', href: '#workflow' },
   { label: 'Installation', href: '#installation' },
   { label: 'GitHub', href: 'https://github.com/niklasschaeffer/supercode-revised', external: true }
@@ -141,13 +156,13 @@ export const NAVIGATION_ITEMS: NavigationItem[] = [
 
 export const FEATURES = [
   {
-    title: '15 Specialized Agents',
+    title: '18 Specialized Agents',
     description: 'Comprehensive coverage of development tasks from frontend to DevOps',
     icon: '🤖',
     highlight: true
   },
   {
-    title: '11 Commands',
+    title: '13 Commands',
     description: 'Powerful command set for project initialization, context loading',
     icon: '💻',
     highlight: true
@@ -205,5 +220,92 @@ export const FEATURES = [
     description: 'Deep codebase understanding and semantic search capabilities',
     icon: '🔍',
     highlight: false
+  }
+]
+
+export const COMMANDS: Command[] = [
+  {
+    id: 'initialize',
+    name: 'Initialize',
+    description: 'Complete project bootstrap establishing dual MCP foundation in one command',
+    example: '/initialize --force-relearn',
+    category: 'Setup'
+  },
+  {
+    id: 'load',
+    name: 'Load',
+    description: 'Load comprehensive project context from both MCP systems',
+    example: '/load --status',
+    category: 'Context'
+  },
+  {
+    id: 'save',
+    name: 'Save',
+    description: 'Save completed work to both MCP memory systems',
+    example: '/save --session-summary',
+    category: 'Context'
+  },
+  {
+    id: 'implement',
+    name: 'Implement',
+    description: 'Feature implementation with orchestration and behavioral flags',
+    example: '/implement --ultrathink --orchestrate "user authentication"',
+    category: 'Development'
+  },
+  {
+    id: 'improve',
+    name: 'Improve',
+    description: 'Code improvement with patterns and performance optimization',
+    example: '/improve --patterns --performance "legacy code"',
+    category: 'Optimization'
+  },
+  {
+    id: 'spawn',
+    name: 'Spawn',
+    description: 'Activate specialized agents for specific tasks',
+    example: '/spawn qa-engineer',
+    category: 'Agents'
+  },
+  {
+    id: 'generate',
+    name: 'Generate',
+    description: 'Auto-generate code, documentation, and templates',
+    example: '/generate --type docs --target "API endpoints"',
+    category: 'Generation'
+  },
+  {
+    id: 'renovate',
+    name: 'Renovate',
+    description: 'Project renovation with Renovator agent and dependency management',
+    example: '/renovate --analyze --safe "update dependencies"',
+    category: 'Maintenance'
+  },
+  {
+    id: 'cleanup',
+    name: 'Cleanup',
+    description: 'Remove unused dependencies and optimize project structure',
+    example: '/cleanup --optimize "remove unused files"',
+    category: 'Maintenance'
+  },
+  {
+    id: 'task',
+    name: 'Task',
+    description: 'Task management system for complex work decomposition and tracking',
+    example: '/task --decompose "complex feature implementation"',
+    category: 'Management'
+  },
+  {
+    id: 'git',
+    name: 'Git',
+    description: 'Git workflow management and repository operations',
+    example: '/git --status "check branch status"',
+    category: 'Tools'
+  },
+  {
+    id: 'troubleshoot',
+    name: 'Troubleshoot',
+    description: 'Systematic issue diagnosis and resolution workflows',
+    example: '/troubleshoot --analyze "build failure"',
+    category: 'Diagnostics'
   }
 ]

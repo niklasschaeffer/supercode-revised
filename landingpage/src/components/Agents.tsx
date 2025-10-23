@@ -15,7 +15,8 @@ const categoryColors = {
   'Tools': 'bg-gray-100 text-gray-800 dark:bg-gray-900/30 dark:text-gray-300',
   'Analysis': 'bg-teal-100 text-teal-800 dark:bg-teal-900/30 dark:text-teal-300',
   'Management': 'bg-cyan-100 text-cyan-800 dark:bg-cyan-900/30 dark:text-cyan-300',
-  'Monitoring': 'bg-lime-100 text-lime-800 dark:bg-lime-900/30 dark:text-lime-300'
+  'Monitoring': 'bg-lime-100 text-lime-800 dark:bg-lime-900/30 dark:text-lime-300',
+  'Maintenance': 'bg-amber-100 text-amber-800 dark:bg-amber-900/30 dark:text-amber-300'
 }
 
 export function Agents() {
@@ -27,7 +28,7 @@ export function Agents() {
         <AnimatedSection animation="fade-up">
           <div className="text-center mb-16">
             <h2 className="text-3xl sm:text-4xl font-bold mb-4">
-              15 Specialized AI Agents
+              18 Specialized AI Agents
             </h2>
             <p className="text-xl text-muted-foreground max-w-3xl mx-auto">
               Each agent is expertly trained for specific development tasks, working together seamlessly

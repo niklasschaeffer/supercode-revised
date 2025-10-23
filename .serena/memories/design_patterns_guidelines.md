@@ -36,7 +36,7 @@
 ### Documentation Philosophy
 - **Show Don't Tell**: Examples over explanations
 - **Direct and Concise**: No marketing language, no fluff
-- **Under 100 Lines**: All agents, commands, MCP docs
+- **`100 < x < 130` Lines**: All agents, commands, MCP docs
 - **Trust the Reader**: Don't over-explain
 
 ## Anti-Patterns (Avoid)
@@ -44,7 +44,7 @@
 - ❌ Verbose explanations and meta-commentary
 - ❌ Magic MCP references (project doesn't use it)
 - ❌ SuperClaude framework commands in MCP docs
-- ❌ Files over 100 lines
+- ❌ Files over `100 < x < 130` lines
 - ❌ Abstract examples without concrete details
 - ❌ Mixing concerns in single files
 

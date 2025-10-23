@@ -4,7 +4,7 @@ When completing a task in SuperCode framework:
 
 ## Documentation
 
-- [ ] **Line Count**: Verify all agent/command/MCP docs are under 100 lines
+- [ ] **Line Count**: Verify all agent/command/MCP docs are under `100 < x < 130` lines
 - [ ] **Consistency**: Follow template structure (agent.template.md, command.template.md, MCP_Server.template.md)
 - [ ] **Examples**: Include concrete examples, not abstract theory
 - [ ] **No Magic**: Ensure no Magic MCP references (project doesn't use it)
@@ -29,7 +29,7 @@ When completing a task in SuperCode framework:
 
 ## Testing
 
-- [ ] **Verify Line Counts**: `wc -l <files>` to check under 100 lines
+- [ ] **Verify Line Counts**: `wc -l <files>` to check under `100 < x < 130` lines
 - [ ] **Read Files**: Verify content accuracy
 - [ ] **Check Links**: Ensure AGENTS.md links are correct
 
@@ -41,7 +41,7 @@ When completing a task in SuperCode framework:
 ## Final Verification
 
 - [ ] All files follow templates
-- [ ] All documentation under 100 lines
+- [ ] All documentation under `100 < x < 130` lines
 - [ ] AGENTS.md updated if needed
 - [ ] Examples are concrete and clear
 - [ ] No SuperClaude-specific commands in MCP docs

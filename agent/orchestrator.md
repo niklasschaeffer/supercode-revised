@@ -9,7 +9,6 @@ tools:
   write: false
   edit: false
   grep: false
-  glob: false
   list: false
   WebFetch: false
   TodoRead: false

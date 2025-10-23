@@ -46,7 +46,10 @@ npm run supercode:init
 /implement --ultrathink --orchestrate "create a user authentication system"
 
 # Explore available agents
-/spawn context-gathering
+/spawn context-refinement
+
+# Try project renovation with the new command
+/renovate --analyze "update project dependencies"
 ```
 
 ### Verification
@@ -62,7 +65,7 @@ npm run supercode:init
 /spawn orchestrator
 ```
 
-✅ **SuperCode is now ready!** You have access to 11 MCP servers, behavioral flags, and the complete agent ecosystem with dual MCP foundation established.
+✅ **SuperCode is now ready!** You have access to 11 MCP servers, behavioral flags, and the complete agent ecosystem (18 agents + 13 commands) with dual MCP foundation established.
 
 ---
 
@@ -136,7 +139,7 @@ Control AI execution with powerful flags:
 Specialized agents for every task:
 
 - **🎯 Orchestrator** - Multi-agent coordination and task decomposition
-- **🔍 Context-Gathering** - Project intelligence and context collection
+- **🔍 Context-Refinement** - Project intelligence and context optimization
 - **🛠️ Backend-Engineer** - API development and server-side logic
 - **🎨 Frontend-Engineer** - UI components and user experience
 - **🔒 Security-Engineer** - Security analysis and vulnerability assessment
@@ -145,6 +148,13 @@ Specialized agents for every task:
 - **🔧 Refactoring-Expert** - Code quality and technical debt reduction
 - **🚀 DevOps-Engineer** - Infrastructure and deployment automation
 - **📊 Deep-Research-Specialist** - Comprehensive research and analysis
+- **🔄 Renovator** - Project renovation and dependency management
+- **📋 Task-Manager** - Intelligent task decomposition and hierarchical management
+- **🔍 Root-Cause-Analyst** - Issue analysis and problem resolution
+- **📱 Mobile-Optimization** - Mobile-first development and responsive design
+- **📝 Logging** - System logging and monitoring implementation
+- **🌿 Git-Specialist** - Version control and Git workflow optimization
+- **⚡ Generator-Specialist** - Code generation and scaffolding automation
 
 ### ⚡ Command System
 
@@ -174,6 +184,18 @@ Powerful commands for common workflows:
 
 # Code generation and scaffolding
 /generate
+
+# Project renovation and dependency management
+/renovate
+
+# Project cleanup and maintenance
+/cleanup
+
+# Task management and decomposition
+/task
+
+# Git operations and version control
+/git
 ```
 
 ### 📋 Template System
@@ -294,6 +316,23 @@ The `/initialize` command establishes this dual MCP foundation by:
 
 # Auto-generate documentation
 /generate --type docs --target "API endpoints"
+```
+
+### Project Renovation and Maintenance
+
+```bash
+# Analyze and update project dependencies
+/renovate --analyze --safe "update all dependencies"
+
+# Renovate with orchestrator coordination
+/renovate --orchestrate --ultrathink "comprehensive project renovation"
+
+# Cleanup and maintenance
+/cleanup --optimize "remove unused dependencies and files"
+
+# Task-based renovation workflow
+/task --decompose "renovate frontend dependencies"
+/git --status "check renovation branch status"
 ```
 
 ### Security and Quality

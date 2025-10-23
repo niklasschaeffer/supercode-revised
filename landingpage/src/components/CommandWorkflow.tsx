@@ -40,6 +40,7 @@ export function CommandWorkflow() {
 /initialize              # Establish dual MCP foundation
 /load                    # Load project context
 /implement --orchestrate "build user authentication"
+/renovate --analyze      # Update dependencies
 /improve --patterns      # Optimize and refactor
 /save                    # Persist changes`
 

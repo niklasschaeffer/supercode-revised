@@ -24,7 +24,10 @@ npm run supercode:init`
 /load
 
 # Start developing with enhanced commands
-/implement --ultrathink "create a new feature"`
+/implement --ultrathink "create a new feature"
+
+# Try project renovation
+/renovate --analyze "update dependencies"`
 
   return (
     <section id="installation" className="py-20 bg-slate-50 dark:bg-slate-900">

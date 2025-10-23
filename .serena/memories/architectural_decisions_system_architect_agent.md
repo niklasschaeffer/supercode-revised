@@ -58,7 +58,7 @@
 - Improved knowledge accumulation and pattern discovery
 
 ## Technical Constraints Considered
-- Template compliance requirements (80/100 lines)
+- Template compliance requirements (`100 < x < 130` lines)
 - Framework recognition and integration standards
 - Multi-agent coordination overhead
 - Memory storage and retrieval efficiency
@@ -70,7 +70,7 @@
 - Single MCP persistence (rejected for comprehensiveness)
 
 ## Decision Validation
-- Template compliance achieved: 80/100 lines
+- Template compliance achieved: `100 < x < 130` lines
 - Framework integration successful: Agent recognized
 - Multi-agent coordination effective: Smooth workflow
 - Dual persistence operational: Both systems functional

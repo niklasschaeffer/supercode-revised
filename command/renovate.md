@@ -10,25 +10,31 @@ Project renovation command with Renovator agent integration and UltraThink analy
 ## References
 - [@FLAGS.md](../FLAGS.md)
 
-## General Context
-**Invoked Arguments [user_prompt]:** $ARGUMENTS
-**Current Directory:** !`pwd`
-**Current Folder:** !`basename $(pwd)`
+## Context
+**Arguments:** $ARGUMENTS
+**Directory:** !`pwd`
+**Folder:** !`basename $(pwd)`
 **Git Branch:** !`git rev-parse --abbrev-ref HEAD`
-**Git Status:**
-!`git status --short | grep '^ M'`
+**Status:** !`git status --short | grep '^ M'`
 
 ## Behavior
 
-Orchestrates comprehensive project renovation through Renovator agent integration with UltraThink analysis and systematic risk assessment:
+Comprehensive project renovation through Renovator agent with UltraThink analysis and safety-first risk assessment:
 
-**UltraThink Integration**: Maximum complexity reasoning for renovation strategy, multi-agent coordination, and risk mitigation planning
-**Context Analysis**: Project dependency evaluation, renovation history discovery, and architectural constraint assessment
-**Renovator Coordination**: Seamless agent activation with comprehensive context and strategic guidance
-**Decision Framework**: Quality assurance validation and renovation outcome documentation
+**UltraThink**: Maximum complexity reasoning for renovation strategy and risk mitigation
+**Context Analysis**: Dependency evaluation, renovation history, and architectural constraints
+**PR Analysis**: Systematic pull request analysis using Forgejo MCP
+**Dashboard Reading**: READ-ONLY access to "Renovate Dashboard" issue
+**Safety Framework**: Semantic versioning analysis and breaking change prevention
+**Renovator Coordination**: Agent activation with comprehensive context
+**Decision Framework**: Quality assurance validation and outcome documentation
 
 ### Primary Configuration Source
-**renovate.json**: Main configuration file for Renovate-Bot settings, renovation rules, and dependency management policies (referenced as authoritative source for agent configuration)
+**renovate.json**: Main Renovate-Bot configuration (authoritative source)
+
+### Enhanced Integration Points
+**Forgejo MCP**: PR analysis, Dashboard READ-ONLY access, issue tracking
+**Safety Framework**: Semantic versioning, compatibility checks, rollback planning
 
 ## Return Format
 
@@ -36,86 +42,72 @@ Orchestrates comprehensive project renovation through Renovator agent integratio
 ## Renovation Analysis Complete
 
 ### UltraThink Strategy
-- **Complexity Assessment**: [High/Medium/Low] renovation complexity identified
-- **Risk Analysis**: [Detailed risk assessment with mitigation strategies]
-- **Multi-Agent Coordination**: [Orchestrator-Renovator workflow established]
-- **Decision Framework**: [Strategic renovation plan validated]
+- **Complexity**: [High/Medium/Low] renovation complexity
+- **Risk Analysis**: [Mitigation strategies]
 
 ### Context Analysis
-- **Project Dependencies**: [N] dependency files identified
-- **Renovation History**: [Previous patterns and decisions discovered]
-- **Architectural Constraints**: [Project-specific limitations and requirements]
-- **Configuration Source**: renovate.json analysis complete
+- **Dependencies**: [N] dependency files found
+- **Configuration**: renovate.json analysis complete
 
-### Renovation Plan
-- **Scope**: [Specific renovation targets and boundaries]
-- **Strategy**: [Systematic approach with risk mitigation]
-- **Priority**: [Security/Stability/Feature updates prioritized]
-- **Validation**: [Quality assurance checkpoints established]
+### PR Analysis Results
+- **Open PRs**: [N] dependency update PRs identified
+- **Categories**: [Security/Major/Minor/Patch] classified
+
+### Dashboard Overview
+- **Renovate Dashboard**: [Found/Not found] - READ-ONLY analysis
+- **Pending Updates**: [N] updates with priorities
+
+### Safety Validation
+- **Semantic Versioning**: [Breaking change analysis complete]
+- **Compatibility**: [Architecture compatibility validated]
 
 ### Next Steps
 - **Renovator Agent**: Activated with comprehensive context
-- **Risk Mitigation**: [Specific safeguards implemented]
-- **Quality Gates**: [Validation criteria defined]
-- **Documentation**: [Renovation decisions recorded]
 ```
 
 ## Workflow
 
-1. **UltraThink Analysis Phase**:
-   - Sequential thinking for complex renovation scenarios and risk assessment
-   - Multi-agent coordination strategy development between orchestrator and renovator
-   - Decision framework establishment with quality assurance integration
-   - Maximum complexity reasoning applied to renovation planning
-
-2. **Context Gathering Phase**:
-   - `serena_list_memories()` → Discover renovation history and patterns
-   - `serena_read_memory(architectural_decisions)` → Load project constraints and decisions
-   - `glob("**/package.json", "**/requirements.txt", "renovate.json")` → Identify dependency and configuration files
-   - `grep("dependencies|devDependencies|renovate")` → Analyze current dependency state and renovation setup
-
-3. **Renovator Activation Phase**:
-   - Activate renovator agent with comprehensive context and risk assessment
-   - Provide renovation strategy and UltraThink analysis results
-   - Coordinate orchestrator-renovator workflow with clear handoff
-   - Establish quality assurance checkpoints and validation criteria
-
-4. **Decision Framework Phase**:
-   - Validate renovation decisions against project stability requirements
-   - Ensure quality assurance standards are met throughout renovation process
-   - Document renovation outcomes, recommendations, and lessons learned
-   - Update project memories with renovation decisions and patterns
+1. **UltraThink Analysis**: Sequential thinking for complex renovation scenarios and risk assessment
+2. **Context Gathering**: Discover renovation history, identify dependency files, analyze current state
+3. **PR Analysis**: `forgejo_list_repo_pull_requests()` → Analyze open PRs for dependency updates
+4. **Dashboard Analysis**: `forgejo_get_issue_by_index()` → READ-ONLY access to "Renovate Dashboard" issue
+5. **Safety Framework**: Semantic versioning analysis, compatibility checks, rollback planning
+6. **Renovator Activation**: Activate agent with comprehensive context and analysis results
+7. **Decision Framework**: Validate decisions, document outcomes, update project memories
 
 ## Tool Requirements
 
-**Sequential MCP**: UltraThink analysis for complex renovation scenarios and multi-agent coordination
-**Serena MCP**: Memory operations for renovation history, architectural decisions, and project context
-**Renovator Agent**: Specialized dependency management and renovation execution
-**Glob/Grep**: Dependency file discovery and configuration analysis
-**Read**: Configuration file analysis (renovate.json as primary source)
+**Forgejo MCP**: READ-ONLY Dashboard access and PR analysis
+- `forgejo_list_repo_issues`: Find Renovate Dashboard issue
+- `forgejo_get_issue_by_index`: Read Dashboard content (READ-ONLY)
+- `forgejo_list_repo_pull_requests`: Analyze open dependency PRs
+**Sequential MCP**: UltraThink analysis for complex scenarios
+**Serena MCP**: Memory operations and project context
+**Renovator Agent**: Enhanced dependency management with Forgejo integration
+**Glob/Grep**: Dependency file discovery and analysis
+**Read**: Configuration analysis (renovate.json as primary source)
 
 ## Examples
 
 ```
 /renovate
-# Full renovation analysis with UltraThink strategy and risk assessment
+# Full renovation with PR analysis and Dashboard reading
 
-/renovate dependencies --scope=security
-# Security-focused dependency renovation with comprehensive risk analysis
+/renovate dashboard --read-only
+# READ-ONLY access to Renovate Dashboard issue
 
-/renovate project --target=package.json
-# Targeted package.json renovation with architectural constraint validation
+/renovate prs --analyze
+# Analyze open PRs for dependency updates with safety assessment
 
-/renovate all --risk-assessment=high
-# Comprehensive project renovation with maximum risk mitigation
+/renovate safety --validate
+# Validate updates with semantic versioning and compatibility checks
 
 /renovate config --validate-renovate-json
-# Validate and analyze renovate.json configuration as primary source
-
-/renovate history --analyze-patterns
-# Analyze past renovation decisions and patterns from memories
+# Validate renovate.json configuration as primary source
 ```
 
 ## Integration
 
-Invoked by **orchestrator** for comprehensive project renovation and dependency management. Works with **renovator** agent for specialized renovation execution. Integrates with **Serena** for renovation history and architectural decisions. Uses **renovate.json** as primary configuration source for agent setup and renovation rules. Pairs with **/save** for documenting renovation decisions and **/load** for understanding renovation context. UltraThink analysis ensures maximum complexity reasoning for high-stakes renovation scenarios with systematic risk assessment and multi-agent coordination.
+Invoked by **orchestrator** for renovation with **renovator** agent using Forgejo MCP. Uses **renovate.json** as primary source. Pairs with **/save** for documenting decisions and **/load** for context.
+
+**Enhanced**: PR analysis, READ-ONLY Dashboard access, safety framework, and UltraThink analysis.

@@ -13,18 +13,18 @@
 - YAML frontmatter with metadata (agent, description, mode, tools, commands)
 - Clear section headers: Triggers, How I Work, Example, MCP Tools
 - Direct voice ("I do X")
-- Under 100 lines maximum
+- Between `100 < x < 130` lines
 - Concrete examples over abstract explanations
 
 ### Command Files
 - YAML frontmatter with metadata (name, description, agents)
 - Sections: Context, Behavior, Return Format, Workflow, Examples, Integration
-- Under 100 lines maximum
+- Between `100 < x < 130` lines
 - Clear integration points with agents
 
 ### MCP Documentation
 - Consistent structure: Purpose, Triggers, Choose When, Works Best With, Examples
-- Under 100 lines maximum
+- Between `100 < x < 130` lines 
 - 5-6 items per section
 - Examples in format: `"prompt" → Server (explanation)`
 
@@ -34,7 +34,7 @@
 - **No SuperClaude framework commands**: MCP docs describe actual MCP capabilities only
 - **Concise and direct**: No verbose explanations
 - **Show don't tell**: Examples over theory
-- **Under 100 lines**: All agent, command, and MCP docs must be under 100 lines
+- **`100 < x < 130` lines**: All agent, command, and MCP docs must be under 100 lines
 
 ## Patterns
 
