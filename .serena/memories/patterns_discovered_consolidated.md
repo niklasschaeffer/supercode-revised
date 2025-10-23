@@ -204,6 +204,79 @@ Establish clear agent boundaries through WILL/WILL NOT statements and complement
 ### Success Metrics Framework Pattern
 Develop quantifiable, industry-standard metrics for measuring agent and task success.
 
+## Memory Management Optimization Patterns (2025-10-23)
+
+### Memory Consolidation Pattern
+Systematic consolidation of related memories to prevent information overflow:
+```
+1. Memory Analysis
+   - Count current memories by type
+   - Identify redundant or outdated memories
+   - Plan consolidation strategy
+
+2. Consolidation Execution
+   - Merge related memories into consolidated files
+   - Archive older, less relevant memories
+   - Preserve critical context and decisions
+
+3. Constraint Enforcement
+   - Enforce session memory limits (2-3 maximum)
+   - Maintain pattern consolidation
+   - Automatic archival of excess memories
+```
+
+### Pattern Deduplication Pattern
+Check consolidated patterns before creating new pattern memories:
+- **Pre-Creation Check**: Search `patterns_discovered_consolidated` for existing patterns
+- **Update Strategy**: Add new patterns to existing consolidated memory
+- **Duplication Prevention**: Avoid creating separate pattern memories
+- **Consolidation Maintenance**: Single source of truth for all patterns
+
+### Command Condensation Pattern
+Reduce command complexity while preserving full functionality:
+```
+1. Functionality Analysis
+   - Identify core capabilities to preserve
+   - Map current implementation to requirements
+   - Plan optimization strategy
+
+2. Optimization Implementation
+   - Apply SOLID principles for maintainability
+   - Implement design patterns for structure
+   - Reduce code size while preserving functionality
+
+3. Constraint Compliance
+   - Ensure adherence to framework limits (150-line max)
+   - Validate all original capabilities maintained
+   - Test optimized implementation thoroughly
+```
+
+### Dual MCP Coordination Enhancement Pattern
+Enhanced coordination between explicit and implicit knowledge systems:
+- **Intelligent Deduplication**: Cross-system pattern and memory deduplication
+- **Complementary Knowledge**: Serena (explicit) + In-Memoria (implicit) coordination
+- **Automatic Enforcement**: Framework constraints applied without user intervention
+- **Optimization Integration**: Memory management integrated with command optimization
+
+### Framework Constraint Enforcement Pattern
+Automatic enforcement of framework rules without user intervention:
+```
+1. Constraint Detection
+   - Monitor memory counts and sizes
+   - Track command compliance with limits
+   - Identify pattern duplication attempts
+
+2. Automatic Enforcement
+   - Enforce session memory limits (2-3 maximum)
+   - Prevent duplicate pattern creation
+   - Ensure command size compliance (150-line limit)
+
+3. Optimization Integration
+   - Integrate enforcement with optimization workflows
+   - Maintain functionality while applying constraints
+   - Provide transparent constraint management
+```
+
 ## Pattern Application Guidelines
 
 ### Pattern Selection
@@ -211,18 +284,26 @@ Develop quantifiable, industry-standard metrics for measuring agent and task suc
 2. **Framework Impact**: Apply template patterns for framework changes
 3. **Quality Requirements**: Implement validation patterns for critical components
 4. **Learning Goals**: Use dual MCP patterns for knowledge preservation
+5. **Memory Management**: Apply memory optimization patterns for sustainable development
+6. **Command Development**: Use condensation patterns for efficient command implementation
 
 ### Pattern Combination
 - **Multi-Agent + Template**: Complex framework expansion tasks
 - **Validation + Metrics**: Quality-critical component development
 - **Scope + Success Metrics**: New agent or capability creation
 - **Dual MCP + All Patterns**: Comprehensive session management
+- **Memory Management + Command Optimization**: Framework efficiency improvements
+- **Constraint Enforcement + All Patterns**: Sustainable framework development
 
 ### Pattern Adaptation
 - **Scale Adjustment**: Adapt patterns to task size and complexity
 - **Domain Customization**: Modify patterns for specific domains
 - **Tool Integration**: Incorporate available MCP tools
 - **Framework Evolution**: Update patterns as framework evolves
+- **Memory Optimization**: Adapt patterns for efficient memory usage
+- **Constraint Integration**: Incorporate framework limits into pattern execution
 
 ## Pattern Status
-**DISCOVERED AND VALIDATED** - All patterns successfully implemented and validated across multiple sessions. Ready for application to future framework expansion and multi-agent coordination tasks.
+**DISCOVERED AND VALIDATED** - All patterns successfully implemented and validated across multiple sessions. Ready for application to future framework expansion, multi-agent coordination, memory management optimization, and sustainable development tasks.
+
+**Latest Update**: 2025-10-23 - Added Memory Management Optimization Patterns for sustainable long-term framework development.
