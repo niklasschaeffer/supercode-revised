@@ -136,7 +136,6 @@ export const NAVIGATION_ITEMS: NavigationItem[] = [
   { label: 'Agents', href: '#agents' },
   { label: 'Workflow', href: '#workflow' },
   { label: 'Installation', href: '#installation' },
-  { label: 'Documentation', href: '/docs', external: true },
   { label: 'GitHub', href: 'https://github.com/niklasschaeffer/supercode-revised', external: true }
 ]
 

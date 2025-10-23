@@ -10,7 +10,7 @@ export function Footer() {
     <footer className="bg-slate-900 text-slate-100">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="py-12">
-          <div className="grid gap-8 md:grid-cols-2 lg:grid-cols-4">
+          <div className="grid gap-8 md:grid-cols-2 lg:grid-cols-3">
             <AnimatedSection animation="fade-up">
               <div className="space-y-4">
                 <div className="flex items-center space-x-2">
@@ -60,55 +60,18 @@ export function Footer() {
                       Installation
                     </a>
                   </li>
-                  <li>
-                    <a href="/docs" className="hover:text-slate-100 transition-colors">
-                      Documentation
-                    </a>
-                  </li>
+
                 </ul>
               </div>
             </AnimatedSection>
 
             <AnimatedSection animation="fade-up" delay={200}>
               <div className="space-y-4">
-                <h3 className="font-semibold">Resources</h3>
-                <ul className="space-y-2 text-sm text-slate-400">
-                  <li>
-                    <a href="/docs" className="hover:text-slate-100 transition-colors">
-                      API Reference
-                    </a>
-                  </li>
-                  <li>
-                    <a href="/examples" className="hover:text-slate-100 transition-colors">
-                      Examples
-                    </a>
-                  </li>
-                  <li>
-                    <a href="/templates" className="hover:text-slate-100 transition-colors">
-                      Templates
-                    </a>
-                  </li>
-                  <li>
-                    <a href="/blog" className="hover:text-slate-100 transition-colors">
-                      Blog
-                    </a>
-                  </li>
-                </ul>
-              </div>
-            </AnimatedSection>
-
-            <AnimatedSection animation="fade-up" delay={300}>
-              <div className="space-y-4">
                 <h3 className="font-semibold">Community</h3>
                 <ul className="space-y-2 text-sm text-slate-400">
                   <li>
                     <a href="https://github.com/niklasschaeffer/supercode-revised/discussions" className="hover:text-slate-100 transition-colors">
                       Discussions
-                    </a>
-                  </li>
-                  <li>
-                    <a href="https://discord.gg/supercode" className="hover:text-slate-100 transition-colors">
-                      Discord
                     </a>
                   </li>
                   <li>

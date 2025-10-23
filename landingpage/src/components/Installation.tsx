@@ -1,4 +1,4 @@
-import { CodeBlock } from '@/components/docs/CodeBlock'
+import { CodeBlock } from '@/components/ui/code-block'
 import { Button } from '@/components/ui/button'
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from '@/components/ui/card'
 import { Badge } from '@/components/ui/badge'

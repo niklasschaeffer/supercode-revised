@@ -7,7 +7,6 @@ import { Agents } from "@/components/Agents"
 import { CommandWorkflow } from "@/components/CommandWorkflow"
 import { Installation } from "@/components/Installation"
 import { Footer } from "@/components/Footer"
-import { DocumentationRouter } from "@/components/docs/DocumentationRouter"
 
 // GitHub Pages redirect handler
 function GitHubPagesRedirect() {
@@ -43,9 +42,6 @@ function App() {
       <Routes>
         {/* Main landing page route */}
         <Route path="/" element={<LandingPage />} />
-
-        {/* Documentation routes - handled by DocumentationRouter */}
-        <Route path="/docs/*" element={<DocumentationRouter />} />
       </Routes>
     </BrowserRouter>
   )
