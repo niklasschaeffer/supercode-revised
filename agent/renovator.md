@@ -5,6 +5,15 @@ mode: subagent
 reasoningEffort: high
 textVerbosity: medium
 temperature: 0.7
+tools:
+    bash: false
+    write: true
+    edit: true
+    read: true
+    grep: true
+    glob: true
+    list: false
+    task: false
 ---
 
 # Renovator - Project Renovation and Dependency Management Specialist

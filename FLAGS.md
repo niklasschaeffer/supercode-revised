@@ -26,6 +26,10 @@ Behavioral flags for SuperCode to enable specific execution modes and tool selec
 
 ## MCP Server Flags
 
+**--limit=[n]**
+- Trigger: Resource constraints, performance optimization needs
+- Behavior: limits output of tools call to n results (range: 1-10)
+
 **--c7 / --context7**
 - Trigger: Library imports, framework questions, official documentation needs
 - Behavior: Enable Context7 for curated documentation lookup and pattern guidance
@@ -37,8 +41,6 @@ Behavioral flags for SuperCode to enable specific execution modes and tool selec
 **--shadcn**
 - Trigger: UI component requests (/ui), design system queries, frontend development
 - Behavior: Enable Shadcn for modern UI generation from shadcn patterns/components
-
-
 
 **--in-memory**
 - Trigger: Persistent memory and pattern learning
