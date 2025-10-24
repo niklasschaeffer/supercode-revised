@@ -7,8 +7,10 @@ description: Systematically cleanup and refine memories and in-memoria data to c
 
 Systematically cleanup and refine memories and in-memoria data to compact context for longer development workflows.
 
-# References
-- [@Flags](../FLAGS.md)
+## References
+- [@FLAGS.md](../FLAGS.md)
+- [@PRINCIPLES.md](../PRINCIPLES.md)
+- [@RULES.md](../RULES.md)
 
 ## General Context
 **Invoked Arguments [user_prompt]:** $ARGUMENTS

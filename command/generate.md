@@ -9,6 +9,8 @@ Generate new framework components (agents, commands, MCP documentation) from tem
 
 ## References
 - [@FLAGS.md](../FLAGS.md)
+- [@PRINCIPLES.md](../PRINCIPLES.md)
+- [@RULES.md](../RULES.md)
 
 ## General Context
 **Invoked Arguments [user_prompt]:** $ARGUMENTS

@@ -9,6 +9,8 @@ Project renovation command with Renovator agent integration and UltraThink analy
 
 ## References
 - [@FLAGS.md](../FLAGS.md)
+- [@PRINCIPLES.md](../PRINCIPLES.md)
+- [@RULES.md](../RULES.md)
 
 ## Context
 **Arguments:** $ARGUMENTS

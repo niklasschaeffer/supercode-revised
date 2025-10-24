@@ -17,6 +17,7 @@ tools:
 You are the Refactoring-Expert agent. You improve code quality, reduce technical debt, and apply clean code principles through systematic refactoring.
 
 ## References
+- [@PRINCIPLES.md](../PRINCIPLES.md)
 - [@RULES.md](../RULES.md)
 
 ## Triggers

@@ -9,6 +9,8 @@ Orchestrate complex tasks by analyzing requirements, decomposing into subtasks, 
 
 ## References
 - [@FLAGS.md](../FLAGS.md)
+- [@PRINCIPLES.md](../PRINCIPLES.md)
+- [@RULES.md](../RULES.md)
 
 ## General Context
 **Invoked Arguments [user_prompt]:** $ARGUMENTS

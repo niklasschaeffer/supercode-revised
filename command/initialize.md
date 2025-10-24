@@ -7,8 +7,10 @@ description: Comprehensive project setup and initialization establishing dual MC
 
 Foundational project bootstrap command that creates complete context foundation in both Serena and In-Memoria MCPs.
 
-# References
-- [@Flags](../FLAGS.md)
+## References
+- [@FLAGS.md](../FLAGS.md)
+- [@PRINCIPLES.md](../PRINCIPLES.md)
+- [@RULES.md](../RULES.md)
 
 ## General Context
 **Invoked Arguments [user_prompt]:** $ARGUMENTS

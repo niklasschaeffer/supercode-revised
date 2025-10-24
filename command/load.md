@@ -9,6 +9,8 @@ Load comprehensive project context by combining Serena's optimized persistent me
 
 ## References
 - [@FLAGS.md](../FLAGS.md)
+- [@PRINCIPLES.md](../PRINCIPLES.md)
+- [@RULES.md](../RULES.md)
 
 ## General Context
 **Invoked Arguments [user_prompt]:** $ARGUMENTS

@@ -25,7 +25,17 @@ Example for Serena MCP Server:
 `delete_memory`: deletes specified memories from the project context.
 ```
 
-## Accessibility (this has to be specific to the mpc server tools and functions)
+## File Storage
+- 3 Bullet Points describing how the MCP Server stores files, if applicable.
+
+```
+Example:
+- Stores files in a dedicated project directory structure.
+- Playwright MCP stores it files in a `.playwright/` subdirectory.
+- Uses versioning to manage different file iterations.
+```
+
+## Accessibility <!-- this has to be specific to the mpc server tools and functions -->
 - 5 Bullet Points describing how the MCP Server can access applications, data sources, or environments.
 
 ## Choose When

@@ -3,6 +3,11 @@
 This file serves as the primary entry point for the SuperCode framework.
 The SuperCode framework components will be automatically imported below.
 
+# Rules
+***Every Agent has to strictly obey these rules***
+
+[@RULES.md](./RULES.md)
+
 # ===================================================
 # SuperCode Framework Components
 # ===================================================
@@ -12,9 +17,6 @@ The SuperCode framework components will be automatically imported below.
 
 # Principles
 [@PRINCIPLES.md](./PRINCIPLES.md)
-
-# Rules
-[@RULES.md](./RULES.md)
 
 # Functional Flags
 [@FLAGS.md](FLAGS.md)

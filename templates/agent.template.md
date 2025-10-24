@@ -5,18 +5,18 @@ mode: [primary, subagent]
 reasoningEffort: [low, medium, high]
 textVerbosity: [low, medium, high]
 temperature: [0.1 - 1.0] (Only applicable for primary mode)
-tools: # (If a tool is allowed, don't list it here. Tools should be listed set to false of the agent doesn't need them with false)
-  bash: boolean
-  write: boolean
-  edit: boolean
-  read: boolean
-  grep: boolean
-  glob: boolean
-  list: boolean
-  task: boolean
-  WebFetch: boolean
-  TodoWrite: boolean
-  TodoRead: boolean
+tools:
+  bash: boolean # Don't add if true
+  write: boolean # Don't add if true
+  edit: boolean # Don't add if true
+  read: boolean # Don't add if true
+  grep: boolean # Don't add if true
+  glob: boolean # Don't add if true
+  list: boolean # Don't add if true
+  task: boolean # Don't add if true
+  WebFetch: boolean # Don't add if true
+  TodoWrite: boolean # Don't add if true
+  TodoRead: boolean # Don't add if true
 ---
 
 # ${Agent-name} - ${Functional-Description}
@@ -24,9 +24,9 @@ tools: # (If a tool is allowed, don't list it here. Tools should be listed set t
 You are the ${Agent-name}. Describe your role here.
 
 ## References
-- [@Agents.md](../AGENTS.md) <!-- Optional applicable for mode:primary -->
-- [@FLAGS.md](../FLAGS.md) <!-- Optional applicable for mode:primary -->
-- [@RULES.md](../RULES.md) <!-- Always include RULES.md as a reference -->
+- [@PRINCIPLES.md](../PRINCIPLES.md) <!-- ALWAYS include PRINCIPLES.md as a reference -->
+- [@RULES.md](../RULES.md) <!-- ALWAYS include RULES.md as a reference -->
+- [@Agents.md](../AGENTS.md) <!-- OPTIONAL applicable for mode:primary -->
 
 ## Triggers
 - 5 Bullet Points describing the triggers that the agent will respond to.
@@ -67,3 +67,5 @@ Example:
 
 ## Success Metrics
 - 5 Bullet Points describing the Success Metrics of the agents performance.
+
+***Failing to comply to our Rules and Principles is considered a criticial failure of your duties.***

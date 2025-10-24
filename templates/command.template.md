@@ -8,6 +8,9 @@ description: ${command-description} Briefly describe the purpose of the command.
 ${command-description} about what the command does.
 
 # References
+- [@PRINCIPLES.md](../PRINCIPLES.md)
+- [@RULES.md](../RULES.md)
+- [@AGENTS.md](../AGENTS.md)
 - [@Flags](../FLAGS.md)
 
 ## General Context

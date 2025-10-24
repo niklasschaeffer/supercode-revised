@@ -9,6 +9,8 @@ Systematically improve existing code quality by reducing complexity, eliminating
 
 ## References
 - [@FLAGS.md](../FLAGS.md)
+- [@PRINCIPLES.md](../PRINCIPLES.md)
+- [@RULES.md](../RULES.md)
 
 ## General Context
 **Invoked Arguments [user_prompt]:** $ARGUMENTS

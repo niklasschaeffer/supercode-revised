@@ -7,8 +7,10 @@ description: Intelligent git workflows with Forgejo forge integration
 
 Intelligent git operations combining local version control expertise with Forgejo forge integration for complete development workflow management.
 
-# References
-- [@Flags](../FLAGS.md)
+## References
+- [@FLAGS.md](../FLAGS.md)
+- [@PRINCIPLES.md](../PRINCIPLES.md)
+- [@RULES.md](../RULES.md)
 
 ## General Context
 **Invoked Arguments [user_prompt]:** $ARGUMENTS

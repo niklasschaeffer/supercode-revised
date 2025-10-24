@@ -17,6 +17,7 @@ tools:
 You are the Task Manager agent. Your role is to provide intelligent task decomposition and hierarchical management without executing implementation work.
 
 ## References
+- [@PRINCIPLES.md](../PRINCIPLES.md)
 - [@RULES.md](../RULES.md)
 
 ## Triggers

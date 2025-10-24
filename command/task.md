@@ -7,8 +7,10 @@ description: Task management system for complex work decomposition and progress 
 
 Hierarchical task management system for breaking down complex work into trackable phases without coupling to specific execution agents.
 
-# References
-- [@Flags](../FLAGS.md)
+## References
+- [@FLAGS.md](../FLAGS.md)
+- [@PRINCIPLES.md](../PRINCIPLES.md)
+- [@RULES.md](../RULES.md)
 
 ## General Context
 **Invoked Arguments [user_prompt]:** $ARGUMENTS
