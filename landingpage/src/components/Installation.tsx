@@ -96,7 +96,7 @@ npm run supercode:init`
           <div className="mt-16">
             <Card className="bg-gradient-to-r from-blue-50 to-purple-50 dark:from-blue-900/20 dark:to-purple-900/20 border-blue-200 dark:border-blue-800">
               <CardHeader className="text-center">
-                <CardTitle className="text-2xl">11 MCP Server Integrations</CardTitle>
+                <CardTitle className="text-2xl">{ MCP_SERVERS.length } MCP Server Integrations</CardTitle>
                 <CardDescription className="text-base max-w-2xl mx-auto">
                   SuperCode seamlessly integrates with modern development tools through Model Context Protocol servers
                 </CardDescription>

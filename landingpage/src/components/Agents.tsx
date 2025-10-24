@@ -26,7 +26,7 @@ export function Agents() {
         <AnimatedSection animation="fade-up">
           <div className="text-center mb-16">
             <h2 className="text-3xl sm:text-4xl font-bold mb-4">
-              17 Specialized AI Agents
+                { AGENTS.length } Specialized AI Agents
             </h2>
             <p className="text-xl text-muted-foreground max-w-3xl mx-auto">
               Each agent is expertly trained for specific development tasks, working together seamlessly
@@ -46,13 +46,13 @@ export function Agents() {
                 <Card className="h-full transition-all duration-300 hover:shadow-lg hover:scale-105 group cursor-pointer relative">
                   {/* Category Badge in top-right corner */}
                   <div className="absolute top-3 right-3 z-10">
-                    <Badge 
+                    <Badge
                       className={`text-xs px-2 py-1 ${categoryColors[agent.category as keyof typeof categoryColors]}`}
                     >
                       {agent.category}
                     </Badge>
                   </div>
-                  
+
                   <CardHeader className="text-center pb-4">
                     <div className="text-4xl mb-3 group-hover:scale-110 transition-transform duration-300">
                       {agent.icon}

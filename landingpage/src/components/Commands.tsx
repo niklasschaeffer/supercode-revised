@@ -23,7 +23,7 @@ export function Commands() {
         <AnimatedSection animation="fade-up">
           <div className="text-center mb-16">
             <h2 className="text-3xl sm:text-4xl font-bold mb-4">
-              12 Powerful Commands
+                { COMMANDS.length } Powerful Commands
             </h2>
             <p className="text-xl text-muted-foreground max-w-3xl mx-auto">
               Complete command set for project initialization, context management, and development workflows
@@ -43,13 +43,13 @@ export function Commands() {
                 <Card className="h-full transition-all duration-300 hover:shadow-lg hover:scale-105 group cursor-pointer relative">
                   {/* Category Badge in top-right corner */}
                   <div className="absolute top-3 right-3 z-10">
-                    <Badge 
+                    <Badge
                       className={`text-xs px-2 py-1 ${categoryColors[command.category as keyof typeof categoryColors]}`}
                     >
                       {command.category}
                     </Badge>
                   </div>
-                  
+
                   <CardHeader>
                     <div className="flex items-center justify-between mb-3 pr-16">
                       <CardTitle className="text-lg group-hover:text-blue-600 transition-colors">
@@ -75,7 +75,7 @@ export function Commands() {
               <CardHeader>
                 <CardTitle className="text-2xl">Command Synergy</CardTitle>
                 <CardDescription className="text-base">
-                  Commands work together seamlessly, creating powerful workflows for everything from 
+                  Commands work together seamlessly, creating powerful workflows for everything from
                   project initialization to complex multi-agent orchestration and maintenance.
                 </CardDescription>
               </CardHeader>

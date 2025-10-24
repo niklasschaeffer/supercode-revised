@@ -154,75 +154,6 @@ export const NAVIGATION_ITEMS: NavigationItem[] = [
   { label: 'GitHub', href: 'https://github.com/niklasschaeffer/supercode-revised', external: true }
 ]
 
-export const FEATURES = [
-  {
-    title: '18 Specialized Agents',
-    description: 'Comprehensive coverage of development tasks from frontend to DevOps',
-    icon: '🤖',
-    highlight: true
-  },
-  {
-    title: '13 Commands',
-    description: 'Powerful command set for project initialization, context loading',
-    icon: '💻',
-    highlight: true
-  },
-  {
-    title: '11 MCP Server Integrations',
-    description: 'Seamless integration with modern development tools and services',
-    icon: '🔌',
-    highlight: true
-  },
-  {
-    title: 'Project Initialization',
-    description: 'Complete project bootstrap establishing dual MCP foundation in one command',
-    icon: '🚀',
-    highlight: true
-  },
-  {
-    title: '25+ Behavioral Flags',
-    description: 'Fine-grained control over agent behavior and decision making',
-    icon: '🚩',
-    highlight: true
-  },
-  {
-    title: 'Dual Memory System',
-    description: 'Serena + In-Memoria for persistent knowledge and codebase intelligence',
-    icon: '🧠',
-    highlight: true
-  },
-  {
-    title: 'Multi-Agent Orchestration',
-    description: 'Intelligent coordination between specialized agents for complex tasks',
-    icon: '🎼',
-    highlight: true
-  },
-  {
-    title: 'Professional QA System',
-    description: 'Comprehensive validation, testing, and quality assurance workflows',
-    icon: '✅',
-    highlight: false
-  },
-  {
-    title: 'Template-Driven Development',
-    description: 'Rapid development with customizable templates and generators',
-    icon: '📝',
-    highlight: false
-  },
-  {
-    title: 'Real-time Collaboration',
-    description: 'Multi-agent collaboration with intelligent task distribution',
-    icon: '🤝',
-    highlight: false
-  },
-  {
-    title: 'Intelligent Code Analysis',
-    description: 'Deep codebase understanding and semantic search capabilities',
-    icon: '🔍',
-    highlight: false
-  }
-]
-
 export const COMMANDS: Command[] = [
   {
     id: 'initialize',
@@ -308,4 +239,73 @@ export const COMMANDS: Command[] = [
     example: '/troubleshoot --analyze "build failure"',
     category: 'Diagnostics'
   }
+]
+
+export const FEATURES = [
+    {
+        title: `${AGENTS.length} Specialized Agents`,
+        description: 'Comprehensive coverage of development tasks from frontend to DevOps',
+        icon: '🤖',
+        highlight: true
+    },
+    {
+        title: `${COMMANDS.length} Commands`,
+        description: 'Powerful command set for project initialization, context loading',
+        icon: '💻',
+        highlight: true
+    },
+    {
+        title: `${MCP_SERVERS.length} MCP Server Integrations`,
+        description: 'Seamless integration with modern development tools and services',
+        icon: '🔌',
+        highlight: true
+    },
+    {
+        title: 'Project Initialization',
+        description: 'Complete project bootstrap establishing dual MCP foundation in one command',
+        icon: '🚀',
+        highlight: true
+    },
+    {
+        title: '25+ Behavioral Flags',
+        description: 'Fine-grained control over agent behavior and decision making',
+        icon: '🚩',
+        highlight: true
+    },
+    {
+        title: 'Dual Memory System',
+        description: 'Serena + In-Memoria for persistent knowledge and codebase intelligence',
+        icon: '🧠',
+        highlight: true
+    },
+    {
+        title: 'Multi-Agent Orchestration',
+        description: 'Intelligent coordination between specialized agents for complex tasks',
+        icon: '🎼',
+        highlight: true
+    },
+    {
+        title: 'Professional QA System',
+        description: 'Comprehensive validation, testing, and quality assurance workflows',
+        icon: '✅',
+        highlight: false
+    },
+    {
+        title: 'Template-Driven Development',
+        description: 'Rapid development with customizable templates and generators',
+        icon: '📝',
+        highlight: false
+    },
+    {
+        title: 'Real-time Collaboration',
+        description: 'Multi-agent collaboration with intelligent task distribution',
+        icon: '🤝',
+        highlight: false
+    },
+    {
+        title: 'Intelligent Code Analysis',
+        description: 'Deep codebase understanding and semantic search capabilities',
+        icon: '🔍',
+        highlight: false
+    }
 ]
