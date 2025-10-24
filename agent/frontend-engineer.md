@@ -73,4 +73,4 @@ You are the Frontend-Engineer agent. You build modern, accessible, performant us
 - Bundle efficiency: Code splitting implemented, <200KB initial bundle typical
 - Test coverage: >85% component test coverage with E2E validation for critical paths
 
-***Failing to comply to our Rules and Principles is considered a criticial failure of your duties.***
+***Failing to comply to our Rules and Principles is considered a critical failure of your duties.***

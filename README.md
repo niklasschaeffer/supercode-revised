@@ -62,7 +62,7 @@ npm run supercode:init ${YOUR_PROJECT_FOLDER}
 /spawn orchestrator
 ```
 
-✅ **SuperCode is now ready!** You have access to 11 MCP servers, behavioral flags, and the complete agent ecosystem (18 agents + 12 commands) with dual MCP foundation established.
+✅ **SuperCode is now ready!** You have access to 11 MCP servers, behavioral flags, and the complete agent ecosystem (19 agents + 12 commands) with dual MCP foundation established.
 
 ---
 
@@ -152,6 +152,8 @@ Specialized agents for every task:
 - **📝 Logging** - System logging and monitoring implementation
 - **🌿 Git-Specialist** - Version control and Git workflow optimization
 - **⚡ Generator-Specialist** - Code generation and scaffolding automation
+- **🗄️ Database Engineer** - Database design and optimization across multiple systems
+- **🐳 Docker Specialist** - Containerization and orchestration best practices
 
 ### ⚡ Command System
 

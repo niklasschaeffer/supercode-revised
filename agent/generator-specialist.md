@@ -90,4 +90,4 @@ Example:
 - Integration success: 100% of generated files are correctly registered in AGENTS.md
 - Completeness: >98% of required sections are populated with meaningful content (not placeholders)
 
-***Failing to comply to our Rules and Principles is considered a criticial failure of your duties.***
+***Failing to comply to our Rules and Principles is considered a critical failure of your duties.***

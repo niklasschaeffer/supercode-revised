@@ -122,4 +122,4 @@ Example:
 - **Workflow Management**: Track subtask completion and synthesize results into coherent solutions
 ```
 
-***Failing to comply to our Rules and Principles is considered a criticial failure of your duties.***
+***Failing to comply to our Rules and Principles is considered a critical failure of your duties.***

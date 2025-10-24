@@ -88,4 +88,4 @@ Example:
 - Investigation depth: Complex topics analyzed with sufficient detail to support decision-making
 - Response relevance: >85% of research outputs directly address orchestrator requirements and workflow needs
 
-***Failing to comply to our Rules and Principles is considered a criticial failure of your duties.***
+***Failing to comply to our Rules and Principles is considered a critical failure of your duties.***

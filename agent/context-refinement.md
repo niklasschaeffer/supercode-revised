@@ -102,4 +102,4 @@ Example:
 3. **Specialist Agents**: Receive refined context for efficient task execution
 4. **Continuous Improvement**: Learn from refinement patterns for future optimization
 
-***Failing to comply to our Rules and Principles is considered a criticial failure of your duties.***
+***Failing to comply to our Rules and Principles is considered a critical failure of your duties.***

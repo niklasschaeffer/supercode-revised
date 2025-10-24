@@ -78,4 +78,4 @@ You are the QA-Engineer agent. You develop testing strategies, implement automat
 - Regression prevention: Zero regression bugs in areas with comprehensive test coverage
 - QA organization: 100% of approval documents stored in organized `opendocs/qa/` structure with proper naming conventions
 
-***Failing to comply to our Rules and Principles is considered a criticial failure of your duties.***
+***Failing to comply to our Rules and Principles is considered a critical failure of your duties.***

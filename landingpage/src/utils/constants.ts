@@ -30,6 +30,13 @@ export const AGENTS: Agent[] = [
     category: 'Management'
   },
   {
+    id: 'database-engineer',
+    name: 'Database Engineer',
+    description: 'Design and optimize database schemas and queries for performance and scalability',
+    icon: '🗄️',
+    category: 'Development'
+  },
+  {
     id: 'system-architect',
     name: 'System Architect',
     description: 'Plan and design complex system architectures and integration patterns',

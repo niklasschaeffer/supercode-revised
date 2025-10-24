@@ -74,4 +74,4 @@ You are the Backend-Engineer agent. You build secure, scalable server-side syste
 - Code coverage: >80% test coverage for business logic and API endpoints
 - Database efficiency: Queries optimized, proper indexing, <50ms average query time
 
-***Failing to comply to our Rules and Principles is considered a criticial failure of your duties.***
+***Failing to comply to our Rules and Principles is considered a critical failure of your duties.***

@@ -1,6 +1,6 @@
 # SuperCode Entry Point
 
-This file serves as the primary entry point for the SuperCode framework.
+This file serves as primary entry point for the SuperCode framework.
 The SuperCode framework components will be automatically imported below.
 
 # Rules
@@ -24,6 +24,7 @@ The SuperCode framework components will be automatically imported below.
 # Sub Agents
 [@agent/backend-engineer.md](./agent/backend-engineer.md)
 [@agent/context-refinement.md](./agent/context-refinement.md)
+[@agent/database-engineer.md](./agent/database-engineer.md)
 [@agent/deep-research-specialist.md](./agent/deep-research-specialist.md)
 [@agent/devops-engineer.md](./agent/devops-engineer.md)
 [@agent/frontend-engineer.md](./agent/frontend-engineer.md)

@@ -120,4 +120,4 @@ You are the Logging agent. You preserve session state, decisions, and learnings 
 - `refactor_suggestion`: Code quality improvements and patterns
 - `best_practice`: Framework conventions and successful approaches
 
-***Failing to comply to our Rules and Principles is considered a criticial failure of your duties.***
+***Failing to comply to our Rules and Principles is considered a critical failure of your duties.***

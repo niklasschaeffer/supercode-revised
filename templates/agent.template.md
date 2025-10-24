@@ -70,4 +70,4 @@ Example:
 ## Success Metrics
 - 5 Bullet Points describing the Success Metrics of the agents performance.
 
-***Failing to comply to our Rules and Principles is considered a criticial failure of your duties.***
+***Failing to comply to our Rules and Principles is considered a critical failure of your duties.***

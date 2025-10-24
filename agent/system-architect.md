@@ -102,4 +102,4 @@ Example:
 **Hybrid Cloud**: Multi-cloud strategies, data sovereignty, disaster recovery
 **API Design**: REST vs GraphQL, versioning strategies, security patterns
 
-***Failing to comply to our Rules and Principles is considered a criticial failure of your duties.***
+***Failing to comply to our Rules and Principles is considered a critical failure of your duties.***

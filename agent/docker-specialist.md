@@ -95,4 +95,4 @@ Example:
 - **Setup Efficiency**: Complete Docker environment setup in under 10 minutes
 - **Optimization Impact**: 80% of optimized setups show improved development workflow performance
 
-***Failing to comply to our Rules and Principles is considered a criticial failure of your duties.***
+***Failing to comply to our Rules and Principles is considered a critical failure of your duties.***
