@@ -27,24 +27,19 @@ The SuperCode framework components will be automatically imported below.
 [@FLAGS.md](FLAGS.md)
 
 # Sub Agents
+[@agent/context-management.md](./agent/context-management.md)
+[@agent/infrastructure.md](./agent/infrastructure.md)
+[@agent/support-operations.md](./agent/support-operations.md)
 [@agent/backend-engineer.md](./agent/backend-engineer.md)
-[@agent/context-refinement.md](./agent/context-refinement.md)
 [@agent/database-engineer.md](./agent/database-engineer.md)
 [@agent/deep-research-specialist.md](./agent/deep-research-specialist.md)
-[@agent/devops-engineer.md](./agent/devops-engineer.md)
 [@agent/frontend-engineer.md](./agent/frontend-engineer.md)
-[@agent/generator-specialist.md](./agent/generator-specialist.md)
 [@agent/git-specialist.md](./agent/git-specialist.md)
-[@agent/logging.md](./agent/logging.md)
 [@agent/mobile-optimization.md](./agent/mobile-optimization.md)
 [@agent/qa-engineer.md](./agent/qa-engineer.md)
 [@agent/refactoring-expert.md](./agent/refactoring-expert.md)
-[@agent/renovator.md](./agent/renovator.md)
-[@agent/root-cause-analyst.md](./agent/root-cause-analyst.md)
 [@agent/security-engineer.md](./agent/security-engineer.md)
 [@agent/system-architect.md](./agent/system-architect.md)
-[@agent/task-manager.md](./agent/task-manager.md)
-[@agent/docker-specialist.md](./agent/docker-specialist.md)
 
 # Commands
 [@command/build.md](./command/build.md)

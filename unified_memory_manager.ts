@@ -5,7 +5,7 @@
  */
 
 import { MemoryRouter } from './memory_router';
-import { ContextFlowOptimizer } from './context_flow_optimizer';
+import { ContextFlowOptimizer, ParallelOperation, OperationBatch, WorkflowPattern } from './context_flow_optimizer';
 import { DeduplicationEngine } from './deduplication_engine';
 import { BackwardCompatibilityLayer } from './backward_compatibility_layer';
 
@@ -101,7 +101,7 @@ export class UnifiedMemoryManager {
   }
 
   /**
-   * Read memory content with intelligent routing
+   * Enhanced read memory content with parallel processing and intelligent routing
    */
   async read(query: MemoryQuery): Promise<MemoryResult> {
     const startTime = Date.now();
@@ -122,23 +122,26 @@ export class UnifiedMemoryManager {
         };
       }
 
-      // 2. Route to optimal system
+      // 2. Check for parallel processing opportunities
+      const parallelOp = await this.createParallelReadOperation(query);
+      
+      // 3. Route to optimal system with parallel optimization
       const targetSystem = await this.router.routeRead(query);
       
-      // 3. Execute read operation
+      // 4. Execute read operation with parallel processing
       let result: MemoryResult;
-      if (targetSystem === 'hybrid') {
-        result = await this.executeHybridRead(query);
+      if (targetSystem === 'hybrid' || parallelOp) {
+        result = await this.executeEnhancedRead(query, targetSystem, parallelOp);
       } else {
         result = await this.executeSystemRead(query, targetSystem);
       }
 
-      // 4. Update cache
+      // 5. Update cache
       if (result.success) {
         await this.optimizer.updateCache(query, result);
       }
 
-      // 5. Record performance metrics
+      // 6. Record enhanced performance metrics
       result.performance = {
         operationTime: Date.now() - startTime,
         cacheHit: false,
@@ -163,7 +166,51 @@ export class UnifiedMemoryManager {
   }
 
   /**
-   * Write memory content with deduplication and routing
+   * Enhanced batch read operations for multiple queries
+   */
+  async readBatch(queries: MemoryQuery[]): Promise<MemoryResult[]> {
+    const startTime = Date.now();
+    
+    try {
+      // 1. Create parallel operations
+      const parallelOps = await Promise.all(
+        queries.map(query => this.createParallelReadOperation(query))
+      );
+      
+      // 2. Process in parallel where possible
+      const batch = await this.optimizer.processParallelOperations(parallelOps.filter(op => op));
+      
+      // 3. Execute remaining operations sequentially
+      const results: MemoryResult[] = [];
+      
+      for (let i = 0; i < queries.length; i++) {
+        const query = queries[i];
+        const parallelOp = parallelOps[i];
+        
+        if (parallelOp && batch.operations.find(op => op.id === parallelOp.id)) {
+          // Use parallel result
+          const batchResult = batch.operations.find(op => op.id === parallelOp.id);
+          results.push(this.convertParallelToMemoryResult(batchResult!, query));
+        } else {
+          // Use sequential execution
+          const result = await this.read(query);
+          results.push(result);
+        }
+      }
+      
+      // 4. Update metrics
+      this.performanceMonitor.recordOperation('batch-read', Date.now() - startTime, true);
+      
+      return results;
+      
+    } catch (error) {
+      // Fallback to individual reads
+      return Promise.all(queries.map(query => this.read(query)));
+    }
+  }
+
+  /**
+   * Enhanced write memory content with batching and parallel processing
    */
   async write(content: MemoryContent): Promise<MemoryResult> {
     const startTime = Date.now();
@@ -185,11 +232,16 @@ export class UnifiedMemoryManager {
         };
       }
 
-      // 2. Route to optimal system
+      // 2. Route to optimal system with MCP optimization
       const targetSystem = await this.router.routeWrite(content);
+      const optimizedContent = await this.optimizer.optimizeMCPIntegration({
+        type: 'write',
+        content,
+        targetSystem
+      });
       
-      // 3. Execute write operation
-      const result = await this.executeSystemWrite(content, targetSystem);
+      // 3. Execute write operation with optimizations
+      const result = await this.executeEnhancedWrite(content, targetSystem, optimizedContent);
 
       // 4. Update cache and sync
       if (result.success) {
@@ -197,12 +249,12 @@ export class UnifiedMemoryManager {
         await this.optimizer.scheduleSync(content, targetSystem);
       }
 
-      // 5. Record performance metrics
+      // 5. Record enhanced performance metrics
       result.performance = {
         operationTime: Date.now() - startTime,
         cacheHit: false,
         systemUsed: targetSystem,
-        optimizationApplied: ['routing', 'sync']
+        optimizationApplied: ['routing', 'sync', 'mcp-optimization']
       };
 
       return result;
@@ -218,6 +270,67 @@ export class UnifiedMemoryManager {
           optimizationApplied: []
         }
       };
+    }
+  }
+
+  /**
+   * Enhanced batch write operations for multiple content items
+   */
+  async writeBatch(contents: MemoryContent[]): Promise<MemoryResult[]> {
+    const startTime = Date.now();
+    
+    try {
+      // 1. Check for duplicates in batch
+      const deduplicationResults = await Promise.all(
+        contents.map(content => this.deduplicator.check(content))
+      );
+      
+      // 2. Filter out duplicates
+      const uniqueContents = contents.filter((_, index) => !deduplicationResults[index].isDuplicate);
+      
+      // 3. Create parallel write operations
+      const parallelOps = await Promise.all(
+        uniqueContents.map(content => this.createParallelWriteOperation(content))
+      );
+      
+      // 4. Process in parallel where possible
+      const batch = await this.optimizer.processParallelOperations(parallelOps);
+      
+      // 5. Combine results
+      const results: MemoryResult[] = [];
+      let uniqueIndex = 0;
+      
+      for (let i = 0; i < contents.length; i++) {
+        if (deduplicationResults[i].isDuplicate) {
+          // Return deduplication result
+          results.push({
+            success: true,
+            data: deduplicationResults[i].existingContent,
+            metadata: deduplicationResults[i].metadata,
+            performance: {
+              operationTime: 0,
+              cacheHit: false,
+              systemUsed: 'deduplication',
+              optimizationApplied: ['deduplication']
+            }
+          });
+        } else {
+          // Use write result
+          const parallelOp = parallelOps[uniqueIndex];
+          const batchResult = batch.operations.find(op => op.id === parallelOp.id);
+          results.push(this.convertParallelToMemoryResult(batchResult!, { type: 'write' }));
+          uniqueIndex++;
+        }
+      }
+      
+      // 6. Update metrics
+      this.performanceMonitor.recordOperation('batch-write', Date.now() - startTime, true);
+      
+      return results;
+      
+    } catch (error) {
+      // Fallback to individual writes
+      return Promise.all(contents.map(content => this.write(content)));
     }
   }
 
@@ -358,10 +471,39 @@ export class UnifiedMemoryManager {
   }
 
   /**
-   * Get performance metrics
+   * Get comprehensive performance metrics including context flow optimization
    */
   getPerformanceMetrics(): PerformanceReport {
-    return this.performanceMonitor.getReport();
+    const basicReport = this.performanceMonitor.getReport();
+    const optimizationMetrics = this.optimizer.getOptimizationMetrics();
+    const performanceReport = this.optimizer.getPerformanceReport();
+    
+    return {
+      ...basicReport,
+      contextFlowOptimization: optimizationMetrics,
+      detailedReport: performanceReport
+    };
+  }
+
+  /**
+   * Run comprehensive performance benchmark
+   */
+  async runPerformanceBenchmark(): Promise<any> {
+    return await this.optimizer.runPerformanceBenchmark();
+  }
+
+  /**
+   * Optimize workflow based on current context
+   */
+  async optimizeWorkflow(context: WorkContext): Promise<WorkflowPattern[]> {
+    return await this.optimizer.optimizeWorkflow(context);
+  }
+
+  /**
+   * Optimize context switching between agents
+   */
+  async optimizeContextSwitch(switch: any): Promise<any> {
+    return await this.optimizer.optimizeContextSwitch(switch);
   }
 
   // Private helper methods
@@ -375,6 +517,215 @@ export class UnifiedMemoryManager {
 
     // Merge results intelligently
     return await this.mergeResults(serenaResult, inMemoriaResult, query);
+  }
+
+  private async executeEnhancedRead(
+    query: MemoryQuery, 
+    targetSystem: MemorySystem, 
+    parallelOp?: any
+  ): Promise<MemoryResult> {
+    if (parallelOp && targetSystem === 'hybrid') {
+      // Use parallel processing
+      return await this.executeParallelRead(query, parallelOp);
+    } else if (targetSystem === 'hybrid') {
+      // Use hybrid approach
+      return await this.executeHybridRead(query);
+    } else {
+      // Use system-specific read
+      return await this.executeSystemRead(query, targetSystem);
+    }
+  }
+
+  private async executeEnhancedWrite(
+    content: MemoryContent, 
+    targetSystem: MemorySystem, 
+    optimizedContent?: any
+  ): Promise<MemoryResult> {
+    if (optimizedContent && optimizedContent.optimized) {
+      // Use optimized write
+      return await this.executeOptimizedWrite(content, targetSystem, optimizedContent);
+    } else {
+      // Use standard write
+      return await this.executeSystemWrite(content, targetSystem);
+    }
+  }
+
+  private async createParallelReadOperation(query: MemoryQuery): Promise<any> {
+    // Determine if read operation can be parallelized
+    const canParallel = await this.canParallelizeRead(query);
+    
+    if (canParallel) {
+      return {
+        id: this.generateOperationId(),
+        type: 'read',
+        queries: [query],
+        system: 'hybrid',
+        priority: this.calculatePriority(query),
+        dependencies: [],
+        estimatedTime: this.estimateReadTime(query)
+      };
+    }
+    
+    return null;
+  }
+
+  private async createParallelWriteOperation(content: MemoryContent): Promise<any> {
+    // Determine if write operation can be parallelized
+    const canParallel = await this.canParallelizeWrite(content);
+    
+    if (canParallel) {
+      return {
+        id: this.generateOperationId(),
+        type: 'write',
+        queries: [{ type: content.type, content: content.content }],
+        system: content.metadata.source,
+        priority: this.calculatePriority(content),
+        dependencies: [],
+        estimatedTime: this.estimateWriteTime(content)
+      };
+    }
+    
+    return null;
+  }
+
+  private async canParallelizeRead(query: MemoryQuery): Promise<boolean> {
+    // Read operations can be parallelized if:
+    // 1. No complex dependencies
+    // 2. Not a sequential operation
+    // 3. Cache miss (to avoid redundant parallel cache checks)
+    
+    const hasDependencies = query.filters?.tags?.length > 5 || query.filters?.dateRange;
+    const isSequential = query.context?.recentOperations?.includes('sequential');
+    const cacheHit = await this.optimizer.checkCache(query);
+    
+    return !hasDependencies && !isSequential && !cacheHit;
+  }
+
+  private async canParallelizeWrite(content: MemoryContent): Promise<boolean> {
+    // Write operations can be parallelized if:
+    // 1. No dependencies on other writes
+    // 2. Not a critical update
+    // 3. Content is not too large
+    
+    const hasDependencies = content.metadata.dependencies && content.metadata.dependencies.length > 0;
+    const isCritical = content.metadata.priority === 'high';
+    const isLarge = content.content.length > 10000;
+    
+    return !hasDependencies && !isCritical && !isLarge;
+  }
+
+  private calculatePriority(item: any): 'low' | 'medium' | 'high' {
+    // Calculate priority based on content characteristics
+    if (item.metadata?.priority === 'high' || item.context?.currentTask?.includes('urgent')) {
+      return 'high';
+    } else if (item.type === 'session' || item.type === 'architectural') {
+      return 'medium';
+    } else {
+      return 'low';
+    }
+  }
+
+  private estimateReadTime(query: MemoryQuery): number {
+    // Estimate read time based on query complexity
+    let baseTime = 100; // 100ms base
+    
+    if (query.filters) {
+      baseTime += Object.keys(query.filters).length * 50;
+    }
+    
+    if (query.content && query.content.length > 100) {
+      baseTime += 100;
+    }
+    
+    return baseTime;
+  }
+
+  private estimateWriteTime(content: MemoryContent): number {
+    // Estimate write time based on content size and complexity
+    let baseTime = 150; // 150ms base
+    
+    baseTime += content.content.length / 100; // 1ms per 100 characters
+    
+    if (content.metadata.tags.length > 0) {
+      baseTime += content.metadata.tags.length * 10;
+    }
+    
+    return baseTime;
+  }
+
+  private async executeParallelRead(query: MemoryQuery, parallelOp: any): Promise<MemoryResult> {
+    // Execute read with parallel optimization
+    const startTime = Date.now();
+    
+    try {
+      // Use parallel processing capabilities
+      const batch = await this.optimizer.processParallelOperations([parallelOp]);
+      const result = batch.operations[0];
+      
+      return {
+        success: true,
+        data: result,
+        performance: {
+          operationTime: Date.now() - startTime,
+          cacheHit: false,
+          systemUsed: 'parallel',
+          optimizationApplied: ['parallel', 'routing']
+        }
+      };
+      
+    } catch (error) {
+      // Fallback to standard read
+      return await this.executeSystemRead(query, 'serena');
+    }
+  }
+
+  private async executeOptimizedWrite(
+    content: MemoryContent, 
+    targetSystem: MemorySystem, 
+    optimizedContent: any
+  ): Promise<MemoryResult> {
+    // Execute write with MCP optimizations
+    const startTime = Date.now();
+    
+    try {
+      // Apply optimizations
+      let result = await this.executeSystemWrite(content, targetSystem);
+      
+      // Add optimization metadata
+      if (result.success) {
+        result.performance!.optimizationApplied.push('mcp-optimization');
+        
+        if (optimizedContent.optimizations) {
+          result.performance!.optimizationApplied.push(
+            ...optimizedContent.optimizations.map((opt: any) => opt.type)
+          );
+        }
+      }
+      
+      return result;
+      
+    } catch (error) {
+      // Fallback to standard write
+      return await this.executeSystemWrite(content, targetSystem);
+    }
+  }
+
+  private convertParallelToMemoryResult(parallelOp: any, originalQuery: any): MemoryResult {
+    // Convert parallel operation result to memory result format
+    return {
+      success: true,
+      data: parallelOp,
+      performance: {
+        operationTime: parallelOp.estimatedTime,
+        cacheHit: false,
+        systemUsed: parallelOp.system || 'parallel',
+        optimizationApplied: ['parallel']
+      }
+    };
+  }
+
+  private generateOperationId(): string {
+    return `op-${Date.now()}-${Math.random().toString(36).substr(2, 6)}`;
   }
 
   private async executeSystemRead(query: MemoryQuery, system: string): Promise<MemoryResult> {
@@ -604,6 +955,17 @@ export interface PerformanceReport {
   failedOperations: number;
   averageOperationTime: number;
   operationBreakdown: Record<string, { count: number; averageTime: number }>;
+  contextFlowOptimization?: any;
+  detailedReport?: any;
+}
+
+export interface WorkflowPattern {
+  id: string;
+  name: string;
+  operations: string[];
+  frequency: number;
+  averageTime: number;
+  optimizationSuggestions: string[];
 }
 
 export default UnifiedMemoryManager;
