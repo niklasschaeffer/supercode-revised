@@ -37,3 +37,10 @@ Example:
 /${command-name} $ARGUMENTS
 ```
 
+## Boundaries
+
+**Will:**
+- 3-5 specific things the command will do.
+
+**Will Not:**
+- 3-5 specific things the command will not do.
