@@ -71,7 +71,7 @@ Comprehensive project renovation through Renovator agent with UltraThink analysi
 
 1. **UltraThink Analysis**: Sequential thinking for complex renovation scenarios and risk assessment
 2. **Context Gathering**: Discover renovation history, identify dependency files, analyze current state
-3. **PR Analysis**: `forgejo_list_repo_pull_requests()` → Analyze open PRs for dependency updates
+3. **PR Analysis**: `forgejo_list_repo_pull_requests()` → Analyze ONLY open PRs for dependency updates
 4. **Dashboard Analysis**: `forgejo_get_issue_by_index()` → READ-ONLY access to "Renovate Dashboard" issue
 5. **Safety Framework**: Semantic versioning analysis, compatibility checks, rollback planning
 6. **Renovator Activation**: Activate agent with comprehensive context and analysis results
@@ -82,7 +82,7 @@ Comprehensive project renovation through Renovator agent with UltraThink analysi
 **Forgejo MCP**: READ-ONLY Dashboard access and PR analysis
 - `forgejo_list_repo_issues`: Find Renovate Dashboard issue
 - `forgejo_get_issue_by_index`: Read Dashboard content (READ-ONLY)
-- `forgejo_list_repo_pull_requests`: Analyze open dependency PRs
+- `forgejo_list_repo_pull_requests`: Analyze ONLY open dependency PRs
 **Sequential MCP**: UltraThink analysis for complex scenarios
 **Serena MCP**: Memory operations and project context
 **Renovator Agent**: Enhanced dependency management with Forgejo integration
