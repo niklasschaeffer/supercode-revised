@@ -36,9 +36,6 @@ npm run supercode:init ${YOUR_PROJECT_FOLDER}
 ### Your First Steps
 
 ```bash
-# Initialize project and establish dual MCP foundation
-/initialize
-
 # Load project context and activate framework
 /load
 
@@ -364,17 +361,14 @@ The `/initialize` command establishes this dual MCP foundation by:
 
 ```bash
 # Clone for development
-git clone https://github.com/your-org/supercode-revised.git
+git clone https://github.com/niklasschaeffer/supercode-revised.git
 cd supercode-revised
 
 # Install development dependencies
 npm install
 
 # Set up development environment
-npm run supercode:init ${YOUR_PROJECT_FOLDER}
-
-# Initialize project and establish dual MCP foundation
-/initialize
+npm run supercode:init .
 
 # Load development context
 /load
@@ -567,7 +561,6 @@ git clone https://github.com/niklasschaeffer/supercode-revised.git
 cd supercode-revised
 npm install
 npm run supercode:init ${YOUR_PROJECT_FOLDER}
-/initialize
 /load
 ```
 
