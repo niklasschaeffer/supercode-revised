@@ -30,7 +30,7 @@ cd supercode-revised
 npm install
 
 # Run the installation script
-npm run supercode:init --folder=${PROJECT_FOLDER}
+npm run supercode:init ${YOUR_PROJECT_FOLDER}
 ```
 
 ### Your First Steps
@@ -371,7 +371,7 @@ cd supercode-revised
 npm install
 
 # Set up development environment
-npm run supercode:init --folder=${PROJECT_FOLDER}
+npm run supercode:init ${YOUR_PROJECT_FOLDER}
 
 # Initialize project and establish dual MCP foundation
 /initialize
@@ -566,7 +566,7 @@ This project is licensed under the **MIT License** - see the [LICENSE](LICENSE) 
 git clone https://github.com/niklasschaeffer/supercode-revised.git
 cd supercode-revised
 npm install
-npm run supercode:init --folder=${PROJECT_FOLDER}
+npm run supercode:init ${YOUR_PROJECT_FOLDER}
 /initialize
 /load
 ```
