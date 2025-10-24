@@ -8,6 +8,11 @@ The SuperCode framework components will be automatically imported below.
 
 [@RULES.md](./RULES.md)
 
+# Documentation Standards
+***All agents and commands must follow consolidated documentation standards***
+
+[@DOCUMENTATION_STANDARDS.md](./DOCUMENTATION_STANDARDS.md)
+
 # ===================================================
 # SuperCode Framework Components
 # ===================================================
@@ -42,16 +47,18 @@ The SuperCode framework components will be automatically imported below.
 [@agent/docker-specialist.md](./agent/docker-specialist.md)
 
 # Commands
+[@command/build.md](./command/build.md)
 [@command/cleanup.md](./command/cleanup.md)
+[@command/context.md](./command/context.md)
 [@command/generate.md](./command/generate.md)
 [@command/git.md](./command/git.md)
-[@command/implement.md](./command/implement.md)
-[@command/improve.md](./command/improve.md)
+[@command/implement.md](./command/implement.md) <!-- DEPRECATED - Use /build -->
+[@command/improve.md](./command/improve.md) <!-- DEPRECATED - Use /build -->
 [@command/initialize.md](./command/initialize.md)
-[@command/load.md](./command/load.md)
+[@command/load.md](./command/load.md) <!-- DEPRECATED - Use /context -->
 [@command/renovate.md](./command/renovate.md)
-[@command/save.md](./command/save.md)
-[@command/spawn.md](./command/spawn.md)
+[@command/save.md](./command/save.md) <!-- DEPRECATED - Use /context -->
+[@command/spawn.md](./command/spawn.md) <!-- DEPRECATED - Use /build -->
 [@command/task.md](./command/task.md)
 [@command/troubleshoot.md](./command/troubleshoot.md)
 
