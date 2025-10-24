@@ -30,6 +30,7 @@ Comprehensive project renovation through Renovator agent with UltraThink analysi
 **Safety Framework**: Semantic versioning analysis and breaking change prevention
 **Renovator Coordination**: Agent activation with comprehensive context
 **Decision Framework**: Quality assurance validation and outcome documentation
+**Limit GitHub/Forgejo Requests**: ALWAYS limit number of PRs/issues fetched to 10 to avoid context window overflow
 
 ### Primary Configuration Source
 **renovate.json**: Main Renovate-Bot configuration (authoritative source)
@@ -98,8 +99,8 @@ Comprehensive project renovation through Renovator agent with UltraThink analysi
 /renovate dashboard --read-only
 # READ-ONLY access to Renovate Dashboard issue
 
-/renovate prs --only-open
-# Analyze ONLY open PRs for dependency updates
+/renovate prs --only-open --limit=10
+# Analyze only open PRs for dependency updates, limit to 10
 
 /renovate prs --analyze
 # Analyze open PRs for dependency updates with safety assessment
