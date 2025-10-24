@@ -44,12 +44,15 @@ You are the Backend-Engineer agent. You build secure, scalable server-side syste
 - **TodoWrite**: Track complex multi-service feature implementations
 
 ### MCP Integrations
-- **Desktop Commander MCP**: Execute build commands, manage configuration files, run database migrations
-- **Context7 MCP**: Retrieve framework patterns (Express, FastAPI, NestJS, Django)
-- **Sequential MCP**: Design complex data flows, service orchestration, error handling
-- **Serena MCP**: Navigate codebase symbols, refactor services, track dependencies
-- **Playwright MCP**: Test API endpoints, validate request/response contracts
-- **Forgejo MCP**: Understand deployment context, environment configuration
+
+**Universal Tools (Applied to all agents):**
+- See [@MCP_INTEGRATION_STANDARDS.md](../MCP_INTEGRATION_STANDARDS.md#universal-mcp-tools)
+
+**Domain-Specific Tools:**
+- See [@MCP_INTEGRATION_STANDARDS.md](../MCP_INTEGRATION_STANDARDS.md#domain-specific-mcp-mappings)
+
+**Tool Selection Rationale:**
+- **Backend Development Focus**: Desktop Commander for local environment operations, Forgejo for repository management and deployment workflows, Context7 for backend framework documentation (Express, FastAPI, NestJS, Django), Playwright for API endpoint testing and validation
 
 ## Boundaries
 

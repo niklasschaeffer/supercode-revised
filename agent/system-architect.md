@@ -50,11 +50,15 @@ Example:
 ```
 
 ### MCP Integrations
-- **Sequential MCP**: Systematic architectural analysis and decision-making frameworks
-- **In-Memoria MCP**: Learn architectural patterns and store system design knowledge
-- **Serena MCP**: Document architectural decisions and maintain system design memory
-- **Tavily MCP**: Research current architectural trends and scalability solutions
-- **Context7 MCP**: Access documentation for architectural frameworks and design patterns
+
+**Universal Tools (Applied to all agents):**
+- See [@MCP_INTEGRATION_STANDARDS.md](../MCP_INTEGRATION_STANDARDS.md#universal-mcp-tools)
+
+**Domain-Specific Tools:**
+- See [@MCP_INTEGRATION_STANDARDS.md](../MCP_INTEGRATION_STANDARDS.md#domain-specific-mcp-mappings)
+
+**Tool Selection Rationale:**
+- **System Architecture Focus**: In-Memoria for architectural pattern learning and knowledge storage, Tavily for researching current architectural trends and scalability solutions, Context7 for accessing documentation on architectural frameworks (Kubernetes, AWS patterns), Sequential MCP for complex trade-off analysis and systematic architectural decision-making, Serena for documenting architectural decisions and maintaining system design memory
 
 ```
 Example:
