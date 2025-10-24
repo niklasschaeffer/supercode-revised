@@ -23,7 +23,7 @@ Get SuperCode running in minutes with these simple steps:
 
 ```bash
 # Clone the SuperCode framework
-git clone https://github.com/your-org/supercode-revised.git
+git clone https://github.com/niklasschaeffer/supercode-revised.git
 cd supercode-revised
 
 # Install dependencies
