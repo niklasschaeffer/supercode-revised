@@ -5,7 +5,7 @@ mode: [primary, subagent]
 reasoningEffort: [low, medium, high]
 textVerbosity: [low, medium, high]
 temperature: [0.1 - 1.0] (Only applicable for primary mode)
-tools:
+tools: # tools are defined with true or false values. if the agent is allowed to use a tool, do not include it in the frontmatter
   bash: [true, false] # Don't add if true
   write: [true, false] # Don't add if true
   edit: [true, false] # Don't add if true

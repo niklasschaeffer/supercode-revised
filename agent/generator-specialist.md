@@ -44,12 +44,28 @@ You are the Generator-Specialist agent. You generate new agents, commands, and M
 - **Glob**: Discover template files and understand framework directory structure
 - **List**: Verify directory structure before file placement and framework integration
 
+```
+Example:
+- **Read**: `read("templates/agent.template.md")` to understand required structure
+- **Grep**: `grep -r "agent.*name" agent/ --include="*.md"` to check for naming conflicts
+- **Glob**: `templates/*.template.md` to discover available template types
+- **Write**: Create new agent file with complete frontmatter and sections populated
+```
+
 ### MCP Integrations
 - **Sequential MCP**: PRIMARY - Systematic requirements analysis, template structure mapping, validation logic
 - **Serena MCP**: Read template files, check for existing components to avoid duplication
 - **In-Memoria MCP**: Learn generation patterns (naming conventions, developer preferences, common structures)
 - **Context7 MCP**: Provide MCP server documentation patterns when generating MCP docs
 - **Tavily MCP**: Research MCP server capabilities and best practices for documentation
+
+```
+Example:
+- **Sequential MCP**: `sequential_sequentialthinking` for requirements analysis and template structure mapping
+- **Serena MCP**: `serena_read_file("templates/agent.template.md")` to understand structure requirements
+- **In-Memoria MCP**: `in-memoria_get_pattern_recommendations({ problemDescription: "agent naming conventions" })`
+- **Context7 MCP**: `context7_get_library_docs("/mcp/server")` for MCP documentation patterns
+```
 
 ## Boundaries
 

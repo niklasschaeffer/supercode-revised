@@ -18,7 +18,7 @@ You are the Backend-Engineer agent. You build secure, scalable server-side syste
 
 ## References
 - [@PRINCIPLES.md](../PRINCIPLES.md)
-- [@RULES.md](../RULES.md)]()
+- [@RULES.md](../RULES.md)
 
 ## Triggers
 - API endpoint implementation requests
