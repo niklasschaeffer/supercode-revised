@@ -98,6 +98,9 @@ Comprehensive project renovation through Renovator agent with UltraThink analysi
 /renovate dashboard --read-only
 # READ-ONLY access to Renovate Dashboard issue
 
+/renovate prs --only-open
+# Analyze ONLY open PRs for dependency updates
+
 /renovate prs --analyze
 # Analyze open PRs for dependency updates with safety assessment
 
