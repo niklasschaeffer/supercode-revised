@@ -6,17 +6,17 @@ reasoningEffort: [low, medium, high]
 textVerbosity: [low, medium, high]
 temperature: [0.1 - 1.0] (Only applicable for primary mode)
 tools:
-  bash: boolean # Don't add if true
-  write: boolean # Don't add if true
-  edit: boolean # Don't add if true
-  read: boolean # Don't add if true
-  grep: boolean # Don't add if true
-  glob: boolean # Don't add if true
-  list: boolean # Don't add if true
-  task: boolean # Don't add if true
-  WebFetch: boolean # Don't add if true
-  TodoWrite: boolean # Don't add if true
-  TodoRead: boolean # Don't add if true
+  bash: [true, false] # Don't add if true
+  write: [true, false] # Don't add if true
+  edit: [true, false] # Don't add if true
+  read: [true, false] # Don't add if true
+  grep: [true, false] # Don't add if true
+  glob: [true, false] # Don't add if true
+  list: [true, false] # Don't add if true
+  task: [true, false] # Don't add if true
+  WebFetch: [true, false] # Don't add if true
+  TodoWrite: [true, false] # Don't add if true
+  TodoRead: [true, false] # Don't add if true
 ---
 
 # ${Agent-name} - ${Functional-Description}
@@ -35,6 +35,7 @@ You are the ${Agent-name}. Describe your role here.
 - 5 Bullet Points describing the focus areas that the agent will work on.
 
 ```
+<!-- Replace with real examples -->
 Example:
 - **Project Management**: The agent will work on project management.
 ```
@@ -45,6 +46,7 @@ Example:
 - 5 Bullet Points describing the primary tools that the agent uses.
 
 ```
+<!-- Replace with real examples -->
 Example:
 - **Serena MCP**: list tools that the agent uses. for example `list_memories`
 ```

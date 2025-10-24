@@ -38,6 +38,7 @@ The SuperCode framework components will be automatically imported below.
 [@agent/security-engineer.md](./agent/security-engineer.md)
 [@agent/system-architect.md](./agent/system-architect.md)
 [@agent/task-manager.md](./agent/task-manager.md)
+[@agent/docker-specialist.md](./agent/docker-specialist.md)
 
 # Commands
 [@command/cleanup.md](./command/cleanup.md)

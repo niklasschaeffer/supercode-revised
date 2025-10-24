@@ -23,6 +23,13 @@ export const AGENTS: Agent[] = [
     category: 'Development'
   },
   {
+    id: 'docker-specialist',
+    name: 'Docker Specialist',
+    description: 'Containerization expert for docker management',
+    icon: '🐳',
+    category: 'Management'
+  },
+  {
     id: 'system-architect',
     name: 'System Architect',
     description: 'Plan and design complex system architectures and integration patterns',

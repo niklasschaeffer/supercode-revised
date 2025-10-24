@@ -25,6 +25,7 @@ ${command-description} about what the command does.
 - 4 Steps describing the command's workflow.
 
 ```
+<!-- Replace with real examples -->
 Example:
 1. **Serena Phase**:
    - `list_memories()` → Discover available project memories

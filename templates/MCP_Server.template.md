@@ -11,6 +11,7 @@
 - 5 Points describing the primary tools that the MCP Server provides to the agent.
 
 ```
+<!-- Replace with real examples -->
 Example for Serena MCP Server:
 `write_memory`: writes project memories for persistent context storage.
 `read_memory`: reads stored project memories for context retrieval.
@@ -20,6 +21,7 @@ Example for Serena MCP Server:
 - 5 Points describing any secondary tools that the MCP Server provides to the agent.
 
 ```
+<!-- Replace with real examples -->
 Example for Serena MCP Server:
 `list_memories`: lists all available memories for the current project.
 `delete_memory`: deletes specified memories from the project context.
@@ -29,6 +31,7 @@ Example for Serena MCP Server:
 - 3 Bullet Points describing how the MCP Server stores files, if applicable.
 
 ```
+<!-- Replace with real examples -->
 Example:
 - Stores files in a dedicated project directory structure.
 - Playwright MCP stores it files in a `.playwright/` subdirectory.
@@ -46,7 +49,9 @@ Example:
 
 ## Examples
 - 5 Examples of how the MCP Server would be used.
+
 ```
+<!-- Replace with real examples -->
 Example:
 "example user prompt" → ${MCP-Server-Name} short description of how it would respond or what it output would be.
 ```
