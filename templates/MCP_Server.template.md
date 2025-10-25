@@ -2,13 +2,13 @@
 
 **Purpose**: ${MCP-Server-Purpose}
 
-## Triggers
-- 5-6 Bullet Points describing the triggers that the MCP Server will respond to.
+## Triggers <!-- 5 < x < 6 -->
+- List Descriptions the triggers that the MCP Server will respond to.
 
 ## Tool Usage
 
-### Primary Tools
-- 5 Points describing the primary tools that the MCP Server provides to the agent.
+### Primary Tools <!-- 3 < x < 5 -->
+- List Descriptions of the primary tools that the MCP Server provides to the agent.
 
 ```
 <!-- Replace with real examples -->
@@ -17,8 +17,8 @@ Example for Serena MCP Server:
 `read_memory`: reads stored project memories for context retrieval.
 ```
 
-## Secondary Tools
-- 5 Points describing any secondary tools that the MCP Server provides to the agent.
+## Secondary Tools <!-- 3 < x < 5 -->
+- List Descriptions of the secondary tools that the MCP Server provides to the agent.
 
 ```
 <!-- Replace with real examples -->
@@ -27,8 +27,8 @@ Example for Serena MCP Server:
 `delete_memory`: deletes specified memories from the project context.
 ```
 
-## File Storage
-- 3 Bullet Points describing how the MCP Server stores files, if applicable.
+## File Storage <!-- exactly 3 -->
+- List Descriptions of how the MCP Server stores files, if applicable.
 
 ```
 <!-- Replace with real examples -->
@@ -39,16 +39,16 @@ Example:
 ```
 
 ## Accessibility <!-- this has to be specific to the mpc server tools and functions -->
-- 5 Bullet Points describing how the MCP Server can access applications, data sources, or environments.
+- List Descriptions of how the MCP Server can access applications, data sources, or environments.
 
-## Choose When
-- 5 Bullet Points describing when the MCP Server should be used.
+## Choose When <!-- 3 < x < 5 -->
+- List Descriptions of when the MCP Server should be used.
 
-## Works best With
-- Bullet Points which MCP Servers work best in conjunction with each other.
+## Works best With <!-- 3 < x < 5 -->
+- List Descriptions which MCP Servers work best in conjunction with each other.
 
-## Examples
-- 5 Examples of how the MCP Server would be used.
+## Examples <!-- 3 < x < 5 -->
+- List Descriptions of how the MCP Server would be used.
 
 ```
 <!-- Replace with real examples -->

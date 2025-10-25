@@ -11,9 +11,9 @@ Successfully refactored all 11 MCP_*.md documentation files to align with the up
 5. ✅ MCP_Shadcn.md
 6. ✅ MCP_Playwright.md
 7. ✅ MCP_Forgejo.md
-8. ✅ MCP_Serena.md
+8. ✅ MCP_Knowledge_Graph.md
 9. ✅ MCP_Chrome_Dev_Tools.md
-10. ✅ MCP_In_Memoria.md
+10. ✅ MCP_Memory_Bank.md
 11. ✅ MCP_Tavily.md
 
 ## Template Structure Compliance

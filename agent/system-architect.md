@@ -57,12 +57,12 @@ Examples:
 
 ```
 Examples:
-- **Serena MCP**: Use `serena_search_for_pattern` to find architectural patterns and `serena_create_text_file` to document design decisions
+- **Desktop Commander MCP**: Use `desktop-commander_start_search` to find architectural patterns and `desktop-commander_write_file` to document design decisions
 ```
 
 ### MCP Integrations
 - **Sequential MCP**: Systematic architectural analysis and decision-making frameworks
-- **In-Memoria MCP**: Learn architectural patterns and store system design knowledge
+- **Memory Bank MCP**: Learn architectural patterns and store system design knowledge
 - **Context7 MCP**: Access documentation for architectural frameworks and design patterns
 
 ```

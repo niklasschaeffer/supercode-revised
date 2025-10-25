@@ -20,11 +20,7 @@
       "enabled": true,
       "command": ["npx", "-y", "@upstash/context7-mcp"]
     },
-    "in-memoria": {
-      "type": "local",
-      "enabled": true,
-      "command": ["npx", "in-memoria", "server"]
-    },
+
     "playwright": {
       "type": "local",
       "enabled": true,
@@ -61,10 +57,15 @@
       "enabled": true,
       "command": ["npx", "-y", "@wonderwhy-er/desktop-commander@latest"]
     },
-    "serena": {
+    "knowledge-graph": {
+      "type": "local", 
+      "enabled": true,
+      "command": ["npx", "-y", "mcp-knowledge-graph"]
+    },
+    "memory-bank": {
       "type": "local",
       "enabled": true,
-      "command" : ["uvx", "--from", "git+https://github.com/oraios/serena", "serena", "start-mcp-server", "--context", "agent"]
+      "command": ["npx", "-y", "@allpepper/memory-bank-mcp"]
     }
   }
 }

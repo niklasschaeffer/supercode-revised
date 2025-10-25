@@ -40,11 +40,11 @@
 - [ ] `command/save.md`: ____ lines (Target: 100-130)
 
 ### MCP Files (100-130 lines required)
-- [ ] `MCP_Serena.md`: ____ lines (Target: 100-130)
+- [ ] `MCP_Knowledge_Graph.md`: ____ lines (Target: 100-130)
 - [ ] `MCP_Chrome_Dev_Tools.md`: ____ lines (Target: 100-130)
 - [ ] `MCP_Context7.md`: ____ lines (Target: 100-130)
 - [ ] `MCP_Forgejo.md`: ____ lines (Target: 100-130)
-- [ ] `MCP_In_Memoria.md`: ____ lines (Target: 100-130)
+- [ ] `MCP_Memory_Bank.md`: ____ lines (Target: 100-130)
 - [ ] `MCP_Playwright.md`: ____ lines (Target: 100-130)
 - [ ] `MCP_Prompt_Kit.md`: ____ lines (Target: 100-130)
 - [ ] `MCP_Shadcn.md`: ____ lines (Target: 100-130)

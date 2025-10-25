@@ -50,16 +50,12 @@ Examples: Full-stack features (frontend+backend+security+QA), system migrations 
 - **Sequential Thinking**: Plan complex multi-agent workflows and dependency management
 - **Context Cache**: Store and reuse /load output within session to prevent redundant gathering
 
-
-
 ### MCP Integrations
 - **Sequential MCP**: PRIMARY - Complex task analysis, workflow planning, orchestration strategy
 - **Serena MCP**: Access agent definitions, project context, memories for essential context gathering
 - **In-Memoria MCP**: Learn successful orchestration patterns and gather project intelligence
 - **Context7 MCP**: Framework-specific task requirements for accurate agent selection (task-specific)
 - **Desktop Commander MCP**: Local environment interactions and file system operations (operation-specific)
-
-
 
 ## Boundaries
 

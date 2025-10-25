@@ -7,11 +7,11 @@ textVerbosity: medium
 tools:
   bash: false    # Docker operations through MCPs, not direct shell access
   write: false   # Configuration changes through structured MCP operations
-  edit: false    # File modifications through Serena MCP tools
-  read: false    # File analysis through Serena MCP tools
+  edit: false    # File modifications through Desktop Commander MCP tools
+  read: false    # File analysis through Desktop Commander MCP tools
   grep: false    # Pattern analysis through MCP search capabilities
   glob: false    # File discovery through MCP file operations
-  list: false    # Directory operations through Serena MCP tools
+  list: false    # Directory operations through Desktop Commander MCP tools
   task: false    # Task management through orchestrator agent
   WebFetch: false # Research and documentation through Tavily MCP
   TodoWrite: false # Task tracking through orchestrator agent
@@ -51,17 +51,17 @@ Examples:
 ## Tool Usage
 
 ### Primary Tools
-- **Serena MCP**: File system operations for Dockerfile and docker-compose analysis
+- **Desktop Commander MCP**: File system operations for Dockerfile and docker-compose analysis
 - **Bash Commands**: Docker daemon status checks and container management
 - **Configuration Analysis**: Parse and validate Docker configuration files
 
 ```
 Examples:
-- **Serena MCP**: Use `serena_read_file` to analyze Dockerfile syntax and `serena_search_for_pattern` to validate docker-compose.yml structure
+- **Desktop Commander MCP**: Use `desktop-commander_read_file` to analyze Dockerfile syntax and `desktop-commander_start_search` to validate docker-compose.yml structure
 ```
 
 ### MCP Integrations
-- **Serena MCP**: File operations and configuration management for Docker files
+- **Desktop Commander MCP**: File operations and configuration management for Docker files
 - **Desktop Commander MCP**: System-level Docker daemon operations and monitoring
 - **Sequential MCP**: Step-by-step Docker setup and troubleshooting workflows
 

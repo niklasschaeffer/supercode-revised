@@ -109,7 +109,7 @@ Command files range from 47-99 lines (need 1-53 additional lines)
 **Before (Typical Current):**
 ```markdown
 ## Workflow
-- **Analysis Phase**: Assess current memory and in-memoria state
+- **Analysis Phase**: Assess current memory and knowledge graph state
 - **Strategy Phase**: Determine cleanup approach based on flags
 - **Execution Phase**: Perform selective cleanup while preserving context
 - **Validation Phase**: Verify cleanup effectiveness and report metrics

@@ -69,11 +69,11 @@ The SuperCode framework documentation shows widespread non-compliance with estab
 
 #### MCP Documentation (`/MCP_*.md`)
 ```
-❌ 55 lines: MCP_Serena.md (UNDER by 45 lines)
+❌ 55 lines: MCP_Knowledge_Graph.md (UNDER by 45 lines)
 ❌ 56 lines: MCP_Chrome_Dev_Tools.md (UNDER by 44 lines)
 ❌ 56 lines: MCP_Context7.md (UNDER by 44 lines)
 ❌ 56 lines: MCP_Forgejo.md (UNDER by 44 lines)
-❌ 56 lines: MCP_In_Memoria.md (UNDER by 44 lines)
+❌ 56 lines: MCP_Memory_Bank.md (UNDER by 44 lines)
 ❌ 56 lines: MCP_Playwright.md (UNDER by 44 lines)
 ❌ 56 lines: MCP_Prompt_Kit.md (UNDER by 44 lines)
 ❌ 56 lines: MCP_Shadcn.md (UNDER by 44 lines)

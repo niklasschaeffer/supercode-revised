@@ -58,8 +58,8 @@ Examples:
 
 ### MCP Integrations
 - **Sequential MCP**: PRIMARY - Systematic requirements analysis, template structure mapping, validation logic
-- **Serena MCP**: Read template files, check for existing components to avoid duplication
-- **In-Memoria MCP**: Learn generation patterns (naming conventions, developer preferences, common structures)
+- **Knowledge Graph MCP**: Read template files, check for existing components to avoid duplication
+- **Memory Bank MCP**: Learn generation patterns (naming conventions, developer preferences, common structures)
 
 ```
 Examples:

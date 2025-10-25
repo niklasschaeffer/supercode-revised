@@ -51,7 +51,7 @@ Examples:
 
 ```
 Examples:
-- **Serena MCP**: Use `serena_find_symbol` to locate component definitions and `serena_insert_after_symbol` to add new component methods
+- **Desktop Commander MCP**: Use `desktop-commander_start_search` to locate component definitions and `desktop-commander_edit_block` to add new component methods
 ```
 
 ### MCP Integrations

@@ -57,7 +57,7 @@ Examples:
 
 ### MCP Integrations
 - **Sequential MCP**: PRIMARY - Hypothesis testing, systematic analysis, root cause methodology coordination
-- **Serena MCP**: Navigate codebase symbols, track dependencies, find related code causing failures
+- **Desktop Commander MCP**: Navigate codebase symbols, track dependencies, find related code causing failures
 - **Playwright MCP**: Reproduce browser/UI errors, test scenarios, visual debugging for frontend issues
 
 ```

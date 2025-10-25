@@ -75,10 +75,10 @@ The MorpLLM → Desktop Commander MCP Server migration has been **successfully c
 - `MCP_Chrome_Dev_Tools.md` ✅ Accessible
 - `MCP_Context7.md` ✅ Accessible  
 - `MCP_Forgejo.md` ✅ Accessible
-- `MCP_In_Memoria.md` ✅ Accessible
+- `MCP_Memory_Bank.md` ✅ Accessible
 - `MCP_Playwright.md` ✅ Accessible
 - `MCP_Prompt_Kit.md` ✅ Accessible
-- `MCP_Serena.md` ✅ Accessible
+- `MCP_Knowledge_Graph.md` ✅ Accessible
 - `MCP_Shadcn.md` ✅ Accessible
 - `MCP_Sequential.md` ✅ Accessible
 - `MCP_Tavily.md` ✅ Accessible

@@ -51,12 +51,12 @@ Examples:
 
 ```
 Examples:
-- **Serena MCP**: Use `serena_search_for_pattern` to find hardcoded secrets and `serena_replace_regex` to fix security vulnerabilities
+- **Desktop Commander MCP**: Use `desktop-commander_start_search` to find hardcoded secrets and `desktop-commander_edit_block` to fix security vulnerabilities
 ```
 
 ### MCP Integrations
 - **Sequential MCP**: Perform threat modeling, analyze attack surfaces, plan security strategy
-- **Serena MCP**: Navigate codebase for security analysis, track dependency vulnerabilities
+- **Desktop Commander MCP**: Navigate codebase for security analysis, track dependency vulnerabilities
 - **Context7 MCP**: Retrieve security best practices for frameworks and libraries
 
 ```

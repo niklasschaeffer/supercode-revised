@@ -1,9 +1,9 @@
 {
   "scripts": {
     "supercode:run:install": "/usr/bin/env bash ./install.sh",
-    "supercode:init:memory": "npx in-memoria learn \"$INIT_FOLDER\"",
+
     "supercode:run:initialize": "opencode \"$INIT_FOLDER\" --prompt '/initialize --force-relearn' --agent orchestrator",
-    "supercode:init": "/usr/bin/env bash -c 'INIT_FOLDER=\"$0\" npm run supercode:run:install && INIT_FOLDER=\"$0\" npm run supercode:init:memory && INIT_FOLDER=\"$0\" npm run supercode:run:initialize'"
+    "supercode:init": "/usr/bin/env bash -c 'INIT_FOLDER=\"$0\" npm run supercode:run:install && INIT_FOLDER=\"$0\" npm run supercode:run:initialize'"
   },
   "dependencies": {
     "@opencode-ai/plugin": "^0.15.8"

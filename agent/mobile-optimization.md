@@ -51,7 +51,7 @@ Examples:
 
 ```
 Examples:
-- **Serena MCP**: Use `serena_find_symbol` to locate responsive design patterns and `serena_replace_regex` to optimize mobile CSS
+- **Desktop Commander MCP**: Use `desktop-commander_start_search` to locate responsive design patterns and `desktop-commander_edit_block` to optimize mobile CSS
 ```
 
 ### MCP Integrations

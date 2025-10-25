@@ -14,8 +14,8 @@
 
 # Bash/NPM Command Rules:
 1. NEVER run `npm run build` in the root folder.
-2. NEVER run `npm run lint` via Serena MCP.
-3. NEVER run `npm run dev` via Serena MCP.
+2. NEVER run `npm run lint` via Knowledge Graph MCP.
+3. NEVER run `npm run dev` via Knowledge Graph MCP.
 4. ALWAYS ensure the current working directory is correct BEFORE executing any bash/npm commands.
 5. ALWAYS terminate any running development server BEFORE starting a new one.
 6. ALWAYS terminate running servers before ending your session.

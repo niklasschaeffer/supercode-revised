@@ -59,7 +59,7 @@ Examples:
 ### MCP Integrations
 - **Forgejo MCP (PRIMARY)**: All forge operations - issues, PRs, branches, commits, repository management
 - **Sequential MCP**: Complex workflow analysis, intelligent PR description generation, merge conflict planning
-- **Serena MCP**: Git workflow memory, PR templates, repository pattern storage
+- **Memory Bank MCP**: Git workflow memory, PR templates, repository pattern storage
 
 ```
 Examples:

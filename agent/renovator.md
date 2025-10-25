@@ -49,7 +49,7 @@ Examples:
 ## Tool Usage
 
 ### Primary Tools
-- **Serena MCP**: File operations for reading configuration files, analyzing project structure, and managing renovation tasks
+- **Desktop Commander MCP**: File operations for reading configuration files, analyzing project structure, and managing renovation tasks
 - **Forgejo MCP**: READ-ONLY access to Renovate Dashboard issue, pull request analysis, and dependency update tracking on Forgejo platforms
 - **WebFetch**: Research dependency updates, security advisories, and best practices for dependency management
 
@@ -60,7 +60,7 @@ Examples:
 
 ### MCP Integrations
 - **Forgejo MCP**: Primary integration for repository management, PR analysis, and dependency update workflows
-- **Serena MCP**: File system operations, project analysis, and configuration management
+- **Desktop Commander MCP**: File system operations, project analysis, and configuration management
 - **Sequential MCP**: Systematic analysis of complex dependency scenarios and renovation planning
 
 ```

@@ -70,12 +70,12 @@ npm run supercode:init ${YOUR_PROJECT_FOLDER}
 
 SuperCode is a **comprehensive AI agent framework** that supercharges OpenCode with:
 
-- **🔗 MCP Server Integrations**: 11 powerful MCP servers for enhanced capabilities
+- **🔗 MCP Server Integrations**: 13 powerful MCP servers for enhanced capabilities
 - **🎛️ Behavioral Flags**: Fine-grained control over AI execution modes
 - **🤖 Modular Agent System**: Specialized agents for specific tasks
 - **⚡ Command System**: Reusable commands for common workflows
 - **📋 Template System**: Standardized templates for consistency
-- **🧠 Memory Management**: Dual persistence with Serena + In-Memoria
+- **🧠 Memory Management**: Dual persistence with Knowledge Graph + Memory Bank
 
 ### Perfect For
 
@@ -95,8 +95,8 @@ SuperCode integrates **11 powerful MCP servers**:
 
 | MCP Server | Purpose | Key Features |
 |------------|---------|--------------|
-| **Serena** | Symbol Operations & Memory | Project memory, session persistence, code analysis |
-| **In-Memoria** | Pattern Learning | Persistent pattern learning, codebase intelligence |
+| **Knowledge Graph** | Entity Memory | Persistent entity relationships, structured knowledge storage |
+| **Memory Bank** | Project Memory | Multi-project memory management, structured documentation |
 | **Sequential** | Multi-step Reasoning | Complex reasoning workflows, decision trees |
 | **Context7** | Library Documentation | Official library docs, API references |
 | **Tavily** | Web Search & Research | Real-time web search, content extraction |
@@ -225,22 +225,22 @@ supercode-revised/
 ├── docs/              # Generated documentation
 ├── landingpage/       # Web interface
 ├── opendocs/          # Open documentation system
-└── .serena/           # Project memories and context
+└── .memory-bank/       # Project memories and structured documentation
 ```
 
 ### Dual MCP Integration
 
-**Explicit + Implicit Knowledge Systems:**
+**Structured + Project Memory Systems:**
 
-- **Serena** - Explicit, human-readable memories for session context
-- **In-Memoria** - Implicit, AI-learned patterns for automated recommendations
+- **Knowledge Graph** - Entity relationships for structured knowledge storage and retrieval
+- **Memory Bank** - Project-based memory management with multi-project support
 - **Intelligent Coordination** - Cross-system deduplication and complementary knowledge
 
 **Initialization Process:**
 The `/initialize` command establishes this dual MCP foundation by:
-- Activating project in Serena and performing initial onboarding
-- Running In-Memoria analysis for pattern learning and intelligence
-- Creating core memories and architectural documentation
+- Setting up Knowledge Graph for entity relationship management
+- Configuring Memory Bank for project-specific documentation
+- Creating core memories and structured project files
 - Setting up complete context management foundation
 
 ### Memory Management
@@ -402,10 +402,9 @@ supercode-revised/
 ├── docs/                   # Generated documentation
 ├── landingpage/           # Web interface
 ├── opendocs/              # Open documentation
-├── .serena/               # Project memories
+├── .memory-bank/          # Project memories and structured documentation
 │   ├── memories/
 │   └── ...
-├── in-memoria.db          # Pattern learning database
 ├── package.json           # Dependencies and scripts
 ├── install.sh             # Installation script
 └── README.md              # This file

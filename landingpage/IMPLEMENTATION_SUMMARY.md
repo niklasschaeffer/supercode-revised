@@ -129,9 +129,9 @@ A stunning, production-ready landing page for the SuperCode framework featuring 
 
 ### SuperCode Framework Showcase
 - **15 Specialized Agents** - Complete agent ecosystem
-- **11 MCP Server Integrations** - Tool integration capabilities
+- **13 MCP Server Integrations** - Tool integration capabilities
 - **25+ Behavioral Flags** - Fine-grained control
-- **Dual Memory System** - Serena + In-Memoria
+- **Dual Memory System** - Knowledge Graph + Memory Bank
 - **Multi-Agent Orchestration** - Intelligent coordination
 - **Professional QA System** - Quality assurance
 - **Template-Driven Development** - Rapid development

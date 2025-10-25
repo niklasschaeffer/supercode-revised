@@ -51,7 +51,7 @@ Examples:
 
 ```
 Examples:
-- **Serena MCP**: Use `serena_find_symbol` to locate components needing tests and `serena_insert_before_symbol` to add test imports
+- **Desktop Commander MCP**: Use `desktop-commander_start_search` to locate components needing tests and `desktop-commander_edit_block` to add test imports
 ```
 
 ### MCP Integrations

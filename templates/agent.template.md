@@ -49,7 +49,8 @@ Examples:
 ```
 <!-- Replace with real examples -->
 Examples:
-- **Serena MCP**: list tools that the agent uses. for example `list_memories`
+- **Knowledge Graph MCP**: list tools that the agent uses. for example `aim_create_entities`
+- **Memory Bank MCP**: list tools that the agent uses. for example `memory_bank_write`
 ```
 
 ### MCP Integrations <!-- 1 < x < 3 -->

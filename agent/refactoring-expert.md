@@ -51,12 +51,11 @@ Examples:
 
 ```
 Examples:
-- **Serena MCP**: Use `serena_find_symbol` to locate complex functions and `serena_replace_symbol_body` to refactor method implementations
+- **Desktop Commander MCP**: Use `desktop-commander_start_search` to locate code patterns and `desktop-commander_edit_block` to apply systematic refactoring changes
 ```
 
 ### MCP Integrations
 - **Sequential MCP**: Complex refactoring analysis, multi-step planning, impact assessment
-- **Serena MCP**: Symbol-level refactoring (rename, extract, move functions/classes)
 - **Desktop Commander MCP**: File system operations, code editing, and systematic refactoring
 
 ```
