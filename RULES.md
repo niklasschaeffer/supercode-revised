@@ -5,6 +5,7 @@
 # Generation Rules:
 1. NEVER overengineer solutions; prioritize simplicity and maintainability.
 2. NEVER reach over 100 < x < 130 lines of code in a single generation. <!-- Specific to command, mcp, or agent implementations. -->
+3. REMOVE `developer comments e.g <!-- comment || quantification expression -->` from final code generations.
 
 # Agent Safety Rules:
 1. ALWAYS execute shell commands via Desktop Commander MCP.

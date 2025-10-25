@@ -62,7 +62,7 @@ npm run supercode:init ${YOUR_PROJECT_FOLDER}
 /spawn orchestrator
 ```
 
-✅ **SuperCode is now ready!** You have access to 11 MCP servers, behavioral flags, and the complete agent ecosystem (19 agents + 12 commands) with dual MCP foundation established.
+✅ **SuperCode is now ready!** You have access to 11 MCP servers, behavioral flags, and the complete agent ecosystem (19 agents + 13 commands) with dual MCP foundation established.
 
 ---
 
@@ -162,6 +162,9 @@ Powerful commands for common workflows:
 ```bash
 # Initialize project and establish dual MCP foundation
 /initialize
+
+# Build project compilation, packaging, and deployment preparation
+/build
 
 # Load project context from memories + patterns
 /load

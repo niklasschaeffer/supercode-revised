@@ -1,102 +1,72 @@
 ---
 name: troubleshoot
-description: Systematically diagnose errors and identify root causes through hypothesis-driven investigation
+description: Troubleshoot command for debugging, error diagnosis, and problem resolution
 ---
 
 # /troubleshoot $ARGUMENTS
 
-Systematically diagnose errors and identify root causes by analyzing evidence, generating hypotheses, testing systematically, and validating findings through the Root-Cause-Analyst agent.
+Troubleshoot command for debugging, error diagnosis, and problem resolution.
 
-## References
-- [@FLAGS.md](../FLAGS.md)
-- [@PRINCIPLES.md](../PRINCIPLES.md)
+## Important File References
 - [@RULES.md](../RULES.md)
+- [@PRINCIPLES.md](../PRINCIPLES.md)
+- [@AGENTS.md](../AGENTS.md)
+- [@Flags](../FLAGS.md)
 
 ## General Context
-**Invoked Arguments [user_prompt]:** $ARGUMENTS
-**Current Directory:** !`pwd`
-**Current Folder:** !`basename $(pwd)`
-**Git Branch:** !`git rev-parse --abbrev-ref HEAD`
-**Git Status:**
-!`git status --short | grep '^ M'`
 
-## Behavior
-
-Invokes Root-Cause-Analyst agent for systematic debugging through hypothesis-driven investigation:
-
-**Evidence Collection**: Gather error messages, stack traces, logs, reproduction steps
-**Hypothesis Formation**: Generate testable hypotheses about potential root causes
-**Systematic Testing**: Validate each hypothesis through diagnostics and analysis
-**Root Cause Identification**: Verify actual underlying cause vs symptoms
-**Solution Guidance**: Recommend fixes that address root cause effectively
-
-## Return Format
-
-```markdown
-## Root Cause Analysis Complete
-
-### Error Summary
-[Concise description of the observed problem and symptoms]
-
-### Root Cause Identified
-**Cause**: [Actual underlying cause, not symptom]
-**Evidence**: [Supporting evidence from systematic investigation]
-**Impact**: [Why this causes the observed error and manifestation]
-
-### Hypotheses Tested
-- ✅ [Validated hypothesis] → Confirmed as root cause
-- ❌ [Rejected hypothesis] → Reason for elimination
-- ⚠️ [Contributing factor] → Secondary issue identified
-
-### Recommended Fix
-**Primary Solution**: [Fix addressing root cause]
-**Implementing Agent**: [Specialist agent for implementation]
-**Validation**: [How to verify fix resolves issue]
-```
+- User Prompt: 
+`${ARGUMENTS}`
+- Current Directory: 
+`!pwd`
+- Current Folder: 
+`!basename $(pwd)`
+- Git Branch: 
+`!git rev-parse --abbrev-ref HEAD`
+- Git Status: 
+`!git status --short | grep ^ M`
 
 ## Workflow
+- Systematic debugging and error diagnosis through hypothesis-driven investigation
+- Steps should be in following order: Analysis → Action → Finalization
 
-1. **Evidence Gathering**:
-   - Collect error messages, stack traces, logs systematically
-   - Document reproduction steps and environmental context
-   - Identify symptoms vs potential underlying causes
-
-2. **Hypothesis Generation**:
-   - Form testable hypotheses about root causes based on evidence
-   - Prioritize hypotheses by likelihood and investigative cost
-   - Consider environmental, dependency, and configuration factors
-
-3. **Systematic Testing**:
-   - Validate hypotheses through bash diagnostics, code analysis
-   - Use Playwright/Chrome DevTools for frontend/performance issues
-   - Track results: confirmed, rejected, or contributing factors
-
-4. **Root Cause Validation**:
-   - Verify identified cause addresses actual problem effectively
-   - Distinguish root cause from symptoms and cascading failures
-   - Provide actionable fix recommendations for specialist agents
-
-## Tool Requirements
-
-**Task**: Invoke root-cause-analyst agent for systematic investigation
-**Root-Cause-Analyst**: Executes hypothesis-driven diagnostic workflow with evidence validation
+```
+Example:
+1. **Analysis**:
+   - `collect_error_evidence()` → Gather logs, stack traces, and error messages
+   - `analyze_system_state()` → Check environment, dependencies, and configurations
+   - `generate_hypotheses()` → Create testable theories about root causes
+2. **Action**:
+   - `execute_diagnostic_tests()` → Run targeted tests to validate hypotheses
+   - `isolate_problem_components()` → Identify specific failing components
+   - `trace_error_causality()` → Follow error propagation paths
+3. **Finalization**:
+   - `confirm_root_cause()` → Validate primary cause and contributing factors
+   - `generate_fix_recommendations()` → Provide actionable solution steps
+   - `document_investigation()` → Record findings and prevention strategies
+```
 
 ## Examples
-
 ```
 /troubleshoot "API returns 500 error on user login"
-# Systematic diagnosis of authentication endpoint failure
-
+/troubleshoot --log-file ./logs/error.log --verbose
 /troubleshoot "React component not rendering after update"
-# Investigates UI rendering issue with dependency analysis
-
-/troubleshoot --error-log ./logs/error.log
-# Analyzes error log file for patterns and root cause
-
-/troubleshoot "Performance degradation after deployment"
-# Investigates performance issue with profiling and comparison
+/troubleshoot --performance "Memory leak in data processing"
+/troubleshoot --network "Connection timeout to database"
 ```
 
-## Integration
+## Boundaries
 
-Invoked for error diagnosis and root cause identification. Complements specialist agents by providing systematic debugging before implementation. Works with /spawn for complex issues requiring multiple specialist agents after diagnosis completes.
+**Will:**
+- Collect and analyze error evidence systematically
+- Generate and test multiple hypotheses about root causes
+- Isolate failing components and trace error propagation
+- Provide actionable fix recommendations with validation steps
+- Document investigation findings and prevention strategies
+
+**Will Not:**
+- Apply fixes without confirming root cause identification
+- Modify production systems without proper validation
+- Override specialist expertise without proper investigation
+- Make assumptions without sufficient evidence and testing
+- Implement solutions that introduce new problems or risks

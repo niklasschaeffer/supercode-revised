@@ -1,92 +1,72 @@
 ---
 name: spawn
-description: Orchestrate complex tasks through intelligent breakdown and specialist agent delegation
+description: Spawn command for agent creation, task delegation, and workflow orchestration
 ---
 
 # /spawn $ARGUMENTS
 
-Orchestrate complex tasks by analyzing requirements, decomposing into subtasks, selecting appropriate specialist agents, and coordinating sequential execution.
+Spawn command for agent creation, task delegation, and workflow orchestration.
 
-## References
-- [@FLAGS.md](../FLAGS.md)
-- [@PRINCIPLES.md](../PRINCIPLES.md)
+## Important File References
 - [@RULES.md](../RULES.md)
+- [@PRINCIPLES.md](../PRINCIPLES.md)
+- [@AGENTS.md](../AGENTS.md)
+- [@Flags](../FLAGS.md)
 
 ## General Context
-**Invoked Arguments [user_prompt]:** $ARGUMENTS
-**Current Directory:** !`pwd`
-**Current Folder:** !`basename $(pwd)`
-**Git Branch:** !`git rev-parse --abbrev-ref HEAD`
-**Git Status:**
-!`git status --short | grep '^ M'`
 
-## Behavior
-
-Activates Orchestrator agent for intelligent multi-agent task coordination:
-
-**Task Analysis**: Evaluate complexity, domains, dependencies
-**Decomposition**: Break into well-defined subtasks with clear objectives
-**Agent Selection**: Match subtasks to specialist agents by domain expertise
-**Delegation**: Invoke agents via Task tool
-**Synthesis**: Integrate multi-agent results into coherent solutions
-
-## Return Format
-
-```markdown
-## Task Orchestration Complete
-
-### Task Breakdown
-- **Subtask 1**: [Description] → Assigned to [agent-name]
-- **Subtask 2**: [Description] → Assigned to [agent-name]
-- [N subtasks total]
-
-### Agent Execution
-- **Parallel**: [Agents executed concurrently] <!-- currently not supported -->
-- **Sequential**: [Agents with dependencies]
-
-### Results Synthesis
-[Coherent integration of all agent results]
-
-### Completion Status
-✅ [N]/[N] subtasks completed successfully
-⏱️ Time saved: [percentage] via parallelization <!-- currently not supported -->
-```
+- User Prompt: 
+`${ARGUMENTS}`
+- Current Directory: 
+`!pwd`
+- Current Folder: 
+`!basename $(pwd)`
+- Git Branch: 
+`!git rev-parse --abbrev-ref HEAD`
+- Git Status: 
+`!git status --short | grep ^ M`
 
 ## Workflow
+- Agent creation and task delegation through intelligent workflow orchestration
+- Steps should be in following order: Analysis → Action → Finalization
 
-1. **Analysis**: Evaluate complexity, domains, dependencies
-2. **Decomposition**: Break into subtasks with objectives and success criteria
-3. **Selection**: Match subtasks to specialist agents by expertise
-4. **Delegation**: Invoke via Task tool track progress
-5. **Synthesis**: Integrate results, resolve conflicts, validate completion
-
-## Tool Requirements
-
-**Orchestrator Agent**: PRIMARY - Task decomposition, agent coordination, result synthesis
-**Task Tool**: Agent invocation for specialist delegation
-**Sequential MCP**: Complex workflow planning and dependency analysis
-**TodoWrite**: Progress tracking for multi-agent coordination
+```
+Example:
+1. **Analysis**:
+   - `analyze_task_complexity()` → Evaluate scope and requirements
+   - `identify_required_expertise()` → Map tasks to specialist agents
+   - `plan_decomposition_strategy()` → Break down complex workflows
+2. **Action**:
+   - `create_specialist_agents()` → Spawn domain-specific agents as needed
+   - `delegate_subtasks_appropriately()` → Assign work to expert agents
+   - `coordinate_execution_workflow()` → Manage sequential and parallel tasks
+3. **Finalization**:
+   - `synthesize_agent_results()` → Combine outputs from multiple agents
+   - `validate_integration_quality()` → Ensure cohesive final result
+   - `document_orchestration_patterns()` → Record successful workflows
+```
 
 ## Examples
-
 ```
 /spawn "Build full-stack authentication system"
-# Orchestrates: backend-engineer (API), frontend-engineer (UI),
-# security-engineer (auth patterns), qa-engineer (testing)
-
-/spawn "Refactor legacy codebase to modern patterns"
-# Orchestrates: refactoring-expert (code quality),
-# context-refinement (pattern intelligence), qa-engineer (regression prevention)
-
-/spawn --delegate "Implement 5 independent microservices"
-# delegation to backend-engineer for each service
-# Concurrent execution for maximum efficiency
-
-/spawn "Complete security audit and remediation"
-# Orchestrates: security-engineer (vulnerabilities),
-# refactoring-expert (secure patterns), qa-engineer (validation)
+/spawn --agents frontend,backend,security "E-commerce platform"
+/spawn --parallel "Microservices architecture migration"
+/spawn --sequential "Complete security audit and remediation"
+/spawn --orchestrator "Complex data pipeline implementation"
 ```
 
-## Integration
+## Boundaries
 
-Invoked for complex multi-domain tasks requiring specialist coordination. Complements /load (context) and /save (persistence) by enabling intelligent task orchestration. The orchestrator agent analyzes task requirements, selects appropriate specialists, and coordinates their execution for optimal results.
+**Will:**
+- Create specialist agents for domain-specific tasks
+- Delegate complex work to appropriate expert agents
+- Coordinate multi-agent workflows with proper sequencing
+- Synthesize results from multiple agent contributions
+- Manage both parallel and sequential task execution
+
+**Will Not:**
+- Spawn agents without proper task analysis and planning
+- Delegate tasks to inappropriate specialist agents
+- Execute workflows without proper coordination and oversight
+- Create redundant agents for tasks that can be handled directly
+- Override agent expertise without valid justification

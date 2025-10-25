@@ -1,98 +1,72 @@
 ---
 name: implement
-description: Feature implementation command for user-requested functionality without agent invocation
+description: Implement command for feature development, code implementation, and functionality creation
 ---
 
 # /implement $ARGUMENTS
 
-Implement features, components, APIs, or complete functionality based on user requirements with direct code generation and framework-specific best practices.
+Implement command for feature development, code implementation, and functionality creation.
 
-## References
-- [@FLAGS.md](../FLAGS.md)
-- [@PRINCIPLES.md](../PRINCIPLES.md)
+## Important File References
 - [@RULES.md](../RULES.md)
+- [@PRINCIPLES.md](../PRINCIPLES.md)
+- [@AGENTS.md](../AGENTS.md)
+- [@Flags](../FLAGS.md)
 
 ## General Context
-**Invoked Arguments [user_prompt]:** $ARGUMENTS
-**Current Directory:** !`pwd`
-**Current Folder:** !`basename $(pwd)`
-**Git Branch:** !`git rev-parse --abbrev-ref HEAD`
-**Git Status:**
-!`git status --short | grep '^ M'`
 
-## Behavior
-
-Direct feature implementation with optional delegation and parallel execution:
-
-**Requirement Analysis**: Parse feature description and identify technology stack context
-**Framework Detection**: Auto-detect framework (React, Vue, Angular, Express) from project structure
-**Code Generation**: Generate implementation with best practices and design patterns
-**Delegation Control**: Use `--delegate` for sub-agent coordination on complex features (>7 files)
-**Parallel Execution**: Use `--orchestrate` to enable parallel operations for multi-component features
-**Quality Integration**: Apply security validation and testing recommendations
-**Documentation**: Update relevant documentation and provide usage examples
-
-## Return Format
-
-```markdown
-## Feature Implementation Complete
-
-**Feature**: [Name and description]
-**Type**: [component|api|service|feature] | **Framework**: [Detected framework]
-**Files**: [N] created/modified
-
-### Files Created/Modified
-- `path/to/file.ext` - [Purpose]
-- `path/to/test.ext` - [Tests]
-
-### Integration
-- Dependencies: [New packages]
-- Configuration: [Config changes]
-- Next Steps: [Testing, integration, docs]
-
-### Validation
-✅ Project conventions ✅ Security ✅ Error handling ✅ Tests
-```
+- User Prompt: 
+`${ARGUMENTS}`
+- Current Directory: 
+`!pwd`
+- Current Folder: 
+`!basename $(pwd)`
+- Git Branch: 
+`!git rev-parse --abbrev-ref HEAD`
+- Git Status: 
+`!git status --short | grep ^ M`
 
 ## Workflow
+- Feature implementation with code generation and integration testing
+- Steps should be in following order: Analysis → Action → Finalization
 
-1. **Analysis**: Parse requirements, detect framework (Read/Grep/Glob), identify patterns
-2. **Planning**: Determine approach, identify files, plan architecture
-3. **Implementation**: Generate code (Write/Edit/MultiEdit), use Context7 MCP, apply security
-4. **Validation**: Review quality, provide tests, update documentation
-
-## Tool Requirements
-
-**Write/Edit/MultiEdit**: Direct code generation and modification
-**Context7 MCP**: Framework patterns and official documentation (React, Vue, Express)
-**Shadcn MCP**: UI component generation for frontend features
-**Read/Grep/Glob**: Project analysis and pattern detection
+```
+Example:
+1. **Analysis**:
+   - `parse_feature_requirements()` → Extract functionality specifications
+   - `analyze_existing_codebase()` → Understand current architecture and patterns
+   - `identify_dependencies_and_integrations()` → Map required connections
+2. **Action**:
+   - `implement_core_functionality()` → Write primary feature code
+   - `create_supporting_components()` → Build related utilities and helpers
+   - `integrate_with_existing_system()` → Connect to current architecture
+3. **Finalization**:
+   - `test_feature_implementation()` → Verify functionality and edge cases
+   - `validate_code_quality()` → Check standards compliance and best practices
+   - `document_implementation()` → Create usage documentation and examples
+```
 
 ## Examples
-
 ```
-/implement user profile component
-# Creates React/Vue component with form, validation, styling
-
-/implement REST API for user authentication
-# Generates API endpoints, middleware, error handling, security
-
-/implement payment processing service
-# Complete service with validation, error handling, integration points
-
-/implement --type component --framework react user dashboard
-# Explicit framework specification for component generation
-
-/implement --safe --with-tests search functionality
-# Safe mode with comprehensive testing and validation
-
-/implement --delegate complete dashboard feature
-# Complex feature with sub-agent coordination for multi-file implementation
-
-/implement --orchestrate multi-service integration
-# Parallel execution for independent components (API + UI + tests)
+/implement user authentication system
+/implement REST API endpoints for user management
+/implement React component for data visualization
+/implement database migration scripts
+/implement email notification service
 ```
 
-## Integration
+## Boundaries
 
-Provides feature implementation with optional delegation via `--delegate` flag. Use for direct code generation or complex multi-component features. Use `--orchestrate` to enable parallel execution for independent components. Complements /improve (quality enhancement) and /troubleshoot (debugging) by focusing on new feature creation. For maximum orchestration control, use /spawn instead.
+**Will:**
+- Implement features following project architectural patterns
+- Create complete, testable code with proper error handling
+- Integrate new functionality with existing codebase seamlessly
+- Follow coding standards and security best practices
+- Generate comprehensive documentation and usage examples
+
+**Will Not:**
+- Implement features without understanding project context
+- Create code that violates established architectural principles
+- Override existing functionality without proper analysis
+- Implement features without proper testing and validation
+- Generate code that introduces security vulnerabilities

@@ -1,50 +1,72 @@
 ---
 name: initialize
-description: Comprehensive project setup and initialization establishing dual MCP foundation.
+description: Initialize command for project setup, environment configuration, and foundation establishment
 ---
 
-# /initialize
+# /initialize $ARGUMENTS
 
-Foundational project bootstrap command that creates complete context foundation in both Serena and In-Memoria MCPs.
+Initialize command for project setup, environment configuration, and foundation establishment.
 
-## References
-- [@FLAGS.md](../FLAGS.md)
-- [@PRINCIPLES.md](../PRINCIPLES.md)
+## Important File References
 - [@RULES.md](../RULES.md)
+- [@PRINCIPLES.md](../PRINCIPLES.md)
+- [@AGENTS.md](../AGENTS.md)
+- [@Flags](../FLAGS.md)
 
 ## General Context
-**Invoked Arguments [user_prompt]:** $ARGUMENTS
-**Current Directory:** !`pwd`
-**Current Folder:** !`basename $(pwd)`
-**Git Branch:** !`git rev-parse --abbrev-ref HEAD`
-**Git Status:**
-!`git status --short | grep '^ M'`
+
+- User Prompt: 
+`${ARGUMENTS}`
+- Current Directory: 
+`!pwd`
+- Current Folder: 
+`!basename $(pwd)`
+- Git Branch: 
+`!git rev-parse --abbrev-ref HEAD`
+- Git Status: 
+`!git status --short | grep ^ M`
 
 ## Workflow
-- **Phase 1: Serena Setup**: Activate project, check onboarding, perform initial setup
-- **Phase 2: In-Memoria Analysis**: Auto-learn codebase, extract patterns, build intelligence
-- **Phase 3: Documentation Synthesis**: Write core memories, establish architectural foundation
-- **Phase 4: Integration**: Verify dual MCP readiness for continued development
+- Complete project initialization with environment setup and configuration
+- Steps should be in following order: Analysis → Action → Finalization
 
 ```
 Example:
-1. **Serena Phase**:
-   - `serena_activate_project()` → Initialize project context
-   - `serena_check_onboarding_performed()` → Verify setup status
-   - `serena_onboarding()` → Complete initial configuration
-2. **In-Memoria Phase**:
-   - `in-memoria_auto_learn_if_needed()` → Analyze entire codebase
-   - `in-memoria_get_developer_profile()` → Extract development patterns
-   - `in-memoria_contribute_insights()` → Establish initial intelligence
-3. **Documentation Phase**:
-   - `serena_write_memory()` → Create project_overview, architectural_decisions
-   - Document initialization process and establish session context
-   - Update patterns_discovered_consolidated with initial findings
+1. **Analysis**:
+   - `detect_project_type()` → Identify framework and technology stack
+   - `analyze_existing_structure()` → Check for existing configuration files
+   - `validate_environment_requirements()` → Ensure tools and dependencies available
+2. **Action**:
+   - `create_project_structure()` → Establish directories and file organization
+   - `setup_configuration_files()` → Generate package.json, config files, environment
+   - `initialize_development_tools()` → Configure linting, testing, build systems
+3. **Finalization**:
+   - `validate_setup_completeness()` → Verify all components properly configured
+   - `generate_initial_documentation()` → Create README and setup guides
+   - `establish_version_control()` → Initialize git repository and basic structure
 ```
 
 ## Examples
 ```
-/initialize
-/initialize --force-relearn
-/initialize --skip-analysis
+/initialize --project-type react --typescript
+/initialize --framework nodejs --database postgresql
+/initialize --template fullstack --docker
+/initialize --minimal --no-git
+/initialize --python --framework django
 ```
+
+## Boundaries
+
+**Will:**
+- Create complete project structure with appropriate directories
+- Generate configuration files for development and production environments
+- Initialize version control and basic project documentation
+- Setup development tools and build systems automatically
+- Validate environment requirements and dependencies
+
+**Will Not:**
+- Initialize projects without proper environment validation
+- Override existing configurations without explicit confirmation
+- Create projects that violate established framework standards
+- Skip essential setup steps for faster initialization
+- Modify system-wide configurations without user permission
