@@ -1,0 +1,53 @@
+{"type":"_aim","source":"mcp-knowledge-graph"}
+{"type":"entity","name":"SuperCode Framework","entityType":"framework","observations":["AI agent orchestration system","19 specialized agents","13 commands","11 MCP server integrations","Built on Node.js and TypeScript","Dual memory architecture","Template standardization system"]}
+{"type":"entity","name":"Orchestrator Agent","entityType":"agent","observations":["Primary coordination agent","Multi-agent task delegation","Context caching and optimization","Workflow dependency management","Central coordination hub"]}
+{"type":"entity","name":"Backend Engineer Agent","entityType":"agent","observations":["Server-side development specialist","API architecture expertise","Database integration patterns","Security best practices","Performance optimization"]}
+{"type":"entity","name":"Frontend Engineer Agent","entityType":"agent","observations":["Client-side development specialist","React and modern UI frameworks","Responsive design expertise","User experience optimization","Component architecture"]}
+{"type":"entity","name":"QA Engineer Agent","entityType":"agent","observations":["Quality assurance specialist","Testing strategy design","E2E testing automation","Performance validation","Compliance verification"]}
+{"type":"entity","name":"Security Engineer Agent","entityType":"agent","observations":["Security analysis specialist","Vulnerability assessment","Security architecture design","Compliance validation","Threat modeling"]}
+{"type":"entity","name":"DevOps Engineer Agent","entityType":"agent","observations":["Infrastructure automation specialist","CI/CD pipeline design","Deployment optimization","Monitoring and observability","Cloud architecture"]}
+{"type":"entity","name":"System Architect Agent","entityType":"agent","observations":["High-level system design","Architecture pattern identification","Scalability planning","Technology stack selection","Integration design"]}
+{"type":"entity","name":"initialize Command","entityType":"command","observations":["Project setup and initialization","Deep codebase analysis","Memory system integration","Framework configuration","Context establishment"]}
+{"type":"entity","name":"implement Command","entityType":"command","observations":["Feature implementation","Code generation","Template application","Best practice integration","Quality validation"]}
+{"type":"entity","name":"spawn Command","entityType":"command","observations":["Agent spawning and coordination","Multi-agent workflow","Task delegation","Specialist agent matching","Workflow orchestration"]}
+{"type":"entity","name":"Memory Bank MCP","entityType":"mcp_server","observations":["Project-based documentation storage","Structured file organization","Persistent project memories","Context management","Documentation automation"]}
+{"type":"entity","name":"Knowledge Graph MCP","entityType":"mcp_server","observations":["Entity relationship management","Persistent knowledge storage","Pattern recognition","Intelligent search","Context mapping"]}
+{"type":"entity","name":"Desktop Commander MCP","entityType":"mcp_server","observations":["Local environment operations","File system management","Process automation","Development workflow","System integration"]}
+{"type":"entity","name":"Playwright MCP","entityType":"mcp_server","observations":["E2E testing automation","Browser control","Visual regression testing","Responsive design validation","Performance testing"]}
+{"type":"entity","name":"React Framework","entityType":"technology","observations":["Frontend framework v18.2.0","Component-based architecture","TypeScript integration","Hooks system","Virtual DOM"]}
+{"type":"entity","name":"Vite Build Tool","entityType":"technology","observations":["Build tool v5.0.8","Fast development server","Optimized production builds","Plugin ecosystem","Modern ES modules"]}
+{"type":"entity","name":"TypeScript Language","entityType":"technology","observations":["Typed JavaScript v5.2.2","Strict mode enabled","Type safety","IntelliSense support","Compilation to JavaScript"]}
+{"type":"entity","name":"Template System","entityType":"pattern","observations":["Standardized template structure","YAML frontmatter","Compliance validation","Real usage examples","100% adherence requirement"]}
+{"type":"entity","name":"Behavioral Flag System","entityType":"pattern","observations":["25+ execution control flags","Mode activation controls","MCP selection flags","Analysis depth settings","Execution customization"]}
+{"type":"relation","from":"SuperCode Framework","to":"Orchestrator Agent","relationType":"coordinates"}
+{"type":"relation","from":"SuperCode Framework","to":"Memory Bank MCP","relationType":"integrates"}
+{"type":"relation","from":"SuperCode Framework","to":"Knowledge Graph MCP","relationType":"integrates"}
+{"type":"relation","from":"SuperCode Framework","to":"Desktop Commander MCP","relationType":"integrates"}
+{"type":"relation","from":"SuperCode Framework","to":"Playwright MCP","relationType":"integrates"}
+{"type":"relation","from":"Orchestrator Agent","to":"Backend Engineer Agent","relationType":"delegates_to"}
+{"type":"relation","from":"Orchestrator Agent","to":"Frontend Engineer Agent","relationType":"delegates_to"}
+{"type":"relation","from":"Orchestrator Agent","to":"QA Engineer Agent","relationType":"delegates_to"}
+{"type":"relation","from":"Orchestrator Agent","to":"Security Engineer Agent","relationType":"delegates_to"}
+{"type":"relation","from":"Orchestrator Agent","to":"DevOps Engineer Agent","relationType":"delegates_to"}
+{"type":"relation","from":"Orchestrator Agent","to":"System Architect Agent","relationType":"delegates_to"}
+{"type":"relation","from":"Orchestrator Agent","to":"initialize Command","relationType":"executes"}
+{"type":"relation","from":"Orchestrator Agent","to":"spawn Command","relationType":"executes"}
+{"type":"relation","from":"Frontend Engineer Agent","to":"React Framework","relationType":"specializes_in"}
+{"type":"relation","from":"Frontend Engineer Agent","to":"Vite Build Tool","relationType":"uses"}
+{"type":"relation","from":"Frontend Engineer Agent","to":"TypeScript Language","relationType":"uses"}
+{"type":"relation","from":"SuperCode Framework","to":"Template System","relationType":"implements"}
+{"type":"relation","from":"SuperCode Framework","to":"Behavioral Flag System","relationType":"implements"}
+{"type":"relation","from":"initialize Command","to":"Memory Bank MCP","relationType":"configures"}
+{"type":"relation","from":"initialize Command","to":"Knowledge Graph MCP","relationType":"configures"}
+{"type":"relation","from":"Memory Bank MCP","to":"Knowledge Graph MCP","relationType":"complements"}
+{"type":"relation","from":"Playwright MCP","to":"QA Engineer Agent","relationType":"supports"}
+{"type":"relation","from":"Desktop Commander MCP","to":"DevOps Engineer Agent","relationType":"supports"}
+{"type":"relation","from":"Template System","to":"SuperCode Framework","relationType":"standardizes"}
+{"type":"relation","from":"Behavioral Flag System","to":"SuperCode Framework","relationType":"controls"}
+{"type":"relation","from":"React Framework","to":"TypeScript Language","relationType":"integrates_with"}
+{"type":"relation","from":"Vite Build Tool","to":"TypeScript Language","relationType":"processes"}
+{"type":"relation","from":"implement Command","to":"Template System","relationType":"applies"}
+{"type":"relation","from":"SuperCode Framework","to":"React Framework","relationType":"integrates"}
+{"type":"relation","from":"SuperCode Framework","to":"Knowledge Graph","relationType":"uses"}
+{"type":"relation","from":"SuperCode Framework","to":"Memory Bank","relationType":"uses"}
+{"type":"relation","from":"Orchestrator Agent","to":"React Framework","relationType":"manages"}

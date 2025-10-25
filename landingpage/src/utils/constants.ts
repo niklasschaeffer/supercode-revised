@@ -140,11 +140,11 @@ export const MCP_SERVERS = [
   { name: 'Chrome DevTools', description: 'Browser automation and debugging' },
   { name: 'Context7', description: 'Framework documentation retrieval' },
   { name: 'Forgejo', description: 'Git repository management' },
-  { name: 'In-Memoria', description: 'Codebase intelligence and learning' },
+  { name: 'Memory Bank', description: 'Project memory and documentation management' },
   { name: 'Desktop Commander', description: 'Intelligent code editing' },
   { name: 'Playwright', description: 'End-to-end testing automation' },
   { name: 'Prompt Kit', description: 'Template management system' },
-  { name: 'Serena', description: 'Advanced file operations and search' },
+  { name: 'Knowledge Graph', description: 'Entity relationships and structured knowledge' },
   { name: 'Shadcn', description: 'UI component registry' },
   { name: 'Sequential', description: 'Logical reasoning and planning' },
   { name: 'Tavily', description: 'Web search and content extraction' }
@@ -295,7 +295,7 @@ export const FEATURES = [
     },
     {
         title: 'Dual Memory System',
-        description: 'Serena + In-Memoria for persistent knowledge and codebase intelligence',
+        description: 'Knowledge Graph + Memory Bank for entity relationships and project intelligence',
         icon: '🧠',
         highlight: true
     },
