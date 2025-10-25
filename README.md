@@ -17,12 +17,12 @@ Get SuperCode running in minutes with these simple steps:
 
 - **Node.js** 16.0.0 or higher
 - **npm** (comes with Node.js)
-- **OpenCode** with the `@opencode-ai/plugin` installed
+- **OpenCode** with `@opencode-ai/plugin` installed
 
 ### Installation
 
 ```bash
-# Clone the SuperCode framework
+# Clone SuperCode framework
 git clone https://github.com/niklasschaeffer/supercode-revised.git
 cd supercode-revised
 
@@ -45,7 +45,7 @@ npm run supercode:init ${YOUR_PROJECT_FOLDER}
 # Explore available agents
 /spawn context-refinement
 
-# Try project renovation with the new command
+# Try project renovation with new command
 /renovate --analyze "update project dependencies"
 ```
 
@@ -62,7 +62,7 @@ npm run supercode:init ${YOUR_PROJECT_FOLDER}
 /spawn orchestrator
 ```
 
-✅ **SuperCode is now ready!** You have access to 11 MCP servers, behavioral flags, and the complete agent ecosystem (19 agents + 12 commands) with dual MCP foundation established.
+✅ **SuperCode is now ready!** You have access to 11 MCP servers, behavioral flags, and complete agent ecosystem (19 agents + 13 commands) with dual MCP foundation established.
 
 ---
 
@@ -175,6 +175,9 @@ Powerful commands for common workflows:
 # Direct feature implementation with orchestration
 /implement
 
+# Build project compilation, packaging, and deployment preparation
+/build
+
 # Quality improvement and optimization
 /improve
 
@@ -238,7 +241,7 @@ The `/initialize` command establishes this dual MCP foundation by:
 - Activating project in Serena and performing initial onboarding
 - Running In-Memoria analysis for pattern learning and intelligence
 - Creating core memories and architectural documentation
-- Setting up the complete context management foundation
+- Setting up complete context management foundation
 
 ### Memory Management
 
@@ -283,7 +286,7 @@ The `/initialize` command establishes this dual MCP foundation by:
 
 # This automatically:
 # 1. 🎯 Orchestrator analyzes requirements and decomposes tasks
-# 2. 🏗️ System-Architect designs the architecture
+# 2. 🏗️ System-Architect designs architecture
 # 3. 🛠️ Backend-Engineer builds APIs
 # 4. 🎨 Frontend-Engineer creates UI components
 # 5. 🔒 Security-Engineer adds authentication
@@ -437,7 +440,7 @@ Configuration is handled through:
 
 ### Code Quality Standards
 
-- **SOLID Principles** - Applied throughout the framework
+- **SOLID Principles** - Applied throughout framework
 - **Design Patterns** - Factory, Builder, Decorator, Observer, Strategy
 - **TypeScript Best Practices** - Strict typing and interfaces
 - **Testing Standards** - Unit, integration, and E2E testing
@@ -515,14 +518,14 @@ git checkout -b feature/amazing-feature
 
 ## 📄 License
 
-This project is licensed under the **MIT License** - see the [LICENSE](LICENSE) file for details.
+This project is licensed under **MIT License** - see the [LICENSE](LICENSE) file for details.
 
 ---
 
 ## 🙏 Acknowledgments
 
-- **OpenCode Team** - For the amazing plugin system
-- **MCP Community** - For the powerful server ecosystem
+- **OpenCode Team** - For amazing plugin system
+- **MCP Community** - For powerful server ecosystem
 - **Contributors** - Everyone who has contributed to this project
 - **Early Adopters** - For valuable feedback and improvements
 
@@ -566,8 +569,8 @@ npm run supercode:init ${YOUR_PROJECT_FOLDER}
 /load
 ```
 
-🚀 **Welcome to the future of AI-assisted development!**
+🚀 **Welcome to future of AI-assisted development!**
 
 ---
 
-*Built with ❤️ by the SuperCode team*
+*Built with ❤️ by SuperCode team*

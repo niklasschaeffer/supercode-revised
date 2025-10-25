@@ -198,6 +198,13 @@ export const COMMANDS: Command[] = [
     category: 'Development'
   },
   {
+    id: 'build',
+    name: 'Build',
+    description: 'Build project compilation, packaging, and deployment preparation',
+    example: '/build --production --optimize',
+    category: 'Development'
+  },
+  {
     id: 'improve',
     name: 'Improve',
     description: 'Code improvement with patterns and performance optimization',

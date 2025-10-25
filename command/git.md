@@ -1,83 +1,72 @@
 ---
 name: git
-description: Intelligent git workflows with Forgejo forge integration
+description: Git command for version control, branch management, and repository operations
 ---
 
 # /git $ARGUMENTS
 
-Intelligent git operations combining local version control expertise with Forgejo forge integration for complete development workflow management.
+Git command for version control, branch management, and repository operations.
 
-## References
-- [@FLAGS.md](../FLAGS.md)
-- [@PRINCIPLES.md](../PRINCIPLES.md)
+## Important File References
 - [@RULES.md](../RULES.md)
+- [@PRINCIPLES.md](../PRINCIPLES.md)
+- [@AGENTS.md](../AGENTS.md)
+- [@Flags](../FLAGS.md)
 
 ## General Context
-**Invoked Arguments [user_prompt]:** $ARGUMENTS
-**Current Directory:** !`pwd`
-**Current Folder:** !`basename $(pwd)`
-**Git Branch:** !`git rev-parse --abbrev-ref HEAD`
-**Git Status:**
-!`git status --short | grep '^ M'`
+
+- User Prompt:
+`$ARGUMENTS`
+- Current Directory: 
+`!pwd`
+- Current Folder: 
+`!basename $(pwd)`
+- Git Branch: 
+`!git rev-parse --abbrev-ref HEAD`
+- Git Status: 
+`!git status --short | grep ^ M`
 
 ## Workflow
+- Comprehensive git operations with intelligent workflow automation
+- Steps should be in following order: Analysis → Action → Finalization
 
-1. **Repository Analysis**:
-   - `git status`, `git branch` → Local state
-   - Forgejo `list_branches`, `list_repo_commits`, ` → Remote state
-
-2. **Operation Execution**:
-   - Parse operation (workflow/branch/issue/pr/commit)
-   - Execute git commands via bash for local operations
-   - Execute Forgejo MCP for forge operations
-
-3. **Intelligence Layer**:
-   - Sequential MCP → PR description generation from commits
-   - `grep/glob/read` → Analyze changes for commit messages
-   - Context understanding for intelligent automation
-
-4. **Synchronization**:
-   - Ensure local/remote consistency
-   - Update Forgejo issues and PRs
-   - Persist workflow patterns to Serena
+```
+Example:
+1. **Analysis**:
+   - `analyze_repository_state()` → Check current branch, status, and conflicts
+   - `parse_git_command()` → Extract operation type and parameters
+   - `validate_git_environment()` → Ensure proper authentication and permissions
+2. **Action**:
+   - `execute_git_operations()` → Perform branch, commit, merge, push operations
+   - `handle_conflicts_resolution()` → Auto-resolve or flag merge conflicts
+   - `manage_remote_sync()` → Coordinate with remote repositories
+3. **Finalization**:
+   - `verify_operation_success()` → Confirm git operation completed correctly
+   - `update_repository_status()` → Refresh local repository information
+   - `log_git_activity()` → Record operations for audit and tracking
+```
 
 ## Examples
-
-**Feature workflow:**
 ```
-/git workflow feature "authentication system"
-# Creates: feature/auth-system branch (local + remote)
-# Creates: Forgejo issue #123 linked to branch
-# Output: Branch ready, tracking issue created
-```
-
-**PR creation:**
-```
-/git pr create
-# Analyzes: Staged commits and changes
-# Generates: Intelligent PR description
-# Creates: Pull request via Forgejo MCP
-# Output: PR #45 created with auto-description
+/git branch create feature/user-authentication
+/git commit --message "Add login functionality"
+/git merge feature/api-integration --no-ff
+/git push origin main --force-with-lease
+/git status --verbose
 ```
 
-**Branch operations:**
-```
-/git branch status              # Compare local vs remote
-/git branch create feature-name # Create local + remote
-/git branch analyze            # Understand branch context
-```
+## Boundaries
 
-**Issue integration:**
-```
-/git issue create "Fix login bug"  # Create Forgejo issue
-/git issue comment 123 "Fixing..." # Add comment to issue with what has been accomplished
-/git issue link 123               # Link current branch to issue
-/git issue close 123              # Close issue with verification
-```
+**Will:**
+- Execute standard git operations (branch, commit, merge, push, pull)
+- Handle conflict detection and provide resolution guidance
+- Manage remote repository synchronization and tracking
+- Generate intelligent commit messages based on changes
+- Support both local and remote git workflows
 
-**Commit intelligence:**
-```
-/git commit smart           # Generate commit message from changes
-/git commit history        # Analyze commit history with forge context
-/git workflow sync         # Sync local and remote state
-```
+**Will Not:**
+- Perform destructive operations without explicit confirmation
+- Override repository protection rules or branch restrictions
+- Execute git operations without proper repository validation
+- Modify git history without user awareness and consent
+- Bypass authentication or security requirements
