@@ -16,7 +16,7 @@ Improve command for code optimization, refactoring, and performance enhancement.
 ## General Context
 
 - User Prompt: 
-`${ARGUMENTS}`
+`$ARGUMENTS`
 - Current Directory: 
 `!pwd`
 - Current Folder: 

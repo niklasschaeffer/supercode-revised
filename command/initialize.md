@@ -16,7 +16,7 @@ Initialize command for project setup, environment configuration, and foundation 
 ## General Context
 
 - User Prompt: 
-`${ARGUMENTS}`
+`$ARGUMENTS`
 - Current Directory: 
 `!pwd`
 - Current Folder: 

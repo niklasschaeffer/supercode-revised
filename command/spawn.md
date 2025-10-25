@@ -16,7 +16,7 @@ Spawn command for agent creation, task delegation, and workflow orchestration.
 ## General Context
 
 - User Prompt: 
-`${ARGUMENTS}`
+`$ARGUMENTS`
 - Current Directory: 
 `!pwd`
 - Current Folder: 

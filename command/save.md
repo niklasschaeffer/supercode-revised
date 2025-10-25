@@ -16,7 +16,7 @@ Save command for state persistence, context storage, and memory management.
 ## General Context
 
 - User Prompt: 
-`${ARGUMENTS}`
+`$ARGUMENTS`
 - Current Directory: 
 `!pwd`
 - Current Folder: 

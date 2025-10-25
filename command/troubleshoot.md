@@ -16,7 +16,7 @@ Troubleshoot command for debugging, error diagnosis, and problem resolution.
 ## General Context
 
 - User Prompt: 
-`${ARGUMENTS}`
+`$ARGUMENTS`
 - Current Directory: 
 `!pwd`
 - Current Folder: 

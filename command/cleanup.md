@@ -15,8 +15,8 @@ Cleanup command for project maintenance, dependency management, and resource opt
 
 ## General Context
 
-- User Prompt: 
-`${ARGUMENTS}`
+- User Prompt:
+`$ARGUMENTS`
 - Current Directory: 
 `!pwd`
 - Current Folder: 

@@ -16,7 +16,7 @@ Task command for task management, project planning, and workflow organization.
 ## General Context
 
 - User Prompt: 
-`${ARGUMENTS}`
+`$ARGUMENTS`
 - Current Directory: 
 `!pwd`
 - Current Folder: 

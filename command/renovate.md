@@ -16,7 +16,7 @@ Renovate command for project updates, dependency management, and modernization.
 ## General Context
 
 - User Prompt: 
-`${ARGUMENTS}`
+`$ARGUMENTS`
 - Current Directory: 
 `!pwd`
 - Current Folder: 

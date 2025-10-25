@@ -15,8 +15,8 @@ Git command for version control, branch management, and repository operations.
 
 ## General Context
 
-- User Prompt: 
-`${ARGUMENTS}`
+- User Prompt:
+`$ARGUMENTS`
 - Current Directory: 
 `!pwd`
 - Current Folder: 

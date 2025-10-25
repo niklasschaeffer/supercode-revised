@@ -15,8 +15,8 @@ Implement command for feature development, code implementation, and functionalit
 
 ## General Context
 
-- User Prompt: 
-`${ARGUMENTS}`
+- User Prompt:
+`$ARGUMENTS`
 - Current Directory: 
 `!pwd`
 - Current Folder: 

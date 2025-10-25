@@ -16,7 +16,7 @@ Load command for context loading, memory retrieval, and project state restoratio
 ## General Context
 
 - User Prompt: 
-`${ARGUMENTS}`
+`$ARGUMENTS`
 - Current Directory: 
 `!pwd`
 - Current Folder: 

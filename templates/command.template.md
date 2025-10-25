@@ -15,8 +15,8 @@ ${command-description} <!-- short description about what the commands purpose. -
 
 ## General Context
 
-- User Prompt: 
-`${ARGUMENTS}`
+- User Prompt:
+`$ARGUMENTS`
 - Current Directory: 
 `!pwd`
 - Current Folder: 

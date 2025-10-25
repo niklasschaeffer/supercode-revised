@@ -16,7 +16,7 @@ Build command for project compilation, packaging, and deployment preparation.
 ## General Context
 
 - User Prompt: 
-`${ARGUMENTS}`
+`$ARGUMENTS`
 - Current Directory: 
 `!pwd`
 - Current Folder: 

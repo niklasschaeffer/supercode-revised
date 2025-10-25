@@ -15,8 +15,8 @@ Generate command for component creation, code scaffolding, and template instanti
 
 ## General Context
 
-- User Prompt: 
-`${ARGUMENTS}`
+- User Prompt:
+`$ARGUMENTS`
 - Current Directory: 
 `!pwd`
 - Current Folder: 
