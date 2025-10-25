@@ -62,7 +62,7 @@ list_project_files({
 
 ```
 // Storage structure examples:
-/memory-bank-root/
+/.memory/
 ├── project-alpha/
 │   ├── projectbrief.md      # Core requirements/goals
 │   ├── productContext.md    # Problem context/solutions  
