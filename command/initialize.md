@@ -1,6 +1,7 @@
 ---
 name: initialize
 description: Initialize deep codebase understanding using Memory Bank, Knowledge Graph, and Context7 for persistent project intelligence
+agent: orchestrator
 ---
 
 # /initialize $ARGUMENTS

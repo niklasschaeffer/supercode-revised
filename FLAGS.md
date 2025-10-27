@@ -42,13 +42,13 @@ Behavioral flags for SuperCode to enable specific execution modes and tool selec
 - Trigger: UI component requests (/ui), design system queries, frontend development
 - Behavior: Enable Shadcn for modern UI generation from shadcn patterns/components
 
-**--in-memory**
-- Trigger: Persistent memory and pattern learning
-- Behavior: Read or Write project patterns from In-Memoria
+**--memory-bank**
+- Trigger: Pattern learning, project memory needs, cross-session knowledge retention
+- Behavior: Enable Memory-Bank consistent memory storage and retrieval
 
-**--serena**
-- Trigger: Symbol operations, project memory needs, large codebase navigation
-- Behavior: Enable Serena for semantic understanding and session persistence
+**--knowledge-graph**
+- Trigger: Entity relationship mapping, task persistence, cross-session state management
+- Behavior: Enable Knowledge-Graph for structured entity storage and intelligent retrieval
 
 **--play / --playwright**
 - Trigger: Browser testing, E2E scenarios, visual validation, accessibility testing
